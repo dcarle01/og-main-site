@@ -1,0 +1,1193 @@
+<!-- Version: 1.0.0 | Created: 2025-08-15 | Last Modified: 2025-08-18 | Author: Open Gateways Team -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates - Open Gateways</title>
+    <meta name="description" content="Latest news and updates from Open Gateways - channeling sessions with Baratta.">
+    <meta name="keywords" content="Open Gateways, news, updates, Baratta, channeling, spiritual guidance">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/shared/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/shared/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/shared/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/shared/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/shared/apple-touch-icon.png">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="News & Updates - Open Gateways">
+    <meta property="og:description" content="Latest news and updates from Open Gateways - channeling sessions with Baratta">
+    <meta property="og:image" content="../assets/images/main-site/en/News_banner_v2.jpg">
+    <meta property="og:url" content="https://opengateways.com/en/news">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News & Updates - Open Gateways">
+    <meta name="twitter:description" content="Latest news and updates from Open Gateways - channeling sessions with Baratta">
+    <meta name="twitter:image" content="../assets/images/main-site/en/News_banner_v2.jpg">
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="https://opengateways.com/en/news">
+    <link rel="alternate" hreflang="es" href="https://opengateways.com/es/noticias">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Side Navigation */
+		/* Fix keyboard navigation - hide side nav links from tab order when menu is closed */
+		.side-nav {
+		    position: fixed;
+		    left: -300px;
+		    top: 0;
+		    width: 280px;
+		    height: 100vh;
+		    background: rgba(255, 255, 255, 0.98);
+		    backdrop-filter: blur(15px);
+		    border-right: 1px solid rgba(1, 132, 246, 0.2);
+		    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+		    transition: all 0.3s ease;
+		    z-index: 1000;
+		    overflow-y: auto;
+		    padding: 20px 0;
+		    visibility: hidden; /* Hide from keyboard navigation when closed */
+		}
+
+		.side-nav.open {
+		    left: 0;
+		    visibility: visible; /* Show for keyboard navigation when open */
+		}
+
+		/* Additional safety: ensure links are not focusable when menu is closed */
+		.side-nav:not(.open) a,
+		.side-nav:not(.open) button {
+		    pointer-events: none;
+		    tabindex: -1;
+		}
+
+		.side-nav.open a,
+		.side-nav.open button {
+		    pointer-events: auto;
+		    tabindex: 0;
+		}
+
+        .side-nav-header {
+            padding: 0 20px 20px;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 20px;
+        }
+
+        .side-nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .side-nav-logo img {
+            height: 35px;
+            width: auto;
+        }
+
+        .side-nav-logo span {
+            font-weight: bold;
+            color: #4a5568;
+            font-size: 1.1rem;
+        }
+
+        .side-nav-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #666;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .side-nav-close:hover {
+            background-color: #f1f5f9;
+        }
+
+        .side-language-switcher {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .side-language-switcher img {
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease;
+            width: 24px;
+            height: 13px;
+        }
+
+        .side-language-switcher img:hover {
+            transform: scale(1.1);
+        }
+
+        .side-nav-menu {
+            padding: 0 20px;
+        }
+
+        .side-nav-section {
+            margin-bottom: 25px;
+        }
+
+        .side-nav-section-title {
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #718096;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .side-nav-link {
+            display: block;
+            padding: 8px 0;
+            color: #4a5568;
+            text-decoration: none;
+            transition: color 0.2s;
+            border-left: 3px solid transparent;
+            padding-left: 12px;
+            margin-left: -12px;
+        }
+
+        .side-nav-link:hover {
+            color: #0184f6;
+            border-left-color: #0184f6;
+        }
+
+        .side-nav-link.active {
+            color: #0184f6;
+            border-left-color: #0184f6;
+            font-weight: 600;
+        }
+
+        .side-nav-cta {
+            margin: 30px 20px 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #38a169 0%, #2f855a 100%);
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .side-nav-cta h4 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .side-nav-cta-btn {
+            display: block;
+            background: white;
+            color: #38a169;
+            padding: 10px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: transform 0.2s ease;
+        }
+
+        .side-nav-cta-btn:hover {
+            transform: translateY(-1px);
+        }
+
+        /* Navigation Toggle Buttons */
+        .nav-toggle-desktop {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1001;
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            border: none;
+            padding: 12px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(1, 132, 246, 0.3);
+            transition: all 0.3s ease;
+            display: none; /* Hidden by default */
+        }
+
+        .nav-toggle-desktop:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(1, 132, 246, 0.4);
+        }
+
+        .nav-toggle-mobile {
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            border: none;
+            padding: 10px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(1, 132, 246, 0.3);
+            transition: all 0.3s ease;
+            display: none; /* Hidden by default */
+        }
+
+        .nav-toggle-mobile:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(1, 132, 246, 0.4);
+        }
+
+        /* Show desktop floating button on larger screens */
+        @media (min-width: 768px) {
+            .nav-toggle-desktop {
+                display: block;
+            }
+            
+            .nav-toggle-mobile {
+                display: none;
+            }
+        }
+
+        /* Show mobile button on smaller screens */
+        @media (max-width: 767px) {
+            .nav-toggle-desktop {
+                display: none;
+            }
+            
+            .nav-toggle-mobile {
+                display: block;
+            }
+        }
+
+        /* Overlay */
+        .nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .nav-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex: 1;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            display: flex;
+            justify-content: flex-end; /* Right-align by default for desktop */
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .language-flags {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Mobile: Restore space-between for menu button positioning */
+        @media (max-width: 767px) {
+            .language-switcher {
+                justify-content: space-between; /* Menu button left, flags right */
+            }
+        }
+
+        .language-switcher img {
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease;
+            width: 30px;
+            height: 16px;
+        }
+
+        .language-switcher img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Site Logo Card */
+        .site-name-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding: 10px 17px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            max-width: 280px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .home-button-logo {
+            display: block;
+            transition: transform 0.2s ease;
+        }
+
+        .home-button-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .site-logo {
+            max-width: 70%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Header Banner */
+        .header-banner {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .news-events-banner {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            max-height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Main Content */
+        main {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            margin-bottom: 25px;
+            min-height: 400px;
+        }
+
+        /* Loading and Error States */
+        #loadingIndicator {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+
+        #loadingIndicator .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #0184f6;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #errorMessage {
+            display: none;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .error-content {
+            background: rgba(254, 202, 202, 0.3);
+            border: 2px solid #f56565;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 20px 0;
+        }
+
+        .error-content h3 {
+            color: #c53030;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .error-content p {
+            color: #2d3748;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .contact-fallback {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .contact-fallback p {
+            margin-bottom: 10px;
+        }
+
+        .contact-fallback a {
+            color: #0184f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-fallback a:hover {
+            text-decoration: underline;
+        }
+
+        /* Enhanced Content Styling for Markdown */
+        #contentArea {
+            display: none;
+        }
+
+        #contentArea h1 {
+            color: #4a5568;
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #0184f6;
+            padding-bottom: 15px;
+            text-align: center;
+            font-family: 'Georgia', serif;
+        }
+
+        #contentArea h2 {
+            color: #4a5568;
+            font-size: 1.8rem;
+            margin: 40px 0 25px 0;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+
+        #contentArea h3 {
+            color: #4a5568;
+            font-size: 1.4rem;
+            margin: 30px 0 20px 0;
+            font-weight: 600;
+        }
+
+        #contentArea h4 {
+            color: #4a5568;
+            font-size: 1.2rem;
+            margin: 25px 0 15px 0;
+            font-weight: bold;
+        }
+
+        #contentArea p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #555;
+            text-align: justify;
+        }
+
+        #contentArea ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+
+        #contentArea li {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        #contentArea strong {
+            color: #2d3748;
+            font-weight: 600;
+        }
+
+        #contentArea em {
+            font-style: italic;
+            color: #4a5568;
+        }
+
+        #contentArea a {
+            color: #0184f6;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        #contentArea a:hover {
+            color: #0164c9;
+            text-decoration: underline;
+        }
+
+        #contentArea code {
+            background: #f7fafc;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        #contentArea pre {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        #contentArea blockquote {
+            border-left: 4px solid #0184f6;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #4a5568;
+        }
+
+        #contentArea hr {
+            border: none;
+            border-top: 2px solid #e2e8f0;
+            margin: 40px 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .container {
+                padding: 40px;
+                padding-left: 100px; /* Space for floating toggle button */
+            }
+
+            main {
+                padding: 50px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                padding: 60px;
+                padding-left: 120px; /* Space for floating toggle button */
+            }
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                padding: 20px;
+            }
+
+            .side-nav {
+                width: 260px;
+                left: -260px;
+            }
+
+            /* Reduced vertical spacing between cards on mobile */
+            .language-switcher {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+            }
+
+            .site-name-card {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+            }
+
+            .header-banner {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+            }
+
+            main {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+                padding: 25px;
+            }
+
+            #contentArea p {
+                font-size: 1rem;
+                text-align: left;
+            }
+
+            #contentArea li {
+                font-size: 1rem;
+            }
+
+            #contentArea h1 {
+                font-size: 1.8rem;
+            }
+
+            #contentArea h2 {
+                font-size: 1.5rem;
+            }
+
+            #contentArea h3 {
+                font-size: 1.2rem;
+            }
+
+            #contentArea h4 {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Accessibility */
+        .nav-toggle-desktop:focus,
+        .nav-toggle-mobile:focus,
+        .side-nav-link:focus {
+            outline: 3px solid #0184f6;
+            outline-offset: 2px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .side-nav,
+            .nav-toggle-desktop,
+            .nav-toggle-mobile,
+            .main-content,
+            .nav-overlay {
+                transition: none;
+            }
+            
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Hide regular language switcher when side nav is open */
+        .nav-open-body .language-switcher {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Toggle for Desktop -->
+    <button class="nav-toggle-desktop" id="navToggleDesktop" onclick="toggleSideNav()">☰ Menu</button>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav" id="sideNav" aria-label="Main navigation">
+        <div class="side-nav-header">
+            <div class="side-nav-logo">
+                    <img src="../assets/images/shared/OG_logo_2025.png" alt="Open Gateways">
+            </div>
+            <button class="side-nav-close" onclick="closeSideNav()" aria-label="Close navigation">&times;</button>
+            <div class="side-language-switcher">
+                <img onclick="switchLanguage('en');" 
+                     onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('en');" 
+                     tabindex="0" 
+                     width="24" 
+                     height="13" 
+                     border="0" 
+                     title="English" 
+                     alt="English" 
+                     src="../assets/images/shared/us.svg">
+                <img onclick="switchLanguage('es');" 
+                     onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('es');" 
+                     tabindex="0" 
+                     width="24" 
+                     height="13" 
+                     border="0" 
+                     title="Español" 
+                     alt="Español" 
+                     src="../assets/images/shared/mx.svg">
+            </div>
+        </div>
+        
+        <div class="side-nav-menu">
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Baratta</div>
+                <div class="side-nav-item">
+                    <a href="meet-baratta" class="side-nav-link">Meet Baratta</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="listen-to-baratta" class="side-nav-link">Listen to Baratta</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="baratta-talks-about" class="side-nav-link">Baratta talks about...</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="private-sessions" class="side-nav-link">Private Sessions</a>
+                </div>
+            </div>
+
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Dale Carley</div>
+                <div class="side-nav-item">
+                    <a href="meet-dale-carley" class="side-nav-link">Meet Dale Carley</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="what-is-channeling" class="side-nav-link">What is Channeling?</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="interview-with-dale" class="side-nav-link">Interview with Dale</a>
+                </div>
+            </div>
+
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Site Pages</div>
+                <div class="side-nav-item">
+                    <a href="news" class="side-nav-link active">News</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="testimonials" class="side-nav-link">Testimonials</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="online-store-coming-soon" class="side-nav-link">Online Store (Coming Soon)</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="terms-and-policies" class="side-nav-link">Terms & Policies</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="contact-us" class="side-nav-link">Contact Us</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="welcome-to-opengateways" class="side-nav-link">🏠 Home</a>
+                </div>
+            </div>
+
+            <div class="side-nav-cta">
+                <h4>Ready to Connect?</h4>
+                <a href="https://schedule.opengateways.com" class="side-nav-cta-btn" target="_blank">📅 Schedule Online</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div class="nav-overlay" id="navOverlay" onclick="closeSideNav()"></div>
+
+    <!-- Main Content -->
+    <div class="page-wrapper">
+        <div class="main-content">
+            <div class="container">
+                <!-- Language Switcher with Mobile Menu Button -->
+				<div class="language-switcher">
+				    <!-- Mobile Menu Button (aligned with language switcher) -->
+				    <button class="nav-toggle-mobile" id="navToggleMobile" onclick="toggleSideNav()" aria-label="Toggle navigation menu">
+				        ☰ Menu
+				    </button>
+    
+				    <div class="language-flags">
+				        <img onclick="switchLanguage('en');" 
+				             onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('en');" 
+				             tabindex="0" 
+				             width="30" 
+				             height="16" 
+				             border="0" 
+				             title="English" 
+				             alt="English" 
+				             src="../assets/images/shared/us.svg">
+				        <img onclick="switchLanguage('es');" 
+				             onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('es');" 
+				             tabindex="0" 
+				             width="30" 
+				             height="16" 
+				             border="0" 
+				             title="Español" 
+				             alt="Español" 
+				             src="../assets/images/shared/mx.svg">
+				    </div>
+				</div>
+
+                <!-- Site Logo Card -->
+                <div class="site-name-card">
+                    <a href="welcome-to-opengateways" class="home-button-logo" title="Home">
+                        <img src="../assets/images/shared/OG_logo_2025.png" alt="Open Gateways Home" class="site-logo">
+                    </a>
+                </div>
+
+                <!-- Header Banner -->
+                <div class="header-banner">
+                    <img src="../assets/images/main-site/en/News_banner_v2.jpg" alt="News" class="news-events-banner">
+                </div>
+
+                <main>
+                    <!-- Loading Indicator -->
+                    <div id="loadingIndicator">
+                        <div class="spinner"></div>
+                        <p>Loading News...</p>
+                    </div>
+
+                    <!-- Error Message -->
+                    <div id="errorMessage">
+                        <!-- Error content will be inserted here -->
+                    </div>
+
+                    <!-- Dynamic Content Area -->
+                    <div id="contentArea">
+                        <!-- Markdown content will be loaded here -->
+                    </div>
+                </main>
+
+                <footer>
+                    <p>Copyright © <script>document.write(new Date().getFullYear())</script> Open Gateways, Inc. All Rights Reserved.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Navigation functionality
+        function toggleSideNav() {
+            const sideNav = document.getElementById('sideNav');
+            const overlay = document.getElementById('navOverlay');
+            const toggleBtn = document.getElementById('navToggleDesktop');
+            
+            if (sideNav.classList.contains('open')) {
+                closeSideNav();
+            } else {
+                openSideNav();
+            }
+        }
+
+        function openSideNav() {
+            const sideNav = document.getElementById('sideNav');
+            const overlay = document.getElementById('navOverlay');
+            const toggleBtn = document.getElementById('navToggleDesktop');
+            
+            sideNav.classList.add('open');
+            overlay.classList.add('active');
+            if (toggleBtn) toggleBtn.style.left = '300px';
+            document.body.classList.add('nav-open-body');
+        }
+
+        function closeSideNav() {
+            const sideNav = document.getElementById('sideNav');
+            const overlay = document.getElementById('navOverlay');
+            const toggleBtn = document.getElementById('navToggleDesktop');
+            
+            sideNav.classList.remove('open');
+            overlay.classList.remove('active');
+            if (toggleBtn) toggleBtn.style.left = '20px';
+            document.body.classList.remove('nav-open-body');
+        }
+
+        // Language functionality
+        function WriteCookie(lan) {
+            document.cookie = "language=" + lan + "; path=/; max-age=" + (365*24*60*60);
+            
+            var fileTranslations = {
+                'welcome-to-opengateways.html': {
+                    'en': 'welcome-to-opengateways.html',
+                    'es': 'bienvenido-a-opengateways.html'
+                },
+                'bienvenido-a-opengateways.html': {
+                    'en': 'welcome-to-opengateways.html',
+                    'es': 'bienvenido-a-opengateways.html'
+                },
+                'meet-baratta.html': {
+                    'en': 'meet-baratta.html',
+                    'es': 'conoce-a-baratta.html'
+                },
+                'conoce-a-baratta.html': {
+                    'en': 'meet-baratta.html',
+                    'es': 'conoce-a-baratta.html'
+                },
+                'private-sessions.html': {
+                    'en': 'private-sessions.html',
+                    'es': 'sesiones-privadas.html'
+                },
+                'sesiones-privadas.html': {
+                    'en': 'private-sessions.html',
+                    'es': 'sesiones-privadas.html'
+                },
+                'testimonials.html': {
+                    'en': 'testimonials.html',
+                    'es': 'testimonios.html'
+                },
+                'testimonios.html': {
+                    'en': 'testimonials.html',
+                    'es': 'testimonios.html'
+                },
+                'listen-to-baratta.html': {
+                    'en': 'listen-to-baratta.html',
+                    'es': 'escucha-a-baratta.html'
+                },
+                'escucha-a-baratta.html': {
+                    'en': 'listen-to-baratta.html',
+                    'es': 'escucha-a-baratta.html'
+                },
+                'baratta-talks-about.html': {
+                    'en': 'baratta-talks-about.html',
+                    'es': 'baratta-habla-de.html'
+                },
+                'baratta-habla-de.html': {
+                    'en': 'baratta-talks-about.html',
+                    'es': 'baratta-habla-de.html'
+                },
+                'meet-dale-carley.html': {
+                    'en': 'meet-dale-carley.html',
+                    'es': 'conoce-a-dale-carley.html'
+                },
+                'conoce-a-dale-carley.html': {
+                    'en': 'meet-dale-carley.html',
+                    'es': 'conoce-a-dale-carley.html'
+                },
+                'what-is-channeling.html': {
+                    'en': 'what-is-channeling.html',
+                    'es': 'que-es-canalizacion.html'
+                },
+                'que-es-canalizacion.html': {
+                    'en': 'what-is-channeling.html',
+                    'es': 'que-es-canalizacion.html'
+                },
+                'interview-with-dale.html': {
+                    'en': 'interview-with-dale.html',
+                    'es': 'entrevista-con-dale.html'
+                },
+                'entrevista-con-dale.html': {
+                    'en': 'interview-with-dale.html',
+                    'es': 'entrevista-con-dale.html'
+                },
+                'news.html': {
+                    'en': 'news.html',
+                    'es': 'noticias.html'
+                },
+                'noticias.html': {
+                    'en': 'news.html',
+                    'es': 'noticias.html'
+                },
+                'online-store-coming-soon.html': {
+                    'en': 'online-store-coming-soon.html',
+                    'es': 'tienda-en-linea-proximamente.html'
+                },
+                'tienda-en-linea-proximamente.html': {
+                    'en': 'online-store-coming-soon.html',
+                    'es': 'tienda-en-linea-proximamente.html'
+                },
+                'terms-and-policies.html': {
+                    'en': 'terms-and-policies.html',
+                    'es': 'terminos-y-politicas.html'
+                },
+                'terminos-y-politicas.html': {
+                    'en': 'terms-and-policies.html',
+                    'es': 'terminos-y-politicas.html'
+                },
+                'contact-us.html': {
+                    'en': 'contact-us.html',
+                    'es': 'contactanos.html'
+                },
+                'contactanos.html': {
+                    'en': 'contact-us.html',
+                    'es': 'contactanos.html'
+                },
+                'relating.html': {
+                    'en': 'relating.html',
+                    'es': 'relacionandote.html'
+                },
+                'relacionandote.html': {
+                    'en': 'relating.html',
+                    'es': 'relacionandote.html'
+                },
+                'masculine-feminine.html': {
+                    'en': 'masculine-feminine.html',
+                    'es': 'masculino-femenino.html'
+                },
+                'masculino-femenino.html': {
+                    'en': 'masculine-feminine.html',
+                    'es': 'masculino-femenino.html'
+                },
+                'learning-spiritually.html': {
+                    'en': 'learning-spiritually.html',
+                    'es': 'aprender-espiritualmente.html'
+                },
+                'aprender-espiritualmente.html': {
+                    'en': 'learning-spiritually.html',
+                    'es': 'aprender-espiritualmente.html'
+                }
+            };
+
+            // Get current language from URL
+            var currentPath = window.location.pathname;
+            var currentLang = '';
+    
+            // Parse current language
+            if (currentPath.startsWith('/en/')) {
+                currentLang = 'en';
+            } else if (currentPath.startsWith('/es/')) {
+                currentLang = 'es';
+            }
+    
+            // Get filename (everything after the language part)
+            var filename = 'news.html'; // default
+            var pathMatch = currentPath.match(/\/(en|es)\/(.+)$/);
+            if (pathMatch && pathMatch[2]) {
+                filename = pathMatch[2];
+                // Handle clean URLs (add .html if missing)
+                if (!filename.endsWith('.html')) {
+                    filename = filename + '.html';
+                }
+            }
+
+            // Get translated filename for target language
+            var translatedFilename = filename;
+            if (fileTranslations[filename] && fileTranslations[filename][lan]) {
+                translatedFilename = fileTranslations[filename][lan];
+            }
+
+            // Only redirect if different language
+            if (lan !== currentLang) {
+                var newPath = '/' + lan + '/' + translatedFilename;
+        
+                // Add a small delay to ensure cookie is set
+                setTimeout(function() {
+                    window.location.replace(newPath);
+                }, 50);
+            } else {
+                // Reset flag if no redirect needed
+                window.languageSwitchInProgress = false;
+            }
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+            }
+            return "";
+        }
+        
+        // Add this function to both files
+        function switchLanguage(lang) {
+            WriteCookie(lang);
+        }
+
+        // Load content from markdown file
+        async function loadNewsContent() {
+            try {
+                document.getElementById('loadingIndicator').style.display = 'block';
+                document.getElementById('contentArea').style.display = 'none';
+                document.getElementById('errorMessage').style.display = 'none';
+                
+                // Try to load from assets directory
+                const response = await fetch('../assets/content/news-content-en.md');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const markdownContent = await response.text();
+                
+                // Skip the first line (title) for static HTML site
+                const lines = markdownContent.split('\n');
+                const contentWithoutHeader = lines.slice(0).join('\n');
+                
+                // Parse markdown content
+                const htmlContent = parseMarkdownToHTML(contentWithoutHeader);
+                document.getElementById('contentArea').innerHTML = htmlContent;
+                document.getElementById('contentArea').style.display = 'block';
+                
+            } catch (error) {
+                console.error('Error loading news content:', error);
+                document.getElementById('errorMessage').style.display = 'block';
+                document.getElementById('errorMessage').innerHTML = 
+                    '<div class="error-content">' +
+                    '<h3>⚠️ Error Loading Content</h3>' +
+                    '<p>We apologize, but there was an error loading the news and updates content.</p>' +
+                    '<p><strong>For now, please contact us directly:</strong></p>' +
+                    '<div class="contact-fallback">' +
+                    '<p>📞 Phone: <a href="tel:+13104579171">(310) 457-9171</a></p>' +
+                    '<p>📞 Toll Free: <a href="tel:+18884227288">1-888-422-7288</a></p>' +
+                    '<p>📧 Email: <a href="mailto:info@opengateways.com">info@opengateways.com</a></p>' +
+                    '</div>' +
+                    '</div>';
+            } finally {
+                document.getElementById('loadingIndicator').style.display = 'none';
+            }
+        }
+
+        // Enhanced markdown to HTML parser
+        function parseMarkdownToHTML(markdown) {
+            let html = markdown;
+            
+            // Headers
+            html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+            html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+            html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+            html = html.replace(/^#### (.*$)/gim, '<h4>$1</h4>');
+            
+            // Bold and italic
+            html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
+            
+            // Links
+            html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+            
+            // Lists - handle both * and - prefixes
+            html = html.replace(/^[\*\-] (.*$)/gim, '<li>$1</li>');
+            html = html.replace(/^\d+\. (.*$)/gim, '<li>$1</li>');
+            
+            // Wrap consecutive <li> elements in <ul>
+            html = html.replace(/(<li>.*?<\/li>(?:\s*<li>.*?<\/li>)*)/gs, '<ul>$1</ul>');
+            
+            // Horizontal rules
+            html = html.replace(/^---$/gim, '<hr>');
+            html = html.replace(/^\*\*\*$/gim, '<hr>');
+            
+            // Code blocks (basic support)
+            html = html.replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
+            html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+            
+            // Blockquotes
+            html = html.replace(/^> (.*$)/gim, '<blockquote>$1</blockquote>');
+            
+            // Paragraphs (split by double newlines, but avoid already processed elements)
+            html = html.split('\n\n').map(paragraph => {
+                paragraph = paragraph.trim();
+                if (paragraph && !paragraph.startsWith('<') && !paragraph.match(/^<\//)) {
+                    return '<p>' + paragraph.replace(/\n/g, '<br>') + '</p>';
+                }
+                return paragraph;
+            }).join('\n\n');
+            
+            // Clean up extra whitespace
+            html = html.replace(/\n\s*\n/g, '\n');
+            
+            return html;
+        }
+
+        // Load content when page loads
+        document.addEventListener('DOMContentLoaded', loadNewsContent);
+    </script>
+
+</body>
+</html>

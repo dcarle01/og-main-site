@@ -1,0 +1,1634 @@
+<!-- Version: 1.0.0 | Created: 2025-08-15 | Last Modified: 2025-08-18 | Author: Open Gateways Team -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conoce a Dale Carley - Open Gateways</title>
+    <meta name="description" content="Conoce a Dale Carley, el canal de Baratta. Descubre su viaje desde músico profesional de jazz con Count Basie hasta canalizador espiritual, y su profunda conexión con el mundo espiritual.">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/shared/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/shared/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/shared/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/shared/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/shared/apple-touch-icon.png">
+    
+    <script type="text/javascript">
+		function WriteCookie(lan) {
+		    // Prevent rapid successive calls with a more aggressive check
+		    if (window.languageSwitchInProgress) {
+		        return false;
+		    }
+		    window.languageSwitchInProgress = true;
+
+		    // Set cookie
+		    var now = new Date();
+		    now.setFullYear(now.getFullYear() + 10); // Use setFullYear instead of setYear
+		    var cookievalue = escape(lan);
+    
+		    var domain = window.location.hostname.indexOf('opengateways.com') !== -1 ? '.opengateways.com' : window.location.hostname;
+		    document.cookie = "langs=" + cookievalue + ";expires=" + now.toUTCString() + ";domain=" + domain + ";path=/";
+
+            // File name translation mapping
+            var fileTranslations = {
+                'welcome-to-opengateways.html': {
+                    'en': 'welcome-to-opengateways.html',
+                    'es': 'bienvenido-a-opengateways.html'
+                },
+                'bienvenido-a-opengateways.html': {
+                    'en': 'welcome-to-opengateways.html',
+                    'es': 'bienvenido-a-opengateways.html'
+                },
+                'meet-baratta.html': {
+                    'en': 'meet-baratta.html',
+                    'es': 'conoce-a-baratta.html'
+                },
+                'conoce-a-baratta.html': {
+                    'en': 'meet-baratta.html',
+                    'es': 'conoce-a-baratta.html'
+                },
+                'private-sessions.html': {
+                    'en': 'private-sessions.html',
+                    'es': 'sesiones-privadas.html'
+                },
+                'sesiones-privadas.html': {
+                    'en': 'private-sessions.html',
+                    'es': 'sesiones-privadas.html'
+                },
+                'testimonials.html': {
+                    'en': 'testimonials.html',
+                    'es': 'testimonios.html'
+                },
+                'testimonios.html': {
+                    'en': 'testimonials.html',
+                    'es': 'testimonios.html'
+                },
+                'listen-to-baratta.html': {
+                    'en': 'listen-to-baratta.html',
+                    'es': 'escucha-a-baratta.html'
+                },
+                'escucha-a-baratta.html': {
+                    'en': 'listen-to-baratta.html',
+                    'es': 'escucha-a-baratta.html'
+                },
+                'baratta-talks-about.html': {
+                    'en': 'baratta-talks-about.html',
+                    'es': 'baratta-habla-de.html'
+                },
+                'baratta-habla-de.html': {
+                    'en': 'baratta-talks-about.html',
+                    'es': 'baratta-habla-de.html'
+                },
+                'meet-dale-carley.html': {
+                    'en': 'meet-dale-carley.html',
+                    'es': 'conoce-a-dale-carley.html'
+                },
+                'conoce-a-dale-carley.html': {
+                    'en': 'meet-dale-carley.html',
+                    'es': 'conoce-a-dale-carley.html'
+                },
+                'what-is-channeling.html': {
+                    'en': 'what-is-channeling.html',
+                    'es': 'que-es-canalizacion.html'
+                },
+                'que-es-canalizacion.html': {
+                    'en': 'what-is-channeling.html',
+                    'es': 'que-es-canalizacion.html'
+                },
+                'interview-with-dale.html': {
+                    'en': 'interview-with-dale.html',
+                    'es': 'entrevista-con-dale.html'
+                },
+                'entrevista-con-dale.html': {
+                    'en': 'interview-with-dale.html',
+                    'es': 'entrevista-con-dale.html'
+                },
+                'news.html': {
+                    'en': 'news.html',
+                    'es': 'noticias.html'
+                },
+                'noticias.html': {
+                    'en': 'news.html',
+                    'es': 'noticias.html'
+                },
+                'online-store-coming-soon.html': {
+                    'en': 'online-store-coming-soon.html',
+                    'es': 'tienda-en-linea-proximamente.html'
+                },
+                'tienda-en-linea-proximamente.html': {
+                    'en': 'online-store-coming-soon.html',
+                    'es': 'tienda-en-linea-proximamente.html'
+                },
+                'terms-and-policies.html': {
+                    'en': 'terms-and-policies.html',
+                    'es': 'terminos-y-politicas.html'
+                },
+                'terminos-y-politicas.html': {
+                    'en': 'terms-and-policies.html',
+                    'es': 'terminos-y-politicas.html'
+                },
+                'contact-us.html': {
+                    'en': 'contact-us.html',
+                    'es': 'contactanos.html'
+                },
+                'contactanos.html': {
+                    'en': 'contact-us.html',
+                    'es': 'contactanos.html'
+                },
+                'relating-with-others.html': {
+                    'en': 'relating-with-others.html',
+                    'es': 'relacionarse-con-otros.html'
+                },
+                'relacionarse-con-otros.html': {
+                    'en': 'relating-with-others.html',
+                    'es': 'relacionarse-con-otros.html'
+                },
+                'masculine-feminine.html': {
+                    'en': 'masculine-feminine.html',
+                    'es': 'masculino-femenino.html'
+                },
+                'masculino-femenino.html': {
+                    'en': 'masculine-feminine.html',
+                    'es': 'masculino-femenino.html'
+                },
+                'learning-spiritually.html': {
+                    'en': 'learning-spiritually.html',
+                    'es': 'aprender-espiritualmente.html'
+                },
+                'aprender-espiritualmente.html': {
+                    'en': 'learning-spiritually.html',
+                    'es': 'aprender-espiritualmente.html'
+                }
+            };
+
+		    // Get current language from URL
+		    var currentPath = window.location.pathname;
+		    var currentLang = '';
+    
+		    // Parse current language
+		    if (currentPath.startsWith('/en/')) {
+		        currentLang = 'en';
+		    } else if (currentPath.startsWith('/es/')) {
+		        currentLang = 'es';
+		    }
+    
+		    // Get filename (everything after the language part)
+		    var filename = 'conoce-a-dale-carley.html'; // default
+		    var pathMatch = currentPath.match(/\/(en|es)\/(.+)$/);
+		    if (pathMatch && pathMatch[2]) {
+		        filename = pathMatch[2];
+                // Handle clean URLs (add .html if missing)
+                if (!filename.endsWith('.html')) {
+                    filename = filename + '.html';
+                }
+            }
+
+            // Get translated filename for target language
+            var translatedFilename = filename;
+            if (fileTranslations[filename] && fileTranslations[filename][lan]) {
+                translatedFilename = fileTranslations[filename][lan];
+            }
+
+            // Only redirect if different language
+            if (lan !== currentLang) {
+                var newPath = '/' + lan + '/' + translatedFilename;
+        
+                // Add a small delay to ensure cookie is set
+                setTimeout(function() {
+                    window.location.replace(newPath); // Use replace instead of href to avoid back button issues
+                }, 50);
+            } else {
+                // Reset flag if no redirect needed
+                window.languageSwitchInProgress = false;
+            }
+        }
+
+		function getCookie(cname) {
+		    var name = cname + "=";
+		    var ca = document.cookie.split(';');
+		    for(var i = 0; i < ca.length; i++) {
+		        var c = ca[i];
+		        while (c.charAt(0) == ' ') c = c.substring(1);
+		        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+		    }
+		    return "";
+        }
+		
+		// Add this function to both files
+		function switchLanguage(lang) {
+		    WriteCookie(lang);
+		}
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Side Navigation */
+		/* Fix keyboard navigation - hide side nav links from tab order when menu is closed */
+		.side-nav {
+		    position: fixed;
+		    left: -300px;
+		    top: 0;
+		    width: 280px;
+		    height: 100vh;
+		    background: rgba(255, 255, 255, 0.98);
+		    backdrop-filter: blur(15px);
+		    border-right: 1px solid rgba(1, 132, 246, 0.2);
+		    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+		    transition: all 0.3s ease;
+		    z-index: 1000;
+		    overflow-y: auto;
+		    padding: 20px 0;
+		    visibility: hidden; /* Hide from keyboard navigation when closed */
+		}
+
+		.side-nav.open {
+		    left: 0;
+		    visibility: visible; /* Show for keyboard navigation when open */
+		}
+
+		/* Additional safety: ensure links are not focusable when menu is closed */
+		.side-nav:not(.open) a,
+		.side-nav:not(.open) button {
+		    pointer-events: none;
+		    tabindex: -1;
+		}
+
+		.side-nav.open a,
+		.side-nav.open button {
+		    pointer-events: auto;
+		    tabindex: 0;
+		}
+
+        .side-nav-header {
+            padding: 0 20px 20px;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 20px;
+        }
+
+        .side-nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .side-nav-logo img {
+            height: 35px;
+            width: auto;
+        }
+
+        .side-nav-logo span {
+            font-weight: bold;
+            color: #4a5568;
+            font-size: 1.1rem;
+        }
+
+        .side-nav-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #666;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .side-nav-close:hover {
+            background-color: #f1f5f9;
+        }
+
+        .side-language-switcher {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .side-language-switcher img {
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease;
+            width: 24px;
+            height: 13px;
+        }
+
+        .side-language-switcher img:hover {
+            transform: scale(1.1);
+        }
+
+        .side-nav-menu {
+            padding: 0 20px;
+        }
+
+        .side-nav-section {
+            margin-bottom: 25px;
+        }
+
+        .side-nav-section-title {
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #718096;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            padding-left: 8px;
+        }
+
+        .side-nav-item {
+            margin-bottom: 5px;
+        }
+
+        .side-nav-link {
+            display: block;
+            padding: 10px 12px;
+            color: #4a5568;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+        }
+
+        .side-nav-link:hover {
+            background-color: #f7fafc;
+            color: #0184f6;
+            transform: translateX(4px);
+        }
+
+        .side-nav-link.active {
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            font-weight: 500;
+        }
+
+        .side-nav-cta {
+            margin-top: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+        }
+
+        .side-nav-cta h4 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .side-nav-cta-btn {
+            display: block;
+            background: white;
+            color: #38a169;
+            padding: 10px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: transform 0.2s ease;
+        }
+
+        .side-nav-cta-btn:hover {
+            transform: translateY(-1px);
+        }
+
+        /* Desktop floating toggle button */
+        .nav-toggle-desktop {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1001;
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            border: none;
+            padding: 12px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(1, 132, 246, 0.3);
+            transition: all 0.3s ease;
+            display: none; /* Hidden by default */
+        }
+
+        .nav-toggle-desktop:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(1, 132, 246, 0.4);
+        }
+
+        .nav-toggle-desktop.nav-open {
+            left: 300px;
+        }
+
+        /* Mobile inline toggle button */
+        .nav-toggle-mobile {
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            border: none;
+            padding: 10px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(1, 132, 246, 0.3);
+            transition: all 0.3s ease;
+            display: none; /* Hidden by default */
+        }
+
+        .nav-toggle-mobile:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(1, 132, 246, 0.4);
+        }
+
+        /* Show desktop floating button on larger screens */
+        @media (min-width: 768px) {
+            .nav-toggle-desktop {
+                display: block;
+            }
+            
+            .nav-toggle-mobile {
+                display: none;
+            }
+        }
+
+        /* Show mobile button on smaller screens */
+        @media (max-width: 767px) {
+            .nav-toggle-desktop {
+                display: none;
+            }
+            
+            .nav-toggle-mobile {
+                display: block;
+            }
+        }
+
+        /* Overlay */
+        .nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .nav-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex: 1;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            display: flex;
+            justify-content: flex-end; /* Right-align by default for desktop */
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .language-flags {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Mobile: Restore space-between for menu button positioning */
+        @media (max-width: 767px) {
+            .language-switcher {
+                justify-content: space-between; /* Menu button left, flags right */
+            }
+        }
+
+        .language-switcher img {
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease;
+            width: 30px;
+            height: 16px;
+        }
+
+        .language-switcher img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Site Logo Card */
+        .site-name-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding: 10px 17px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            max-width: 280px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .home-button-logo {
+            display: block;
+            transition: transform 0.2s ease;
+        }
+
+        .home-button-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .site-logo {
+            max-width: 70%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Header Banner */
+        .header-banner {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .meet-dale-banner {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            max-height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Main Content */
+        main {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            margin-bottom: 25px;
+        }
+
+        /* Biography Introduction Section */
+        .bio-intro {
+            margin-bottom: 40px;
+        }
+
+        .text-beside-image {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .dale-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .dale-image img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .dale-image img:hover {
+            transform: scale(1.02);
+        }
+
+        .intro-text-beside {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            text-align: justify;
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 35px;
+        }
+
+        .content-section h2 {
+            color: #4a5568;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #0184f6;
+            padding-bottom: 10px;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #555;
+            text-align: justify;
+        }
+
+        /* Timeline/Life Journey Sections */
+        .journey-section {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border-left: 4px solid #48bb78;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .journey-section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .journey-section:nth-child(even) {
+            border-left-color: #667eea;
+        }
+
+        .journey-section:nth-child(3n) {
+            border-left-color: #ed8936;
+        }
+
+        .journey-section h3 {
+            color: #4a5568;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .journey-section p {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Highlight Boxes */
+        .highlight-box {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .highlight-box h3 {
+            color: #4a5568;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .highlight-box p {
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        /* Quote attribution for closing */
+        .quote-attribution {
+            text-align: right;
+            font-style: italic;
+            color: #718096;
+            font-size: 0.95rem;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .cta-text {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+		/* Fix for mobile button centering */
+		.cta-buttons {
+		    display: flex;
+		    flex-direction: column;
+		    gap: 15px;
+		    align-items: stretch; /* This ensures buttons fill width */
+		    justify-content: center; /* This centers the container */
+		}
+
+		.cta-button {
+		    padding: 18px 35px;
+		    background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+		    color: white;
+		    text-decoration: none;
+		    border-radius: 50px;
+		    font-size: 1.1rem;
+		    font-weight: bold;
+		    transition: all 0.3s ease;
+		    box-shadow: 0 6px 20px rgba(1, 132, 246, 0.3);
+		    min-width: 250px;
+		    min-height: 92.3011px;  /* 60px; */
+		    display: flex;
+		    align-items: center;
+		    justify-content: center; /* This centers text within each button */
+		    text-align: center;
+		    align-self: center; /* This centers each button within the flex container */
+		    max-width: 350px; /* Prevents buttons from getting too wide on larger screens */
+		    width: 100%; /* Ensures consistent button width */
+		}
+
+		/* Additional mobile-specific fix */
+		@media (max-width: 767px) {
+		    .cta-section {
+		        text-align: center; /* Ensures the entire section is centered */
+		    }
+    
+		    .cta-buttons {
+		        align-items: center; /* Centers buttons in mobile view */
+		        width: 100%;
+		    }
+    
+		    .cta-button {
+		        width: auto;
+		        min-width: 280px;
+		        max-width: 90%; /* Responsive width for very small screens */
+		    }
+		}
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(1, 132, 246, 0.4);
+        }
+
+        .cta-button.secondary {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            color: #333;
+            box-shadow: 0 6px 20px rgba(255, 234, 167, 0.3);
+        }
+
+        .cta-button.secondary:hover {
+            box-shadow: 0 8px 25px rgba(255, 234, 167, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .container {
+                padding: 40px;
+                padding-left: 100px; /* Space for floating toggle button */
+            }
+
+            .text-beside-image {
+                grid-template-columns: 2fr 1fr;
+                gap: 40px;
+            }
+
+            .dale-image {
+                text-align: right;
+                margin-bottom: 0;
+            }
+
+            .dale-image img {
+                max-width: 300px;
+            }
+
+            .cta-buttons {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            main {
+                padding: 50px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                padding: 60px;
+                padding-left: 120px; /* Space for floating toggle button */
+            }
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                padding: 20px;
+            }
+
+            .side-nav {
+                width: 260px;
+                left: -260px;
+            }
+
+            /* Reduced vertical spacing between cards on mobile */
+            .language-switcher {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+            }
+
+            .site-name-card {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+            }
+
+            .header-banner {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+            }
+
+            main {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+                padding: 25px;
+            }
+
+            .content-section p {
+                font-size: 1rem;
+                text-align: left;
+            }
+
+            .intro-text-beside {
+                font-size: 1rem;
+                text-align: left;
+            }
+
+            .cta-title {
+                font-size: 1.5rem;
+            }
+
+            .cta-text {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 15px 30px;
+                min-width: 250px;
+            }
+        }
+
+        /* Accessibility */
+        .cta-button:focus,
+        .nav-toggle-desktop:focus,
+        .nav-toggle-mobile:focus,
+        .side-nav-link:focus {
+            outline: 3px solid #0184f6;
+            outline-offset: 2px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .side-nav,
+            .nav-toggle-desktop,
+            .nav-toggle-mobile,
+            .main-content,
+            .nav-overlay {
+                transition: none;
+            }
+            
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Hide regular language switcher when side nav is open */
+        .nav-open-body .language-switcher {
+            display: none;
+        }
+
+		/* Photo credit tooltip */
+        .photo-credit {
+            position: relative;
+            display: inline-block;
+        }
+
+        .photo-credit::after {
+            content: attr(data-credit);
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #3e4659;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+            z-index: 100;
+            pointer-events: none;
+        }
+
+        .photo-credit:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+
+    /* Biography Section Images */
+    .bio-image-container {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .bio-image-container img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        padding: 5px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+    .bio-image-container img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .bio-image-caption {
+        font-size: 0.9rem;
+        font-style: italic;
+        color: #718096;
+        margin-top: 8px;
+        text-align: center !important;
+    }
+
+    .bio-image-float-right {
+        float: right;
+        margin: 0 0 15px 20px;
+        max-width: 200px;
+    }
+
+    .bio-image-float-left {
+        float: left;
+        margin: 0 20px 15px 0;
+        max-width: 200px;
+    }
+
+    .bio-image-float-right img,
+    .bio-image-float-left img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        padding: 4px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+    .bio-image-float-right img:hover,
+    .bio-image-float-left img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    }
+
+    .bio-image-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        margin: 25px 0;
+    }
+
+    .bio-image-gallery .bio-image-container {
+        margin: 0;
+        background: linear-gradient(135deg, #e8f4f8 0%, #f0e6f0 100%);
+        border-radius: 12px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bio-image-gallery .bio-image-container img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 200px;
+        aspect-ratio: auto;
+        object-fit: contain;
+        padding: 0;
+        border: none;
+        background: transparent;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Clear floats after sections */
+    .journey-section::after,
+    .highlight-box::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Photo Lightbox Styles */
+    .photo-lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.92);
+        z-index: 10000;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .photo-lightbox.active {
+        display: flex;
+    }
+
+    .lightbox-close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 40px;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 10001;
+        transition: transform 0.2s ease, color 0.2s ease;
+        line-height: 1;
+        padding: 10px;
+    }
+
+    .lightbox-close:hover {
+        color: #f0f0f0;
+        transform: scale(1.1);
+    }
+
+    .lightbox-content {
+        max-width: 90%;
+        max-height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lightbox-content img {
+        max-width: 100%;
+        max-height: calc(90vh - 60px);
+        object-fit: contain;
+        border-radius: 8px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .lightbox-caption {
+        color: white;
+        font-size: 1.1rem;
+        font-style: italic;
+        margin-top: 15px;
+        text-align: center;
+        max-width: 600px;
+    }
+
+    @media (max-width: 767px) {
+        .bio-image-float-right,
+        .bio-image-float-left {
+            float: none;
+            max-width: 280px;
+            margin: 15px auto;
+            display: block;
+        }
+
+        .bio-image-gallery {
+            grid-template-columns: 1fr;
+        }
+
+        .bio-image-gallery .bio-image-container img {
+            max-height: 250px;
+        }
+
+        .lightbox-close {
+            top: 10px;
+            right: 15px;
+            font-size: 32px;
+        }
+
+        .lightbox-caption {
+            font-size: 0.95rem;
+            padding: 0 10px;
+        }
+    }
+    
+    /* Focus indicators for language flags */
+		.language-switcher img:focus,
+		.side-language-switcher img:focus {
+		    outline: 2px solid #0184f6;
+		    outline-offset: 2px;
+		    transform: scale(1.1);
+		    border-radius: 3px;
+		}
+
+		/* Ensure flags are keyboard accessible */
+		.language-switcher img,
+		.side-language-switcher img {
+		    cursor: pointer;
+		    border-radius: 3px;
+		    transition: transform 0.2s ease;
+		}
+
+		.language-switcher img:hover,
+		.side-language-switcher img:hover {
+		    transform: scale(1.1);
+		}
+    </style>
+</head>
+<body>
+    <!-- Navigation Toggle Button -->
+    <button class="nav-toggle-desktop" id="navToggleDesktop" onclick="toggleSideNav()" aria-label="Alternar menú de navegación">
+        ☰ Menú
+    </button>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay" onclick="closeSideNav()"></div>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav" id="sideNav">
+        <button class="side-nav-close" onclick="closeSideNav()" aria-label="Cerrar navegación">×</button>
+        
+        <div class="side-nav-header">
+            <div class="side-nav-logo">
+                <a href="bienvenido-a-opengateways">
+                    <img src="../assets/images/shared/OG_logo_2025.png" alt="Open Gateways">
+                </a>
+            </div>
+			<div class="side-language-switcher">
+			    <img onclick="switchLanguage('en');" 
+			         onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('en');" 
+			         tabindex="0" 
+			         width="24" 
+			         height="13" 
+			         border="0" 
+			         title="English" 
+			         alt="English" 
+			         src="../assets/images/shared/us.svg">
+			    <img onclick="switchLanguage('es');" 
+			         onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('es');" 
+			         tabindex="0" 
+			         width="24" 
+			         height="13" 
+			         border="0" 
+			         title="Español" 
+			         alt="Español" 
+			         src="../assets/images/shared/mx.svg">
+			</div>
+        </div>
+
+        <div class="side-nav-menu">
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Baratta</div>
+                <div class="side-nav-item">
+                    <a href="conoce-a-baratta" class="side-nav-link">Conoce a Baratta</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="escucha-a-baratta" class="side-nav-link">Escucha a Baratta</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="baratta-habla-de" class="side-nav-link">Baratta habla de...</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="sesiones-privadas" class="side-nav-link">Sesiones privadas</a>
+                </div>
+            </div>
+
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Dale Carley</div>
+                <div class="side-nav-item">
+                    <a href="conoce-a-dale-carley" class="side-nav-link active">Conoce a Dale Carley</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="que-es-canalizacion" class="side-nav-link">¿Qué es la canalización?</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="entrevista-con-dale" class="side-nav-link">Entrevista con Dale</a>
+                </div>
+            </div>
+
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Páginas del Sitio</div>
+                <div class="side-nav-item">
+                    <a href="noticias" class="side-nav-link">Noticias</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="testimonios" class="side-nav-link">Testimonios</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="tienda-en-linea-proximamente" class="side-nav-link">Tienda en línea (proximamente)</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="terminos-y-politicas" class="side-nav-link">Términos y políticas</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="contactanos" class="side-nav-link">Contáctanos</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="bienvenido-a-opengateways" class="side-nav-link">🏠 Inicio</a>
+                </div>
+            </div>
+
+            <div class="side-nav-cta">
+                <h4>¿Listo para conectar?</h4>
+                <a href="https://schedule.opengateways.com" class="side-nav-cta-btn" target="_blank">📅 Agendar en Línea</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="page-wrapper">
+        <div class="main-content">
+            <div class="container">
+                <!-- Language Switcher with Mobile Menu Button -->
+				<div class="language-switcher">
+				    <!-- Mobile Menu Button (aligned with language switcher) -->
+				    <button class="nav-toggle-mobile" id="navToggleMobile" onclick="toggleSideNav()" aria-label="Toggle navigation menu">
+				        ☰ Menu
+				    </button>
+    
+				    <div class="language-flags">
+				        <img onclick="switchLanguage('en');" 
+				             onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('en');" 
+				             tabindex="0" 
+				             width="30" 
+				             height="16" 
+				             border="0" 
+				             title="English" 
+				             alt="English" 
+				             src="../assets/images/shared/us.svg">
+				        <img onclick="switchLanguage('es');" 
+				             onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('es');" 
+				             tabindex="0" 
+				             width="30" 
+				             height="16" 
+				             border="0" 
+				             title="Español" 
+				             alt="Español" 
+				             src="../assets/images/shared/mx.svg">
+				    </div>
+				</div>
+
+                <!-- Site Logo Card -->
+                <div class="site-name-card">
+                    <a href="bienvenido-a-opengateways" class="home-button-logo" title="Inicio">
+                        <img src="../assets/images/shared/OG_logo_2025.png" alt="Open Gateways Inicio" class="site-logo">
+                    </a>
+                </div>
+
+                <!-- Header Banner -->
+                <div class="header-banner">
+                    <img src="../assets/images/main-site/es/Conoce_a_Dale_Carley_banner_v2.jpg" alt="Conoce a Dale Carley" class="meet-dale-banner">
+                </div>
+
+                <main>
+                    <div class="bio-intro">
+                        <div class="text-beside-image">
+                            <div class="intro-text-beside">
+                                <p>Los reinos más allá de nuestro mundo físico, y los seres que allí existen, han sido una fuente de profunda fascinación y emoción en mí desde que tengo memoria.</p>
+                                
+                                <p>Cuando era niño, mi hermana menor Denise y yo podíamos sentir que había "amigos espirituales" que nos rodeaban, y descubrimos formas de comunicarnos con ellos. Teníamos "sesiones de juego" con ellos; cada uno colocaba una camisa en un perchero y la traíamos de aquí para allá; en retrospectiva, creo que las usábamos porque necesitábamos algo físico en que enfocarnos. En estas sesiones, teníamos conversaciones activas y aventuras con estos amigos invisibles. Era increíble lo claro de su presencia con nosotros mientras interactuábamos con esas camisas. Podíamos sentirlos y escuchar sus mensajes, así como disfrutar de su humor y diversión.</p>
+                            </div>
+                            
+							<div class="dale-image">
+							    <div class="photo-credit" data-credit="Foto: Paulina Chávez">
+							        <img src="../assets/images/main-site/shared/Dale_Carley.jpg" alt="Dale Carley - Foto por Paulina Chávez" width="280">
+							    </div>
+							</div>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <p>Las presiones sociales nos llevaron a ambos a dejar ir estas relaciones cuando crecimos, pero yo seguía con una profunda curiosidad sobre el mundo en el que vivían mis amigos invisibles. Durante la adolescencia, leí un poco al respecto: poderes psíquicos, proyección astral, la ouija; pero muchos de los libros que leí contenían advertencias serias sobre arriesgarse a entrar solo en ese mundo.</p>
+                        
+                        <p>Una mañana, cuando tenía catorce años me desperté y encontré un espíritu en mi habitación: muy hermoso, un ser masculino y radiante compuesto en su totalidad de luz, que sólo se me mostraba. No supe qué hacer, o que decir, así que simplemente le permití estar ahí por un rato, y luego desapareció. No escuché nada conscientemente, pero creo que él estaba hablando a una parte más profunda de mí. Desde ese día, he sentido una afinidad siempre presente con el mundo de los espíritus.</p>
+                    </div>
+
+                    <div class="journey-section">
+                        <h3>🎼 Inicios musicales</h3>
+                        <div class="bio-image-float-left">
+                            <img src="../assets/images/main-site/shared/Carley_Family_1960.jpg" alt="La familia Carley en 1960">
+                            <p class="bio-image-caption">La familia Carley en 1960.</p>
+                        </div>
+                        <p>Mis padres, Joseph y Shirley Carley, los dos habían sido músicos profesionales durante su juventud, y cuando yo era niño, mi padre era piloto de la Fuerza Aérea Norteamericana. Nos cambiamos de ciudad en muchas ocasiones, y cada nuevo lugar tenía sus propios misterios por revelar. A inicios de la década de los sesenta, cuando estaba en la escuela primaria, vivíamos en Libia, en la costa del Mediterráneo.</p>
+                        
+                        <p>Mi padre practicaba el clarinete cuando estaba en casa, tocando con los discos de "Music Minus One" (grabaciones especiales de bandas tocando arreglos de canciones populares sin la línea melódica), lo cual permitía que él podía tocar la melodía e improvisar solos como si fuera un concierto real. También me enseñó mucho sobre la teoría musical, heredándome un profundo amor por la música, en especial la de Count Basie, cuya banda tenía el más increíble sonido y sensibilidad. "¡Sólo escucha ese ritmo!", me decía con una genuina emoción en la voz, mientras llevaba el tiempo con su pie siguiendo el pulso de "Meet B B" del álbum "Basie One More Time". Desde entonces esa música se convirtió en parte mía.</p>
+                    </div>
+
+                    <div class="journey-section">
+                        <h3>🎺 Descubriendo la trompeta</h3>
+                        <div class="bio-image-float-right">
+                            <img src="../assets/images/main-site/shared/Dale_at_20.jpg" alt="Dale a los 20 años">
+                            <p class="bio-image-caption">Dale a los 20 años.</p>
+                        </div>
+                        <p>Cuando tenía 10 años, vivíamos cerca de Washington, D.C. y un amigo me mostró su habilidad para tocar su nueva trompeta. Tuve la absoluta certeza de que yo también podía hacerlo, pues ya me consideraba un experto en la música. Me frustró descubrir que no pude producir ni el más mínimo sonido musical de su trompeta; sólo logré obtener el sonido del aire saliendo por el extremo. Naturalmente, ese mismo día le dije a mi padre que quería aprender a tocar la trompeta. Él dijo: "Si eso es lo que quieres; te ayudaré." Y así lo hizo. Conté con su ayuda para encontrar profesores y lugares donde tocar, y me fue posible iniciar una carrera como músico profesional a la edad de trece años.</p>
+                        
+                        <div class="bio-image-float-left">
+                            <img src="../assets/images/main-site/shared/Starliners_WETA_TV_ca1975.jpg" alt="Joe Carley directing the Starliners on WETA-TV, ca. 1975">
+                            <p class="bio-image-caption">Joe Carley dirigiendo a los Starliners en WETA-TV, 1975.</p>
+                        </div>
+                        <p>Por ese entonces mi padre decidió ofrecer su considerable talento como educador musical, en su tiempo libre y sin compensación, a la escuela preparatoria local (Bowie High School en Maryland, EE.UU.) como el fundador y director de la orquesta de jazz de la escuela, a la que llamó "The Starliners". El increíble trabajo que mi padre hizo para esa banda me proporcionó (así como a muchos otros jóvenes estudiantes de música durante los siguientes 10 años) un ambiente rico y auténticamente profesional en el cual aprender y crecer como músicos de jazz. A partir de ahí estudié la música de jazz en varias universidades importantes, incluyendo la Universidad Estatal del Norte de Texas, la Universidad de Indiana y la Universidad de Miami.</p>
+                    </div>
+
+                    <div class="highlight-box">
+                        <h3>✨ Destacados de la carrera de Jazz</h3>
+                        <p>Durante los siguientes 20 años, tuve la excelente fortuna de tocar con muchas personas maravillosas en el mundo del jazz (Buddy Rich, Clark Terry, Sarah Vaughan, Ella Fitzgerald, Joe Williams, Frank Sinatra y muchos otros), llegando a la cúspide cuando me uní a la banda de Count Basie a la edad de 26 años. Toqué con su banda durante los últimos cinco años de su vida, de gira alrededor del mundo, y realizando muchas grabaciones.</p>
+
+                        <div class="bio-image-gallery">
+                            <div class="bio-image-container">
+                                <img src="../assets/images/main-site/shared/Basie_1979_Playboy_Jazz.jpg" alt="Count Basie en el Festival de Jazz Playboy de 1979">
+                                <p class="bio-image-caption">Count Basie en el Festival de Jazz Playboy de 1979.</p>
+                            </div>
+                            <div class="bio-image-container">
+                                <img src="../assets/images/main-site/shared/Dale_Basie_Japan_1981.jpg" alt="Dale con Count Basie en Yokohama, Japón, 1981">
+                                <p class="bio-image-caption">Dale con Count Basie en Yokohama, Japón, 1981.</p>
+                            </div>
+                            <div class="bio-image-container">
+                                <img src="../assets/images/main-site/shared/Dale_Basie_Scranton.jpg" alt="Dale con Count Basie en Scranton, Pensilvania, 1980">
+                                <p class="bio-image-caption">Dale con Count Basie en Scranton, Pensilvania, 1980.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="journey-section">
+                        <h3>🌤️ Desafíos y transición</h3>
+                        <p>Más que nada, me encantaba tocar la música de Basie, pero después de tres años con la banda, tuve la sensación de que no podría continuar por mucho más tiempo. La salud de Basie declinaba, y también yo sabía que no podía mantenerme de gira muchos años más; era una vida fisicamente difícil. Sabía también que había algo más para mí más allá de esta forma de vida, pero cualquier cosa que podía imaginar dentro del mundo de la música me parecía un retroceso.</p>
+                        
+                        <p>Sin un nuevo sueño para el futuro, empecé a perder contacto con mi impulso y motivación que me habían servido tan bien hasta entonces. Estaba tocando Primera Trompeta con Basie; esta es una de las posiciones clave que define el estilo de la banda, y que requiere gran concentración para hacerlo sin lastimarte. Esto nunca antes había sido problema para mí, pero en 1983, después de una larga pausa debida a la salud de Basie, me lastimé la embocadura (los músculos de los labios que producen el sonido de la trompeta) mientras tocaba con Basie y Joe Williams en el Hotel Fairmont en San Francisco.</p>
+                    </div>
+
+                    <div class="journey-section">
+                      <h3>𝄌 Fin de una era</h3>
+                      <p>Le dije a Basie que necesitaba una licencia para recuperarme, pero me dijo que sentía que sería un error que me fuera. Me pidió que me quedara y tocara los solos de jazz que yo había grabado en los últimos tres años. Él estaba cada vez más enfermo, y yo sabía que no podía decirle 'no'. Así que me quedé dos años más, tocando bien, pero muy por debajo de mi nivel anterior de habilidad. Fue un tiempo emocionalmente doloroso.</p>
+                      
+                      <div class="bio-image-float-right">
+                        <img src="../assets/images/main-site/shared/88_Basie_Street_cover_art.jpg" alt="Álbum ganador del Grammy grabado en 1983">
+                          <p class="bio-image-caption">Álbum ganador del Grammy grabado en 1983.</p>
+                      </div>
+
+                      <p>En abril de 1984, Count Basie falleció. Para mí, así como para muchos otros en el mundo, esto marcó el fin de una era musical de increíble belleza. Aunque la banda de Basie continuó tocando tras su muerte, poco tiempo después la dejé, y además dejé de tocar profesionalmente. Comencé a trabajar en el campo del desarrollo de software (de nuevo con mi padre, quien se había convertido en un reconocido pionero de ese campo). Eventualmente me convertí en un especialista en comercio electrónico B2B (negocio a negocio).</p>
+                    </div>
+
+                    <div class="journey-section">
+                        <h3>🌟 Despertar espiritual</h3>
+                        <p>Fue durante esos últimos dos años con Basie que mi consciencia espiritual comenzó a abrirse. Parte de esto fue leer el hermoso libro de la famosa actriz Shirley MacLaine, "Out on a Limb" (Aventurarse en una rama), en el cual ella describió el fenómeno llamado "canalización". Cuando leí eso, fue como si una corriente eléctrica pasara a través de mi. Dentro de mí se estaban conectando cosas, ligando mis experiencias tempranas con algún futuro desconocido pero irresistible. Desde algún lugar más allá de mí, estaba empezando a recibir el mensaje, "¡Pon mucha atención!"</p>
+                        
+                        <p>A través de encuentros sincrónicos con varias personas clave, escuché más respecto a la canalización, y comencé a explorar la información que llegaba a través de ciertos canalizadores. En ese momento, yo buscaba sanar mis heridas personales de una forma fundamental y duradera y descubrí que los seres no físicos canalizados hacia los que me sentía atraído, como Lazaris (canalizado por Jach Pursel) y Bashar (canalizado por Darryl Anka), tenían una perspectiva consistentemente hermosa y amorosa, mucho más allá de cualquier cosa que hubiera experimentado antes dentro de mí o de otros seres humanos.</p>
+                    </div>
+
+                    <div class="journey-section">
+                      <h3>🎐 Aprendiendo a canalizar</h3>
+                        <p>A través de mi buen amigo de la banda de Basie, el baterista Gregg Field, conocí a Shawn Randall, la maravillosa canalizadora del ser llamado Torah. Shawn también tiene gran habilidad para ayudar a otros a despertar sus propias habilidades de canalización. Poco después de conocernos, ella sugirió que yo contaba con esta habilidad. Me sentía renuente a creerlo, y me resistí durante bastante tiempo, pero en 1987, después de varios recordatorios por parte suya, decidí trabajar con ella en el tema.</p>
+                        
+                        <p>Fue como abrir una puerta a otro mundo. Tan pronto como yo "extendí la invitación" comenzó a suceder la magia, al principio a través de una relación más profunda con mis guías espirituales personales (parece que todos tenemos al menos dos, uno masculino y uno femenino). Esto se convirtió en una comunicación telepática que era conversacional, y de allí a la canalización de trance profundo.</p>
+                        
+                        <p>Durante 3 años seguí canalizando como una práctica diaria y me reuní semanalmente con Shawn Randall y un maravilloso grupo de estudiantes canalizadores, y entre ellos estaban los increíbles canales Annie Bossingham y Sharyl Noday. A medida que mi propia habilidad de canalización se desarrollaba, descubrí que podía sentarme con la gente en sesiones privadas y permitir que sus guías espirituales personales vinieran y les hablaran. Este trabajo profundamente íntimo se convirtió en la base de mi trabajo de canalización para otros durante los siguientes 8 años.</p>
+                    </div>
+
+                    <div class="journey-section">
+                        <h3>💫 Conociendo a Baratta</h3>
+                        <p>Una noche en el otoño de 1998, me senté al canal para el músico, el canalizador y la médium Tysa Goodrich sobre un importante problema personal que estaba enfrentando. Antes de entrar en mi estado de trance, había esperado que uno de sus guías personales viniera por ella. Pero a medida que entraba en mi estado alterado de conciencia, podía sentir que una nueva guía estaba llegando para asistirla, y había un poderoso sentido de un ser muy expansivo y amoroso entrando.</p>
+						
+                        <p>Este fue el momento en que el ser conocido como Baratta vino por primera vez, y representó un cambio importante en mi canalización. Durante esa sesión Baratta compartió que yo había llegado al punto en mi canalización donde podía permitir un mayor nivel de energía amorosa, y esta fue la razón por la cual Baratta pudo comenzar a trabajar conmigo.</p>
+                        <div class="bio-image-float-right">
+                            <img src="../assets/images/main-site/shared/Baratta_in_session_2005.jpg" alt="Baratta en sesión en 2005">
+                            <p class="bio-image-caption">Durante 28 años, Baratta ha dado miles de consultas para personas en muchos países alrededor del mundo.</p>
+                        </div>
+
+                        <p>Durante los meses siguientes, Baratta participó en más y más sesiones privadas, y pronto me invitaron a organizar talleres con él. La respuesta de los asistentes fue tan poderosamente positiva que decidí enfocar mi trabajo de canalización en esta relación con Baratta. Durante todos los años desde entonces, Baratta ha hablado con miles de personas en sesiones privadas y talleres en varios países alrededor del mundo. Ha sido una gran alegría y honor para mí ser parte de esto.</p>
+                    </div>
+
+                    <div class="journey-section">
+                        <h3>🚚 El traslado a México</h3>
+                        <div class="bio-image-float-left">
+                            <img src="../assets/images/main-site/shared/Baratta_workshop_Cuernavaca_2010.jpg" alt="Taller de Baratta, Cuernavaca, México 2010">
+                            <p class="bio-image-caption">Taller de Baratta, Cuernavaca, México 2010.</p>
+                        </div>
+                        <p>En abril de 2011 llegó otra serie de cambios importantes en mi vida. Por un tiempo había estado sintiendo fuertemente que quería comenzar una nueva aventura en mi vida. Durante los dos años anteriores había estado viajando a México para hacer talleres y sesiones con Baratta, y estaba tan conmovido por la gente y la cultura allí que en ese momento decidí ver cómo sería vivir por un tiempo limitado en el centro de México.</p>
+                        
+                        <p>Mi tiempo en México resultó no ser limitado en absoluto! Durante mi primer año tuve clases particulares 3 veces a la semana con una profesora de español, esperando que un día pudiera hacer mi trabajo de canalización para el pueblo mexicano en su idioma nativo, para que el trabajo de Baratta pudiera tocarlos en los niveles más profundos de su consciencia. A finales de 2013 pude realizar ese sueño, comenzando por dar clases de canalización en español. Poco después pude hacer todo mi trabajo aquí en México en español. Esto me sigue haciendo muy feliz.</p>
+                    </div>
+
+                    <div class="journey-section">
+                        <h3>🎭 La actuación</h3>
+                        <p>En los últimos 9 años también he estado muy activo con otra pasión personal mía, la de actuar.  Ese aspecto de mi vida realmente comenzó en Los Ángeles hace 20 años, cuando pasé 4 años estudiando actuación con varios maestros maravillosos, asistiendo a talleres y participando en proyectos estudiantiles con profesionales activos.</p>
+                        
+                        <p>Durante mis primeros años en México mi pasión personal por la actuación se despertó de nuevo, y elegí entrar a ese trabajo profesionalmente, emocionado de aceptar el desafío tanto en inglés como en español. En los años desde entonces he tenido el privilegio de trabajar con muchos actores y directores increíbles en cine, televisión y teatro. Ha sido, y sigue siendo, una parte muy disfrutable de mi vida.</p>
+
+                        <div class="bio-image-gallery">
+                            <div class="bio-image-container">
+                                <img src="../assets/images/main-site/shared/Dale_and_Fernando_Lujan_2017.jpg" alt="Dale con Fernando Luján durante el rodaje de Ingobernable">
+                                <p class="bio-image-caption">Dale con Fernando Luján durante el rodaje de "Ingobernable".</p>
+                            </div>
+                            <div class="bio-image-container">
+                                <img src="../assets/images/main-site/shared/Selva_tragica.jpg" alt="Dale en locación en Belice con el elenco de Selva Trágica">
+                                <p class="bio-image-caption">Dale en locación en Belice con el elenco de "Selva Trágica".</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section">
+                        <h2>🌎 La vida en México continua...</h2>
+                        <div class="bio-image-float-right">
+                            <img src="../assets/images/main-site/shared/Carley-Mendoza_family_12_2024.jpg" alt="The Carley-Mendoza Family, December 2024">
+                            <p class="bio-image-caption">La familia Carley-Mendoza, diciembre de 2024.</p>
+                        </div>
+                        <p>Ahora, después de 15 años en México, estoy viviendo en la Ciudad de México con mi maravillosa esposa, Cristina Mendoza.  Me siento muy afortunado de vivir aquí entre estas hermosas personas, los Mexicanos... y sobre todo, con Cristina y su (ya <em>nuestra</em>) increíble perrita <b>Cinna</b>.</p>
+
+                        <p>Mis 39 años de canalización (los últimos 28 con Baratta) han sido una fuente constante de crecimiento personal, amor y alegría para mí. Ahora, debido a la expansión de otras actividades en mi vida, hago mi trabajo de canalización sobre una base mensual más limitada, ofreciendo sesiones durante los primeros días de cada mes.</p>
+
+                        <p>Incluso ahora, después de tantos años, cada vez que entro en trance para alguien, algo único y nuevo sucede, y luego vuelvo del estado de trance sintiendo que mi vida ha cambiado para siempre. Este ha sido un viaje emocionante y desafiante, ¡y estoy emocionado por lo que venga a continuación!</p>
+                    </div>
+
+                    <div class="quote-attribution">
+                        – Dale Carley, enero 2026
+                    </div>
+
+                    <div class="cta-section">
+                        <h2 class="cta-title">Experimenta el trabajo de Dale con Baratta</h2>
+                        <p class="cta-text">¿Listo para conectar con el ser que ha transformado la vida de Dale y las vidas de muchas otras personas? Descubre la sabiduría y el amor que Baratta ofrece.</p>
+                        <div class="cta-buttons">
+                            <a href="conoce-a-baratta" class="cta-button">Conoce a Baratta</a>
+                            <a href="sesiones-privadas" class="cta-button secondary">Aprende sobre sesiones privadas</a>
+                            <a href="https://schedule.opengateways.com" class="cta-button secondary" target="_blank">Agenda tu sesión en línea</a>
+                        </div>
+                    </div>
+                </main>
+
+                <footer>
+                    <p>&copy; <script>document.write(new Date().getFullYear())</script> Open Gateways, Inc. &ndash; Todos los derechos reservados.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSideNav() {
+            const sideNav = document.getElementById('sideNav');
+            const navToggleDesktop = document.getElementById('navToggleDesktop');
+            const navToggleMobile = document.getElementById('navToggleMobile');
+            const navOverlay = document.getElementById('navOverlay');
+            const body = document.body;
+            
+            if (sideNav.classList.contains('open')) {
+                closeSideNav();
+            } else {
+                sideNav.classList.add('open');
+                if (navToggleDesktop) navToggleDesktop.classList.add('nav-open');
+                if (navToggleMobile) navToggleMobile.classList.add('nav-open');
+                navOverlay.classList.add('active');
+                body.classList.add('nav-open-body');
+            }
+        }
+
+        function closeSideNav() {
+            const sideNav = document.getElementById('sideNav');
+            const navToggleDesktop = document.getElementById('navToggleDesktop');
+            const navToggleMobile = document.getElementById('navToggleMobile');
+            const navOverlay = document.getElementById('navOverlay');
+            const body = document.body;
+            
+            sideNav.classList.remove('open');
+            if (navToggleDesktop) navToggleDesktop.classList.remove('nav-open');
+            if (navToggleMobile) navToggleMobile.classList.remove('nav-open');
+            navOverlay.classList.remove('active');
+            body.classList.remove('nav-open-body');
+        }
+
+        // Close nav on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeSideNav();
+            }
+        });
+
+      </script>
+
+      <!-- Photo Lightbox -->
+      <div id="photoLightbox" class="photo-lightbox" onclick="closeLightbox(event)">
+          <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Cerrar">&times;</button>
+          <div class="lightbox-content">
+              <img id="lightboxImage" src="" alt="">
+              <p id="lightboxCaption" class="lightbox-caption"></p>
+          </div>
+      </div>
+
+      <script>
+          // Lightbox functionality
+          function openLightbox(imgSrc, caption) {
+              const lightbox = document.getElementById('photoLightbox');
+              const lightboxImg = document.getElementById('lightboxImage');
+              const lightboxCaption = document.getElementById('lightboxCaption');
+              
+              lightboxImg.src = imgSrc;
+              lightboxCaption.textContent = caption;
+              lightbox.classList.add('active');
+              document.body.style.overflow = 'hidden';
+          }
+
+          function closeLightbox(event) {
+              // Only close if clicking the overlay or close button, not the image
+              if (event.target.id === 'photoLightbox' || event.target.classList.contains('lightbox-close')) {
+                  const lightbox = document.getElementById('photoLightbox');
+                  lightbox.classList.remove('active');
+                  document.body.style.overflow = '';
+              }
+          }
+
+          // Close lightbox on escape key
+          document.addEventListener('keydown', function(e) {
+              if (e.key === 'Escape') {
+                  const lightbox = document.getElementById('photoLightbox');
+                  if (lightbox.classList.contains('active')) {
+                      lightbox.classList.remove('active');
+                      document.body.style.overflow = '';
+                  }
+              }
+          });
+
+          // Initialize bio images for lightbox
+          document.addEventListener('DOMContentLoaded', function() {
+              const bioImages = document.querySelectorAll('.bio-image-container img, .bio-image-float-left img, .bio-image-float-right img');
+              bioImages.forEach(function(img) {
+                  img.style.cursor = 'pointer';
+                  img.setAttribute('tabindex', '0');
+                  img.setAttribute('role', 'button');
+                  img.setAttribute('aria-label', 'Haga clic para ampliar la imagen');
+                  
+                  // Get caption from sibling element
+                  const container = img.closest('.bio-image-container, .bio-image-float-left, .bio-image-float-right');
+                  const captionEl = container ? container.querySelector('.bio-image-caption') : null;
+                  const caption = captionEl ? captionEl.textContent : img.alt;
+                  
+                  img.addEventListener('click', function() {
+                      openLightbox(this.src, caption);
+                  });
+                  
+                  img.addEventListener('keydown', function(e) {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          openLightbox(this.src, caption);
+                      }
+                  });
+              });
+          });
+      </script>
+  </body>
+</html>

@@ -1,0 +1,1016 @@
+<!-- Version: 1.0.1 | Created: 2025-08-15 | Last Modified: 2026-02-02 | Author: Open Gateways Team -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store (Coming Soon) Under Construction - Open Gateways</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/shared/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/shared/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/shared/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/shared/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/shared/apple-touch-icon.png">
+
+    <script type="text/javascript">
+        function WriteCookie(lan) {
+            if (window.languageSwitchInProgress) {
+                return false;
+            }
+            window.languageSwitchInProgress = true;
+
+            var now = new Date();
+            now.setFullYear(now.getFullYear() + 10);
+            var cookievalue = escape(lan);
+    
+            var domain = window.location.hostname.indexOf('opengateways.com') !== -1 ? '.opengateways.com' : window.location.hostname;
+            document.cookie = "langs=" + cookievalue + ";expires=" + now.toUTCString() + ";domain=" + domain + ";path=/";
+
+            var fileTranslations = {
+                'welcome-to-opengateways.html': {
+                    'en': 'welcome-to-opengateways.html',
+                    'es': 'bienvenido-a-opengateways.html'
+                },
+                'bienvenido-a-opengateways.html': {
+                    'en': 'welcome-to-opengateways.html',
+                    'es': 'bienvenido-a-opengateways.html'
+                },
+                'meet-baratta.html': {
+                    'en': 'meet-baratta.html',
+                    'es': 'conoce-a-baratta.html'
+                },
+                'conoce-a-baratta.html': {
+                    'en': 'meet-baratta.html',
+                    'es': 'conoce-a-baratta.html'
+                },
+                'private-sessions.html': {
+                    'en': 'private-sessions.html',
+                    'es': 'sesiones-privadas.html'
+                },
+                'sesiones-privadas.html': {
+                    'en': 'private-sessions.html',
+                    'es': 'sesiones-privadas.html'
+                },
+                'testimonials.html': {
+                    'en': 'testimonials.html',
+                    'es': 'testimonios.html'
+                },
+                'testimonios.html': {
+                    'en': 'testimonials.html',
+                    'es': 'testimonios.html'
+                },
+                'listen-to-baratta.html': {
+                    'en': 'listen-to-baratta.html',
+                    'es': 'escucha-a-baratta.html'
+                },
+                'escucha-a-baratta.html': {
+                    'en': 'listen-to-baratta.html',
+                    'es': 'escucha-a-baratta.html'
+                },
+                'baratta-talks-about.html': {
+                    'en': 'baratta-talks-about.html',
+                    'es': 'baratta-habla-de.html'
+                },
+                'baratta-habla-de.html': {
+                    'en': 'baratta-talks-about.html',
+                    'es': 'baratta-habla-de.html'
+                },
+                'meet-dale-carley.html': {
+                    'en': 'meet-dale-carley.html',
+                    'es': 'conoce-a-dale-carley.html'
+                },
+                'conoce-a-dale-carley.html': {
+                    'en': 'meet-dale-carley.html',
+                    'es': 'conoce-a-dale-carley.html'
+                },
+                'what-is-channeling.html': {
+                    'en': 'what-is-channeling.html',
+                    'es': 'que-es-canalizacion.html'
+                },
+                'que-es-canalizacion.html': {
+                    'en': 'what-is-channeling.html',
+                    'es': 'que-es-canalizacion.html'
+                },
+                'interview-with-dale.html': {
+                    'en': 'interview-with-dale.html',
+                    'es': 'entrevista-con-dale.html'
+                },
+                'entrevista-con-dale.html': {
+                    'en': 'interview-with-dale.html',
+                    'es': 'entrevista-con-dale.html'
+                },
+                'news.html': {
+                    'en': 'news.html',
+                    'es': 'noticias.html'
+                },
+                'noticias.html': {
+                    'en': 'news.html',
+                    'es': 'noticias.html'
+                },
+                'online-store-coming-soon.html': {
+                    'en': 'online-store-coming-soon.html',
+                    'es': 'tienda-en-linea-proximamente.html'
+                },
+                'tienda-en-linea-proximamente.html': {
+                    'en': 'online-store-coming-soon.html',
+                    'es': 'tienda-en-linea-proximamente.html'
+                },
+                'terms-and-policies.html': {
+                    'en': 'terms-and-policies.html',
+                    'es': 'terminos-y-politicas.html'
+                },
+                'terminos-y-politicas.html': {
+                    'en': 'terms-and-policies.html',
+                    'es': 'terminos-y-politicas.html'
+                },
+                'contact-us.html': {
+                    'en': 'contact-us.html',
+                    'es': 'contactanos.html'
+                },
+                'contactanos.html': {
+                    'en': 'contact-us.html',
+                    'es': 'contactanos.html'
+                },
+                'relating.html': {
+                    'en': 'relating.html',
+                    'es': 'relacionandote.html'
+                },
+                'relacionandote.html': {
+                    'en': 'relating.html',
+                    'es': 'relacionandote.html'
+                },
+                'masculine-feminine.html': {
+                    'en': 'masculine-feminine.html',
+                    'es': 'masculino-femenino.html'
+                },
+                'masculino-femenino.html': {
+                    'en': 'masculine-feminine.html',
+                    'es': 'masculino-femenino.html'
+                },
+                'learning-spiritually.html': {
+                    'en': 'learning-spiritually.html',
+                    'es': 'aprender-espiritualmente.html'
+                },
+                'aprender-espiritualmente.html': {
+                    'en': 'learning-spiritually.html',
+                    'es': 'aprender-espiritualmente.html'
+                }
+            };
+
+            var currentPath = window.location.pathname;
+            var currentLang = '';
+    
+            if (currentPath.startsWith('/en/')) {
+                currentLang = 'en';
+            } else if (currentPath.startsWith('/es/')) {
+                currentLang = 'es';
+            }
+    
+            var filename = 'online-store-coming-soon.html';
+            var pathMatch = currentPath.match(/\/(en|es)\/(.+)$/);
+            if (pathMatch && pathMatch[2]) {
+                filename = pathMatch[2];
+                if (!filename.endsWith('.html')) {
+                    filename = filename + '.html';
+                }
+            }
+
+            var translatedFilename = filename;
+            if (fileTranslations[filename] && fileTranslations[filename][lan]) {
+                translatedFilename = fileTranslations[filename][lan];
+            }
+
+            if (lan !== currentLang) {
+                var newPath = '/' + lan + '/' + translatedFilename;
+                setTimeout(function() {
+                    window.location.replace(newPath);
+                }, 50);
+            } else {
+                window.languageSwitchInProgress = false;
+            }
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+            }
+            return "";
+        }
+        
+        function switchLanguage(lang) {
+            WriteCookie(lang);
+        }
+    </script>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        /* Side Navigation */
+        .side-nav {
+            position: fixed;
+            left: -300px;
+            top: 0;
+            width: 280px;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(15px);
+            border-right: 1px solid rgba(1, 132, 246, 0.2);
+            box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 20px 0;
+            visibility: hidden;
+        }
+
+        .side-nav.open {
+            left: 0;
+            visibility: visible;
+        }
+
+        .side-nav:not(.open) a,
+        .side-nav:not(.open) button {
+            pointer-events: none;
+        }
+
+        .side-nav.open a,
+        .side-nav.open button {
+            pointer-events: auto;
+        }
+
+        .side-nav-header {
+            padding: 0 20px 20px;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 20px;
+        }
+
+        .side-nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .side-nav-logo img {
+            height: 35px;
+            width: auto;
+        }
+
+        .side-nav-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #666;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .side-nav-close:hover {
+            background-color: #f1f5f9;
+        }
+
+        .side-language-switcher {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .side-language-switcher img {
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease;
+            width: 24px;
+            height: 13px;
+        }
+
+        .side-language-switcher img:hover {
+            transform: scale(1.1);
+        }
+
+        .side-nav-menu {
+            padding: 0 20px;
+        }
+
+        .side-nav-section {
+            margin-bottom: 25px;
+        }
+
+        .side-nav-section-title {
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #718096;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            padding-left: 8px;
+        }
+
+        .side-nav-item {
+            margin-bottom: 5px;
+        }
+
+        .side-nav-link {
+            display: block;
+            padding: 10px 12px;
+            color: #4a5568;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+        }
+
+        .side-nav-link:hover {
+            background-color: #f7fafc;
+            color: #0184f6;
+            transform: translateX(4px);
+        }
+
+        .side-nav-link.active {
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            font-weight: 500;
+        }
+
+        .side-nav-cta {
+            margin-top: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+        }
+
+        .side-nav-cta h4 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .side-nav-cta-btn {
+            display: block;
+            background: white;
+            color: #38a169;
+            padding: 10px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: transform 0.2s ease;
+        }
+
+        .side-nav-cta-btn:hover {
+            transform: translateY(-1px);
+        }
+
+        /* Desktop floating toggle button */
+        .nav-toggle-desktop {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1001;
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            border: none;
+            padding: 12px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(1, 132, 246, 0.3);
+            transition: all 0.3s ease;
+            display: none;
+        }
+
+        .nav-toggle-desktop:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(1, 132, 246, 0.4);
+        }
+
+        .nav-toggle-desktop.nav-open {
+            left: 300px;
+        }
+
+        /* Mobile inline toggle button */
+        .nav-toggle-mobile {
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            border: none;
+            padding: 10px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(1, 132, 246, 0.3);
+            transition: all 0.3s ease;
+            display: none;
+        }
+
+        .nav-toggle-mobile:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(1, 132, 246, 0.4);
+        }
+
+        @media (min-width: 768px) {
+            .nav-toggle-desktop {
+                display: block;
+            }
+            
+            .nav-toggle-mobile {
+                display: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .nav-toggle-desktop {
+                display: none;
+            }
+            
+            .nav-toggle-mobile {
+                display: block;
+                position: fixed;
+                top: 23px;
+                left: 20px;
+                z-index: 1001;
+            }
+        }
+
+        /* Overlay */
+        .nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .nav-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .header-nav {
+            position: absolute;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .language-flags {
+            display: flex;
+            gap: 10px;
+        }
+
+        .language-flags img {
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease;
+            width: 30px;
+            height: 16px;
+        }
+
+        .language-flags img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            min-height: calc(100vh - 200px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Under Construction Section */
+        .construction-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 60px 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .construction-icon {
+            font-size: 4rem;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .construction-title {
+            font-size: 2.5rem;
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+
+        .construction-subtitle {
+            font-size: 1.3rem;
+            color: #0184f6;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .construction-description {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .features-preview {
+            background: rgba(240, 248, 255, 0.8);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+            border-left: 4px solid #0184f6;
+        }
+
+        .features-title {
+            font-size: 1.4rem;
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .features-list {
+            list-style: none;
+            text-align: left;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .features-list li {
+            padding: 8px 0;
+            color: #666;
+            font-size: 1rem;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .features-list li::before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+
+        .cta-section {
+            margin-top: 30px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cta-button {
+            padding: 18px 35px;
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(1, 132, 246, 0.3);
+            min-width: 250px;
+            min-height: 92px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            align-self: center;
+            max-width: 350px;
+            width: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(1, 132, 246, 0.4);
+        }
+
+        .cta-button.secondary {
+            background: rgba(255, 255, 255, 0.9);
+            color: #0184f6;
+            border: 2px solid #0184f6;
+        }
+
+        .cta-button.secondary:hover {
+            background: #0184f6;
+            color: white;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .contact-title {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .contact-details {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .contact-details a {
+            color: #0184f6;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            margin: 40px 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #0184f6;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .construction-section {
+                padding: 40px 25px;
+            }
+
+            .construction-title {
+                font-size: 2rem;
+            }
+
+            .construction-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .construction-description {
+                font-size: 1rem;
+            }
+
+            .features-preview {
+                padding: 20px;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .cta-section {
+                text-align: center;
+            }
+            
+            .cta-buttons {
+                align-items: center;
+                width: 100%;
+            }
+            
+            .cta-button {
+                width: auto;
+                min-width: 280px;
+                max-width: 90%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .cta-buttons {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay" onclick="closeSideNav()"></div>
+
+    <!-- Desktop/Tablet Floating Toggle Button -->
+    <button class="nav-toggle-desktop" id="navToggleDesktop" onclick="toggleSideNav()" aria-label="Toggle navigation menu">
+        ☰ Menu
+    </button>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav" id="sideNav">
+        <button class="side-nav-close" onclick="closeSideNav()" aria-label="Close navigation">×</button>
+        
+        <div class="side-nav-header">
+            <div class="side-nav-logo">
+                <a href="welcome-to-opengateways">
+                    <img src="../assets/images/shared/OG_logo_2025.png" alt="Open Gateways">
+                </a>
+            </div>
+            <div class="side-language-switcher">
+                <img onclick="switchLanguage('en');"
+                     onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('en');"
+                     tabindex="0"
+                     width="24"
+                     height="13"
+                     border="0"
+                     title="English"
+                     alt="English"
+                     src="../assets/images/shared/us.svg">
+                <img onclick="switchLanguage('es');"
+                     onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('es');"
+                     tabindex="0"
+                     width="24"
+                     height="13"
+                     border="0"
+                     title="Español"
+                     alt="Español"
+                     src="../assets/images/shared/mx.svg">
+            </div>
+        </div>
+
+        <div class="side-nav-menu">
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Baratta</div>
+                <div class="side-nav-item">
+                    <a href="meet-baratta" class="side-nav-link">Meet Baratta</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="listen-to-baratta" class="side-nav-link">Listen to Baratta</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="baratta-talks-about" class="side-nav-link">Baratta talks about...</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="private-sessions" class="side-nav-link">Private Sessions</a>
+                </div>
+            </div>
+
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Dale Carley</div>
+                <div class="side-nav-item">
+                    <a href="meet-dale-carley" class="side-nav-link">Meet Dale Carley</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="what-is-channeling" class="side-nav-link">What is Channeling?</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="interview-with-dale" class="side-nav-link">Interview with Dale</a>
+                </div>
+            </div>
+
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Site Pages</div>
+                <div class="side-nav-item">
+                    <a href="news" class="side-nav-link">News</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="testimonials" class="side-nav-link">Testimonials</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="online-store-coming-soon" class="side-nav-link active">Online Store (Coming Soon)</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="terms-and-policies" class="side-nav-link">Terms & Policies</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="contact-us" class="side-nav-link">Contact Us</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="welcome-to-opengateways" class="side-nav-link">🏠 Home</a>
+                </div>
+            </div>
+
+            <div class="side-nav-cta">
+                <h4>Ready to Connect?</h4>
+                <a href="https://schedule.opengateways.com" class="side-nav-cta-btn" target="_blank">📅 Schedule Online</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="welcome-to-opengateways">
+                    <img src="../assets/images/shared/OG_logo_2025.png" alt="Open Gateways">
+                </a>
+            </div>
+            
+            <nav class="header-nav">
+                <button class="nav-toggle-mobile" id="navToggleMobile" onclick="toggleSideNav()" aria-label="Toggle navigation menu">
+                    ☰ Menu
+                </button>
+                <div class="language-flags">
+                    <img onclick="switchLanguage('en');"
+                         onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('en');"
+                         tabindex="0"
+                         width="30"
+                         height="16"
+                         border="0"
+                         title="English"
+                         alt="English"
+                         src="../assets/images/shared/us.svg">
+                    <img onclick="switchLanguage('es');"
+                         onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('es');"
+                         tabindex="0"
+                         width="30"
+                         height="16"
+                         border="0"
+                         title="Español"
+                         alt="Español"
+                         src="../assets/images/shared/mx.svg">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section class="construction-section">
+            <span class="construction-icon">🚧</span>
+            
+            <h1 class="construction-title">New Online Store Coming Soon</h1>
+            <h2 class="construction-subtitle">The Loving Wisdom of Baratta at Your Fingertips</h2>
+            
+            <p class="construction-description">
+                We're building something beautiful for you! Our new online store will feature Baratta's transformative workshops, guided meditations, and spiritual insights - all available for instant download.
+            </p>
+
+            <div class="features-preview">
+                <h3 class="features-title">What's Coming:</h3>
+                <ul class="features-list">
+                    <li>Recorded workshops on personal transformation</li>
+                    <li>Guided meditation sessions</li>
+                    <li>Spiritual insights and teachings</li>
+                    <li>Content available in English and Spanish</li>
+                    <li>Instant downloads after purchase</li>
+                    <li>Mobile-friendly shopping experience</li>
+                    <li>Secure payment processing</li>
+                    <li>Bundle packages for greater value</li>
+                </ul>
+            </div>
+
+            <div class="cta-section">
+                <div class="cta-buttons">
+                    <a href="welcome-to-opengateways" class="cta-button">Explore Main Site</a>
+                    <a href="private-sessions" class="cta-button secondary">Book a Private Session</a>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <h3 class="contact-title">Get Notified When We Launch</h3>
+                <div class="contact-details">
+                    <p>For updates on our store launch or to inquire about available content:</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@opengateways.com">info@opengateways.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+13104579171">+1 310-457-9171</a> or <a href="tel:+18884227288">1-888-422-7288</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="welcome-to-opengateways">Home</a>
+            <a href="meet-baratta">Meet Baratta</a>
+            <a href="private-sessions">Private Sessions</a>
+            <a href="contact-us">Contact Us</a>
+        </div>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Open Gateways, Inc. — All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleSideNav() {
+            const sideNav = document.getElementById('sideNav');
+            const navToggleDesktop = document.getElementById('navToggleDesktop');
+            const navToggleMobile = document.getElementById('navToggleMobile');
+            const navOverlay = document.getElementById('navOverlay');
+            const body = document.body;
+    
+            if (sideNav.classList.contains('open')) {
+                closeSideNav();
+            } else {
+                sideNav.classList.add('open');
+                if (navToggleDesktop) navToggleDesktop.classList.add('nav-open');
+                if (navToggleMobile) navToggleMobile.classList.add('nav-open');
+                navOverlay.classList.add('active');
+                body.classList.add('nav-open-body');
+            }
+        }
+
+        function closeSideNav() {
+            const sideNav = document.getElementById('sideNav');
+            const navToggleDesktop = document.getElementById('navToggleDesktop');
+            const navToggleMobile = document.getElementById('navToggleMobile');
+            const navOverlay = document.getElementById('navOverlay');
+            const body = document.body;
+    
+            sideNav.classList.remove('open');
+            if (navToggleDesktop) navToggleDesktop.classList.remove('nav-open');
+            if (navToggleMobile) navToggleMobile.classList.remove('nav-open');
+            navOverlay.classList.remove('active');
+            body.classList.remove('nav-open-body');
+        }
+
+        // Close nav on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeSideNav();
+            }
+        });
+    </script>
+</body>
+</html>
+

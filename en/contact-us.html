@@ -1,0 +1,1278 @@
+<!-- Version: 1.0.0 | Created: 2025-08-15 | Last Modified: 2025-08-18 | Author: Open Gateways Team -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Open Gateways</title>
+    <meta name="description" content="Contact Open Gateways for questions about Baratta's sessions, Dale Carley's channeling services, or any other inquiries. Reach us by email, phone, or mail.">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/shared/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/shared/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/shared/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/shared/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/shared/apple-touch-icon.png">
+    
+    <script type="text/javascript">
+		function WriteCookie(lan) {
+		    // Prevent rapid successive calls with a more aggressive check
+		    if (window.languageSwitchInProgress) {
+		        return false;
+		    }
+		    window.languageSwitchInProgress = true;
+
+		    // Set cookie
+		    var now = new Date();
+		    now.setFullYear(now.getFullYear() + 10); // Use setFullYear instead of setYear
+		    var cookievalue = escape(lan);
+    
+		    var domain = window.location.hostname.indexOf('opengateways.com') !== -1 ? '.opengateways.com' : window.location.hostname;
+		    document.cookie = "langs=" + cookievalue + ";expires=" + now.toUTCString() + ";domain=" + domain + ";path=/";
+
+            // File name translation mapping
+            var fileTranslations = {
+                'welcome-to-opengateways.html': {
+                    'en': 'welcome-to-opengateways.html',
+                    'es': 'bienvenido-a-opengateways.html'
+                },
+                'bienvenido-a-opengateways.html': {
+                    'en': 'welcome-to-opengateways.html',
+                    'es': 'bienvenido-a-opengateways.html'
+                },
+                'meet-baratta.html': {
+                    'en': 'meet-baratta.html',
+                    'es': 'conoce-a-baratta.html'
+                },
+                'conoce-a-baratta.html': {
+                    'en': 'meet-baratta.html',
+                    'es': 'conoce-a-baratta.html'
+                },
+                'private-sessions.html': {
+                    'en': 'private-sessions.html',
+                    'es': 'sesiones-privadas.html'
+                },
+                'sesiones-privadas.html': {
+                    'en': 'private-sessions.html',
+                    'es': 'sesiones-privadas.html'
+                },
+                'testimonials.html': {
+                    'en': 'testimonials.html',
+                    'es': 'testimonios.html'
+                },
+                'testimonios.html': {
+                    'en': 'testimonials.html',
+                    'es': 'testimonios.html'
+                },
+                'listen-to-baratta.html': {
+                    'en': 'listen-to-baratta.html',
+                    'es': 'escucha-a-baratta.html'
+                },
+                'escucha-a-baratta.html': {
+                    'en': 'listen-to-baratta.html',
+                    'es': 'escucha-a-baratta.html'
+                },
+                'baratta-talks-about.html': {
+                    'en': 'baratta-talks-about.html',
+                    'es': 'baratta-habla-de.html'
+                },
+                'baratta-habla-de.html': {
+                    'en': 'baratta-talks-about.html',
+                    'es': 'baratta-habla-de.html'
+                },
+                'meet-dale-carley.html': {
+                    'en': 'meet-dale-carley.html',
+                    'es': 'conoce-a-dale-carley.html'
+                },
+                'conoce-a-dale-carley.html': {
+                    'en': 'meet-dale-carley.html',
+                    'es': 'conoce-a-dale-carley.html'
+                },
+                'what-is-channeling.html': {
+                    'en': 'what-is-channeling.html',
+                    'es': 'que-es-canalizacion.html'
+                },
+                'que-es-canalizacion.html': {
+                    'en': 'what-is-channeling.html',
+                    'es': 'que-es-canalizacion.html'
+                },
+                'interview-with-dale.html': {
+                    'en': 'interview-with-dale.html',
+                    'es': 'entrevista-con-dale.html'
+                },
+                'entrevista-con-dale.html': {
+                    'en': 'interview-with-dale.html',
+                    'es': 'entrevista-con-dale.html'
+                },
+                'news.html': {
+                    'en': 'news.html',
+                    'es': 'noticias.html'
+                },
+                'noticias.html': {
+                    'en': 'news.html',
+                    'es': 'noticias.html'
+                },
+                'online-store-coming-soon.html': {
+                    'en': 'online-store-coming-soon.html',
+                    'es': 'tienda-en-linea-proximamente.html'
+                },
+                'tienda-en-linea-proximamente.html': {
+                    'en': 'online-store-coming-soon.html',
+                    'es': 'tienda-en-linea-proximamente.html'
+                },
+                'terms-and-policies.html': {
+                    'en': 'terms-and-policies.html',
+                    'es': 'terminos-y-politicas.html'
+                },
+                'terminos-y-politicas.html': {
+                    'en': 'terms-and-policies.html',
+                    'es': 'terminos-y-politicas.html'
+                },
+                'contact-us.html': {
+                    'en': 'contact-us.html',
+                    'es': 'contactanos.html'
+                },
+                'contactanos.html': {
+                    'en': 'contact-us.html',
+                    'es': 'contactanos.html'
+                },
+                'relating.html': {
+                    'en': 'relating.html',
+                    'es': 'relacionarse-con-otros.html'
+                },
+                'relacionarse-con-otros.html': {
+                    'en': 'relating.html',
+                    'es': 'relacionarse-con-otros.html'
+                },
+                'masculine-feminine.html': {
+                    'en': 'masculine-feminine.html',
+                    'es': 'masculino-femenino.html'
+                },
+                'masculino-femenino.html': {
+                    'en': 'masculine-feminine.html',
+                    'es': 'masculino-femenino.html'
+                },
+                'learning-spiritually.html': {
+                    'en': 'learning-spiritually.html',
+                    'es': 'aprender-espiritualmente.html'
+                },
+                'aprender-espiritualmente.html': {
+                    'en': 'learning-spiritually.html',
+                    'es': 'aprender-espiritualmente.html'
+                }
+            };
+
+		    // Get current language from URL
+		    var currentPath = window.location.pathname;
+		    var currentLang = '';
+    
+		    // Parse current language
+		    if (currentPath.startsWith('/en/')) {
+		        currentLang = 'en';
+		    } else if (currentPath.startsWith('/es/')) {
+		        currentLang = 'es';
+		    }
+    
+		    // Get filename (everything after the language part)
+		    var filename = 'contact-us.html'; // default
+		    var pathMatch = currentPath.match(/\/(en|es)\/(.+)$/);
+		    if (pathMatch && pathMatch[2]) {
+		        filename = pathMatch[2];
+                // Handle clean URLs (add .html if missing)
+                if (!filename.endsWith('.html')) {
+                    filename = filename + '.html';
+                }
+ 		    }
+
+            // Get translated filename for target language
+            var translatedFilename = filename;
+            if (fileTranslations[filename] && fileTranslations[filename][lan]) {
+                translatedFilename = fileTranslations[filename][lan];
+            }
+
+		    // Only redirect if different language
+		    if (lan !== currentLang) {
+                var newPath = '/' + lan + '/' + translatedFilename;
+        
+		        // Add a small delay to ensure cookie is set
+		        setTimeout(function() {
+		            window.location.replace(newPath); // Use replace instead of href to avoid back button issues
+		        }, 50);
+		    } else {
+		        // Reset flag if no redirect needed
+		        window.languageSwitchInProgress = false;
+		    }
+		}
+
+		function getCookie(cname) {
+		    var name = cname + "=";
+		    var ca = document.cookie.split(';');
+		    for(var i = 0; i < ca.length; i++) {
+		        var c = ca[i];
+		        while (c.charAt(0) == ' ') c = c.substring(1);
+		        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+		    }
+		    return "";
+        }
+		
+		// Add this function to both files
+		function switchLanguage(lang) {
+		    WriteCookie(lang);
+		}
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Side Navigation */
+		/* Fix keyboard navigation - hide side nav links from tab order when menu is closed */
+		.side-nav {
+		    position: fixed;
+		    left: -300px;
+		    top: 0;
+		    width: 280px;
+		    height: 100vh;
+		    background: rgba(255, 255, 255, 0.98);
+		    backdrop-filter: blur(15px);
+		    border-right: 1px solid rgba(1, 132, 246, 0.2);
+		    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+		    transition: all 0.3s ease;
+		    z-index: 1000;
+		    overflow-y: auto;
+		    padding: 20px 0;
+		    visibility: hidden; /* Hide from keyboard navigation when closed */
+		}
+
+		.side-nav.open {
+		    left: 0;
+		    visibility: visible; /* Show for keyboard navigation when open */
+		}
+
+		/* Additional safety: ensure links are not focusable when menu is closed */
+		.side-nav:not(.open) a,
+		.side-nav:not(.open) button {
+		    pointer-events: none;
+		    tabindex: -1;
+		}
+
+		.side-nav.open a,
+		.side-nav.open button {
+		    pointer-events: auto;
+		    tabindex: 0;
+		}
+
+        .side-nav-header {
+            padding: 0 20px 20px;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 20px;
+        }
+
+        .side-nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .side-nav-logo img {
+            height: 35px;
+            width: auto;
+        }
+
+        .side-nav-logo span {
+            font-weight: bold;
+            color: #4a5568;
+            font-size: 1.1rem;
+        }
+
+        .side-nav-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #666;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .side-nav-close:hover {
+            background-color: #f1f5f9;
+        }
+
+        .side-language-switcher {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .side-language-switcher img {
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease;
+            width: 24px;
+            height: 13px;
+        }
+
+        .side-language-switcher img:hover {
+            transform: scale(1.1);
+        }
+
+        .side-nav-menu {
+            padding: 0 20px;
+        }
+
+        .side-nav-section {
+            margin-bottom: 25px;
+        }
+
+        .side-nav-section-title {
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #718096;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            padding-left: 8px;
+        }
+
+        .side-nav-item {
+            margin-bottom: 5px;
+        }
+
+        .side-nav-link {
+            display: block;
+            padding: 10px 12px;
+            color: #4a5568;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+        }
+
+        .side-nav-link:hover {
+            background-color: #f7fafc;
+            color: #0184f6;
+            transform: translateX(4px);
+        }
+
+        .side-nav-link.active {
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            font-weight: 500;
+        }
+
+        .side-nav-cta {
+            margin-top: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+        }
+
+        .side-nav-cta h4 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .side-nav-cta-btn {
+            display: block;
+            background: white;
+            color: #38a169;
+            padding: 10px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: transform 0.2s ease;
+        }
+
+        .side-nav-cta-btn:hover {
+            transform: translateY(-1px);
+        }
+
+        /* Desktop floating toggle button */
+        .nav-toggle-desktop {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1001;
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            border: none;
+            padding: 12px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(1, 132, 246, 0.3);
+            transition: all 0.3s ease;
+            display: none; /* Hidden by default */
+        }
+
+        .nav-toggle-desktop:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(1, 132, 246, 0.4);
+        }
+
+        .nav-toggle-desktop.nav-open {
+            left: 300px;
+        }
+
+        /* Mobile inline toggle button */
+        .nav-toggle-mobile {
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            border: none;
+            padding: 10px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(1, 132, 246, 0.3);
+            transition: all 0.3s ease;
+            display: none; /* Hidden by default */
+        }
+
+        .nav-toggle-mobile:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(1, 132, 246, 0.4);
+        }
+
+        /* Show desktop floating button on larger screens */
+        @media (min-width: 768px) {
+            .nav-toggle-desktop {
+                display: block;
+            }
+            
+            .nav-toggle-mobile {
+                display: none;
+            }
+        }
+
+        /* Show mobile button on smaller screens */
+        @media (max-width: 767px) {
+            .nav-toggle-desktop {
+                display: none;
+            }
+            
+            .nav-toggle-mobile {
+                display: block;
+            }
+        }
+
+        /* Overlay */
+        .nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .nav-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex: 1;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            display: flex;
+            justify-content: flex-end; /* Right-align by default for desktop */
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .language-flags {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Mobile: Restore space-between for menu button positioning */
+        @media (max-width: 767px) {
+            .language-switcher {
+                justify-content: space-between; /* Menu button left, flags right */
+            }
+        }
+
+        .language-switcher img {
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease;
+            width: 30px;
+            height: 16px;
+        }
+
+        .language-switcher img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Site Logo Card */
+        .site-name-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding: 10px 17px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            max-width: 280px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .home-button-logo {
+            display: block;
+            transition: transform 0.2s ease;
+        }
+
+        .home-button-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .site-logo {
+            max-width: 70%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Header Banner */
+        .header-banner {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .contact-banner {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            max-height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Main Content */
+        main {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            margin-bottom: 25px;
+        }
+
+        /* Contact Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #0184f6;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-card:nth-child(2) {
+            border-left-color: #48bb78;
+        }
+
+        .contact-card:nth-child(3) {
+            border-left-color: #ed8936;
+        }
+
+        .contact-card h3 {
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-card .icon {
+            font-size: 1.5rem;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #4a5568;
+            font-size: 1rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 12px 15px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: 'Georgia', serif;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #0184f6;
+            box-shadow: 0 0 0 3px rgba(1, 132, 246, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            align-self: flex-start;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(1, 132, 246, 0.4);
+        }
+
+        .submit-btn:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Phone Section */
+        .phone-numbers {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .phone-item {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .phone-item h4 {
+            color: #4a5568;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .phone-number {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #0184f6;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .phone-number:hover {
+            color: #0164c9;
+            text-decoration: underline;
+        }
+
+        .phone-description {
+            font-size: 0.9rem;
+            color: #718096;
+        }
+
+        /* Mail Section */
+        .mail-address {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .mail-address p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .mail-address p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Success/Error Messages */
+        .message {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+
+        .message.success {
+            background: rgba(72, 187, 120, 0.1);
+            color: #38a169;
+            border: 2px solid #48bb78;
+        }
+
+        .message.error {
+            background: rgba(245, 101, 101, 0.1);
+            color: #e53e3e;
+            border: 2px solid #f56565;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .container {
+                padding: 40px;
+                padding-left: 100px; /* Space for floating toggle button */
+            }
+
+            main {
+                padding: 50px;
+            }
+
+            .contact-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+
+            .phone-numbers {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .phone-item {
+                flex: none;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                padding: 60px;
+                padding-left: 120px; /* Space for floating toggle button */
+            }
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                padding: 20px;
+            }
+
+            .side-nav {
+                width: 260px;
+                left: -260px;
+            }
+
+            /* Reduced vertical spacing between cards on mobile */
+            .language-switcher {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+            }
+
+            .site-name-card {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+            }
+
+            .header-banner {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+            }
+
+            main {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+                padding: 25px;
+            }
+
+            .contact-card {
+                padding: 20px;
+            }
+
+            .phone-numbers {
+                gap: 15px;
+            }
+
+            .phone-number {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Accessibility */
+        .submit-btn:focus,
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .nav-toggle-desktop:focus,
+        .nav-toggle-mobile:focus,
+        .side-nav-link:focus {
+            outline: 3px solid #0184f6;
+            outline-offset: 2px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .side-nav,
+            .nav-toggle-desktop,
+            .nav-toggle-mobile,
+            .main-content,
+            .nav-overlay {
+                transition: none;
+            }
+            
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Hide regular language switcher when side nav is open */
+        .nav-open-body .language-switcher {
+            display: none;
+        }
+		
+		/* Focus indicators for language flags */
+		.language-switcher img:focus,
+		.side-language-switcher img:focus {
+		    outline: 2px solid #0184f6;
+		    outline-offset: 2px;
+		    transform: scale(1.1);
+		    border-radius: 3px;
+		}
+
+		/* Ensure flags are keyboard accessible */
+		.language-switcher img,
+		.side-language-switcher img {
+		    cursor: pointer;
+		    border-radius: 3px;
+		    transition: transform 0.2s ease;
+		}
+
+		.language-switcher img:hover,
+		.side-language-switcher img:hover {
+		    transform: scale(1.1);
+		}
+    </style>
+</head>
+<body>
+    <!-- Navigation Toggle Button -->
+    <button class="nav-toggle-desktop" id="navToggleDesktop" onclick="toggleSideNav()" aria-label="Toggle navigation menu">
+        ☰ Menu
+    </button>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay" onclick="closeSideNav()"></div>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav" id="sideNav">
+        <button class="side-nav-close" onclick="closeSideNav()" aria-label="Close navigation">×</button>
+        
+        <div class="side-nav-header">
+            <div class="side-nav-logo">
+                <a href="welcome-to-opengateways">
+                    <img src="../assets/images/shared/OG_logo_2025.png" alt="Open Gateways">
+                </a>
+            </div>
+			<div class="side-language-switcher">
+			    <img onclick="switchLanguage('en');" 
+			         onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('en');" 
+			         tabindex="0" 
+			         width="24" 
+			         height="13" 
+			         border="0" 
+			         title="English" 
+			         alt="English" 
+			         src="../assets/images/shared/us.svg">
+			    <img onclick="switchLanguage('es');" 
+			         onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('es');" 
+			         tabindex="0" 
+			         width="24" 
+			         height="13" 
+			         border="0" 
+			         title="Español" 
+			         alt="Español" 
+			         src="../assets/images/shared/mx.svg">
+			</div>
+        </div>
+
+        <div class="side-nav-menu">
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Baratta</div>
+                <div class="side-nav-item">
+                    <a href="meet-baratta" class="side-nav-link">Meet Baratta</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="listen-to-baratta" class="side-nav-link">Listen to Baratta</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="baratta-talks-about" class="side-nav-link">Baratta talks about...</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="private-sessions" class="side-nav-link">Private Sessions</a>
+                </div>
+            </div>
+
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Dale Carley</div>
+                <div class="side-nav-item">
+                    <a href="meet-dale-carley" class="side-nav-link">Meet Dale Carley</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="what-is-channeling" class="side-nav-link">What is Channeling?</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="interview-with-dale" class="side-nav-link">Interview with Dale</a>
+                </div>
+            </div>
+
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Site Pages</div>
+                <div class="side-nav-item">
+                    <a href="news" class="side-nav-link">News</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="testimonials" class="side-nav-link">Testimonials</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="online-store-coming-soon" class="side-nav-link">Online Store (Coming Soon)</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="terms-and-policies" class="side-nav-link">Terms & Policies</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="contact-us" class="side-nav-link active">Contact Us</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="welcome-to-opengateways" class="side-nav-link">🏠 Home</a>
+                </div>
+            </div>
+
+            <div class="side-nav-cta">
+                <h4>Ready to Connect?</h4>
+                <a href="https://schedule.opengateways.com" class="side-nav-cta-btn" target="_blank">📅 Schedule Online</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="page-wrapper">
+        <div class="main-content">
+            <div class="container">
+                <!-- Language Switcher with Mobile Menu Button -->
+				<div class="language-switcher">
+				    <!-- Mobile Menu Button (aligned with language switcher) -->
+				    <button class="nav-toggle-mobile" id="navToggleMobile" onclick="toggleSideNav()" aria-label="Toggle navigation menu">
+				        ☰ Menu
+				    </button>
+    
+				    <div class="language-flags">
+				        <img onclick="switchLanguage('en');" 
+				             onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('en');" 
+				             tabindex="0" 
+				             width="30" 
+				             height="16" 
+				             border="0" 
+				             title="English" 
+				             alt="English" 
+				             src="../assets/images/shared/us.svg">
+				        <img onclick="switchLanguage('es');" 
+				             onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('es');" 
+				             tabindex="0" 
+				             width="30" 
+				             height="16" 
+				             border="0" 
+				             title="Español" 
+				             alt="Español" 
+				             src="../assets/images/shared/mx.svg">
+				    </div>
+				</div>
+
+                <!-- Site Logo Card -->
+                <div class="site-name-card">
+                    <a href="welcome-to-opengateways" class="home-button-logo" title="Home">
+                        <img src="../assets/images/shared/OG_logo_2025.png" alt="Open Gateways Home" class="site-logo">
+                    </a>
+                </div>
+
+                <!-- Header Banner -->
+                <div class="header-banner">
+                    <img src="../assets/images/main-site/en/Contact_Us_banner_v2.jpg" alt="Contact Us" class="contact-banner">
+                </div>
+
+                <main>
+                    <div class="contact-grid">
+                        <!-- Contact Form Section -->
+                        <div class="contact-card">
+                            <h3><span class="icon">📧</span> Send Us a Message</h3>
+                            
+                            <div id="messageContainer" class="message"></div>
+                            
+                            <form class="contact-form" id="contactForm" action="#" method="POST">
+                                <div class="form-group">
+                                    <label for="name">Your Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Your Message *</label>
+                                    <textarea id="message" name="message" required placeholder="Please share your questions, comments, or how we can help you..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="submit-btn" id="submitBtn">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Phone Contact Section -->
+                        <div class="contact-card">
+                            <h3><span class="icon">📞</span> Phone (Voicemail)</h3>
+                            
+                            <div class="phone-numbers">
+                                <div class="phone-item">
+                                    <h4>Toll Free (US & Canada)</h4>
+                                    <a href="tel:+18884227288" class="phone-number">1-888-422-7288</a>
+                                </div>
+                                
+                                <div class="phone-item">
+                                    <h4>International Calls</h4>
+                                    <a href="tel:+13104579171" class="phone-number">+1 310-457-9171</a>
+                                </div>
+                            </div>
+                            
+                            <p style="margin-top: 20px; text-align: center; color: #666; font-size: 0.95rem;">
+                                Our phone lines provide menu-based information and voicemail. Please leave a message and we'll return your call, usually by the end of the next business day.
+                            </p>
+                            
+                            <p style="margin-top: 10px; text-align: center; color: #0184f6; font-size: 0.9rem; font-weight: 500;">
+                                💡 For fastest response, please email us at <a href="mailto:appointments@opengateways.com" style="color: #0184f6;">appointments@opengateways.com</a>
+                            </p>
+                        </div>
+
+                        <!-- Mailing Address Section -->
+                        <div class="contact-card">
+                            <h3><span class="icon">📮</span> Write to Us</h3>
+                            
+                            <div class="mail-address">
+                                <p><strong>Open Gateways, Inc.</strong></p>
+                                <p>6901A N 9th Avenue #695</p>
+                                <p>Pensacola, FL 32504-6638</p>
+                                <p>USA</p>
+                            </div>
+                            
+                            <p style="margin-top: 20px; text-align: center; color: #666; font-size: 0.95rem;">
+                                For formal correspondence, returns, or any documents you'd like to send us by mail.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div style="background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%); padding: 30px; border-radius: 12px; text-align: center; margin-top: 30px;">
+                        <h3 style="color: #4a5568; margin-bottom: 15px;">We're Here to Help</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.6; color: #555; margin-bottom: 20px;">
+                            Whether you have questions about Baratta's sessions, Dale's channeling work, our policies, or need technical support with our website, we're here to assist you on your spiritual journey.
+                        </p>
+                        <p style="font-size: 1rem; color: #666; font-style: italic;">
+                            We typically respond to messages within 24-48 hours during business days.
+                        </p>
+                    </div>
+                </main>
+
+                <footer>
+                    <p>Copyright © <script>document.write(new Date().getFullYear())</script> Open Gateways, Inc. – All Rights Reserved.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Contact Form Handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const messageContainer = document.getElementById('messageContainer');
+            const form = this;
+            
+            // Get form data
+            const formData = new FormData(form);
+            const name = formData.get('name').trim();
+            const email = formData.get('email').trim();
+            const message = formData.get('message').trim();
+            
+            // Basic validation
+            if (!name || !email || !message) {
+                showMessage('Please fill in all required fields.', 'error');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showMessage('Please enter a valid email address.', 'error');
+                return;
+            }
+            
+            // Disable submit button and show loading
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            
+            // Create mailto link with form data
+            const subject = encodeURIComponent('Contact Form Message from ' + name);
+            const body = encodeURIComponent(
+                'Name: ' + name + '\n' +
+                'Email: ' + email + '\n' +
+                'Message:\n' + message + '\n\n' +
+                '---\n' +
+                'This message was sent from the Open Gateways contact form.'
+            );
+            
+            const mailtoLink = `mailto:feedback@opengateways.com?subject=${subject}&body=${body}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Simulate sending delay and show success message
+            setTimeout(() => {
+                showMessage('Your message has been prepared for sending. Please send the email from your email client.', 'success');
+                form.reset();
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            }, 1000);
+        });
+        
+        function showMessage(text, type) {
+            const messageContainer = document.getElementById('messageContainer');
+            messageContainer.textContent = text;
+            messageContainer.className = `message ${type}`;
+            messageContainer.style.display = 'block';
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                messageContainer.style.display = 'none';
+            }, 5000);
+        }
+
+        // Navigation functions
+        function toggleSideNav() {
+            const sideNav = document.getElementById('sideNav');
+            const navToggleDesktop = document.getElementById('navToggleDesktop');
+            const navToggleMobile = document.getElementById('navToggleMobile');
+            const navOverlay = document.getElementById('navOverlay');
+            const body = document.body;
+            
+            if (sideNav.classList.contains('open')) {
+                closeSideNav();
+            } else {
+                sideNav.classList.add('open');
+                if (navToggleDesktop) navToggleDesktop.classList.add('nav-open');
+                if (navToggleMobile) navToggleMobile.classList.add('nav-open');
+                navOverlay.classList.add('active');
+                body.classList.add('nav-open-body');
+            }
+        }
+
+        function closeSideNav() {
+            const sideNav = document.getElementById('sideNav');
+            const navToggleDesktop = document.getElementById('navToggleDesktop');
+            const navToggleMobile = document.getElementById('navToggleMobile');
+            const navOverlay = document.getElementById('navOverlay');
+            const body = document.body;
+            
+            sideNav.classList.remove('open');
+            if (navToggleDesktop) navToggleDesktop.classList.remove('nav-open');
+            if (navToggleMobile) navToggleMobile.classList.remove('nav-open');
+            navOverlay.classList.remove('active');
+            body.classList.remove('nav-open-body');
+        }
+
+        // Close nav on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeSideNav();
+            }
+        });
+
+    </script>
+</body>
+</html>

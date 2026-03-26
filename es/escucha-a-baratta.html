@@ -1,0 +1,2133 @@
+<!-- Version: 1.0.0 | Created: 2025-08-15 | Last Modified: 2025-08-18 | Author: Open Gateways Team -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escucha a Baratta - Open Gateways</title>
+    <meta name="description" content="Escucha el archivo del programa de radio de Baratta - 'Una Vida Exuberante' de LATalkRadio.com. Explora temas espirituales, crecimiento personal y sabiduría de este delicioso ser no físico de luz.">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/shared/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/shared/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/shared/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/shared/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/shared/apple-touch-icon.png">
+    
+    <script type="text/javascript">
+		function WriteCookie(lan) {
+		    // Prevent rapid successive calls with a more aggressive check
+		    if (window.languageSwitchInProgress) {
+		        return false;
+		    }
+		    window.languageSwitchInProgress = true;
+
+		    // Set cookie
+		    var now = new Date();
+		    now.setFullYear(now.getFullYear() + 10); // Use setFullYear instead of setYear
+		    var cookievalue = escape(lan);
+    
+		    var domain = window.location.hostname.indexOf('opengateways.com') !== -1 ? '.opengateways.com' : window.location.hostname;
+		    document.cookie = "langs=" + cookievalue + ";expires=" + now.toUTCString() + ";domain=" + domain + ";path=/";
+
+            // File name translation mapping
+            var fileTranslations = {
+                'welcome-to-opengateways.html': {
+                    'en': 'welcome-to-opengateways.html',
+                    'es': 'bienvenido-a-opengateways.html'
+                },
+                'bienvenido-a-opengateways.html': {
+                    'en': 'welcome-to-opengateways.html',
+                    'es': 'bienvenido-a-opengateways.html'
+                },
+                'meet-baratta.html': {
+                    'en': 'meet-baratta.html',
+                    'es': 'conoce-a-baratta.html'
+                },
+                'conoce-a-baratta.html': {
+                    'en': 'meet-baratta.html',
+                    'es': 'conoce-a-baratta.html'
+                },
+                'private-sessions.html': {
+                    'en': 'private-sessions.html',
+                    'es': 'sesiones-privadas.html'
+                },
+                'sesiones-privadas.html': {
+                    'en': 'private-sessions.html',
+                    'es': 'sesiones-privadas.html'
+                },
+                'testimonials.html': {
+                    'en': 'testimonials.html',
+                    'es': 'testimonios.html'
+                },
+                'testimonios.html': {
+                    'en': 'testimonials.html',
+                    'es': 'testimonios.html'
+                },
+                'listen-to-baratta.html': {
+                    'en': 'listen-to-baratta.html',
+                    'es': 'escucha-a-baratta.html'
+                },
+                'escucha-a-baratta.html': {
+                    'en': 'listen-to-baratta.html',
+                    'es': 'escucha-a-baratta.html'
+                },
+                'baratta-talks-about.html': {
+                    'en': 'baratta-talks-about.html',
+                    'es': 'baratta-habla-de.html'
+                },
+                'baratta-habla-de.html': {
+                    'en': 'baratta-talks-about.html',
+                    'es': 'baratta-habla-de.html'
+                },
+                'meet-dale-carley.html': {
+                    'en': 'meet-dale-carley.html',
+                    'es': 'conoce-a-dale-carley.html'
+                },
+                'conoce-a-dale-carley.html': {
+                    'en': 'meet-dale-carley.html',
+                    'es': 'conoce-a-dale-carley.html'
+                },
+                'what-is-channeling.html': {
+                    'en': 'what-is-channeling.html',
+                    'es': 'que-es-canalizacion.html'
+                },
+                'que-es-canalizacion.html': {
+                    'en': 'what-is-channeling.html',
+                    'es': 'que-es-canalizacion.html'
+                },
+                'interview-with-dale.html': {
+                    'en': 'interview-with-dale.html',
+                    'es': 'entrevista-con-dale.html'
+                },
+                'entrevista-con-dale.html': {
+                    'en': 'interview-with-dale.html',
+                    'es': 'entrevista-con-dale.html'
+                },
+                'news.html': {
+                    'en': 'news.html',
+                    'es': 'noticias.html'
+                },
+                'noticias.html': {
+                    'en': 'news.html',
+                    'es': 'noticias.html'
+                },
+                'online-store-coming-soon.html': {
+                    'en': 'online-store-coming-soon.html',
+                    'es': 'tienda-en-linea-proximamente.html'
+                },
+                'tienda-en-linea-proximamente.html': {
+                    'en': 'online-store-coming-soon.html',
+                    'es': 'tienda-en-linea-proximamente.html'
+                },
+                'terms-and-policies.html': {
+                    'en': 'terms-and-policies.html',
+                    'es': 'terminos-y-politicas.html'
+                },
+                'terminos-y-politicas.html': {
+                    'en': 'terms-and-policies.html',
+                    'es': 'terminos-y-politicas.html'
+                },
+                'contact-us.html': {
+                    'en': 'contact-us.html',
+                    'es': 'contactanos.html'
+                },
+                'contactanos.html': {
+                    'en': 'contact-us.html',
+                    'es': 'contactanos.html'
+                },
+                'relating-with-others.html': {
+                    'en': 'relating-with-others.html',
+                    'es': 'relacionarse-con-otros.html'
+                },
+                'relacionarse-con-otros.html': {
+                    'en': 'relating-with-others.html',
+                    'es': 'relacionarse-con-otros.html'
+                },
+                'masculine-feminine.html': {
+                    'en': 'masculine-feminine.html',
+                    'es': 'masculino-femenino.html'
+                },
+                'masculino-femenino.html': {
+                    'en': 'masculine-feminine.html',
+                    'es': 'masculino-femenino.html'
+                },
+                'learning-spiritually.html': {
+                    'en': 'learning-spiritually.html',
+                    'es': 'aprender-espiritualmente.html'
+                },
+                'aprender-espiritualmente.html': {
+                    'en': 'learning-spiritually.html',
+                    'es': 'aprender-espiritualmente.html'
+                }
+            };
+
+		    // Get current language from URL
+		    var currentPath = window.location.pathname;
+		    var currentLang = '';
+    
+		    // Parse current language
+		    if (currentPath.startsWith('/en/')) {
+		        currentLang = 'en';
+		    } else if (currentPath.startsWith('/es/')) {
+		        currentLang = 'es';
+		    }
+    
+		    // Get filename (everything after the language part)
+		    var filename = 'escucha-a-baratta.html'; // default
+		    var pathMatch = currentPath.match(/\/(en|es)\/(.+)$/);
+		    if (pathMatch && pathMatch[2]) {
+		        filename = pathMatch[2];
+                // Handle clean URLs (add .html if missing)
+                if (!filename.endsWith('.html')) {
+                    filename = filename + '.html';
+                }
+            }
+
+            // Get translated filename for target language
+            var translatedFilename = filename;
+            if (fileTranslations[filename] && fileTranslations[filename][lan]) {
+                translatedFilename = fileTranslations[filename][lan];
+            }
+
+            // Only redirect if different language
+            if (lan !== currentLang) {
+                var newPath = '/' + lan + '/' + translatedFilename;
+        
+                // Add a small delay to ensure cookie is set
+                setTimeout(function() {
+                    window.location.replace(newPath); // Use replace instead of href to avoid back button issues
+                }, 50);
+            } else {
+                // Reset flag if no redirect needed
+                window.languageSwitchInProgress = false;
+            }
+        }
+
+		function getCookie(cname) {
+		    var name = cname + "=";
+		    var ca = document.cookie.split(';');
+		    for(var i = 0; i < ca.length; i++) {
+		        var c = ca[i];
+		        while (c.charAt(0) == ' ') c = c.substring(1);
+		        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+		    }
+		    return "";
+        }
+		
+		// Add this function to both files
+		function switchLanguage(lang) {
+		    WriteCookie(lang);
+		}
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Side Navigation */
+		/* Fix keyboard navigation - hide side nav links from tab order when menu is closed */
+		.side-nav {
+		    position: fixed;
+		    left: -300px;
+		    top: 0;
+		    width: 280px;
+		    height: 100vh;
+		    background: rgba(255, 255, 255, 0.98);
+		    backdrop-filter: blur(15px);
+		    border-right: 1px solid rgba(1, 132, 246, 0.2);
+		    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+		    transition: all 0.3s ease;
+		    z-index: 1000;
+		    overflow-y: auto;
+		    padding: 20px 0;
+		    visibility: hidden; /* Hide from keyboard navigation when closed */
+		}
+
+		.side-nav.open {
+		    left: 0;
+		    visibility: visible; /* Show for keyboard navigation when open */
+		}
+
+		/* Additional safety: ensure links are not focusable when menu is closed */
+		.side-nav:not(.open) a,
+		.side-nav:not(.open) button {
+		    pointer-events: none;
+		    tabindex: -1;
+		}
+
+		.side-nav.open a,
+		.side-nav.open button {
+		    pointer-events: auto;
+		    tabindex: 0;
+		}
+
+        .side-nav-header {
+            padding: 0 20px 20px;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 20px;
+        }
+
+        .side-nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .side-nav-logo img {
+            height: 35px;
+            width: auto;
+        }
+
+        .side-nav-logo span {
+            font-weight: bold;
+            color: #4a5568;
+            font-size: 1.1rem;
+        }
+
+        .side-nav-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #666;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .side-nav-close:hover {
+            background-color: #f1f5f9;
+        }
+
+        .side-language-switcher {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .side-language-switcher img {
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease;
+            width: 24px;
+            height: 13px;
+        }
+
+        .side-language-switcher img:hover {
+            transform: scale(1.1);
+        }
+
+        .side-nav-menu {
+            padding: 0 20px;
+        }
+
+        .side-nav-section {
+            margin-bottom: 25px;
+        }
+
+        .side-nav-section-title {
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #718096;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            padding-left: 8px;
+        }
+
+        .side-nav-item {
+            margin-bottom: 5px;
+        }
+
+        .side-nav-link {
+            display: block;
+            padding: 10px 12px;
+            color: #4a5568;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+        }
+
+        .side-nav-link:hover {
+            background-color: #f7fafc;
+            color: #0184f6;
+            transform: translateX(4px);
+        }
+
+        .side-nav-link.active {
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            font-weight: 500;
+        }
+
+        .side-nav-cta {
+            margin-top: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+        }
+
+        .side-nav-cta h4 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .side-nav-cta-btn {
+            display: block;
+            background: white;
+            color: #38a169;
+            padding: 10px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: transform 0.2s ease;
+        }
+
+        .side-nav-cta-btn:hover {
+            transform: translateY(-1px);
+        }
+
+        /* Desktop floating toggle button */
+        .nav-toggle-desktop {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1001;
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            border: none;
+            padding: 12px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(1, 132, 246, 0.3);
+            transition: all 0.3s ease;
+            display: none; /* Hidden by default */
+        }
+
+        .nav-toggle-desktop:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(1, 132, 246, 0.4);
+        }
+
+        .nav-toggle-desktop.nav-open {
+            left: 300px;
+        }
+
+        /* Mobile inline toggle button */
+        .nav-toggle-mobile {
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            border: none;
+            padding: 10px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(1, 132, 246, 0.3);
+            transition: all 0.3s ease;
+            display: none; /* Hidden by default */
+        }
+
+        .nav-toggle-mobile:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(1, 132, 246, 0.4);
+        }
+
+        /* Show desktop floating button on larger screens */
+        @media (min-width: 768px) {
+            .nav-toggle-desktop {
+                display: block;
+            }
+            
+            .nav-toggle-mobile {
+                display: none;
+            }
+        }
+
+        /* Show mobile button on smaller screens */
+        @media (max-width: 767px) {
+            .nav-toggle-desktop {
+                display: none;
+            }
+            
+            .nav-toggle-mobile {
+                display: block;
+            }
+        }
+
+        /* Overlay */
+        .nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .nav-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex: 1;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            display: flex;
+            justify-content: flex-end; /* Right-align by default for desktop */
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .language-flags {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Mobile: Restore space-between for menu button positioning */
+        @media (max-width: 767px) {
+            .language-switcher {
+                justify-content: space-between; /* Menu button left, flags right */
+            }
+        }
+
+        .language-switcher img {
+            cursor: pointer;
+            border-radius: 3px;
+            transition: transform 0.2s ease;
+            width: 30px;
+            height: 16px;
+        }
+
+        .language-switcher img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Site Logo Card */
+        .site-name-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding: 10px 17px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            max-width: 280px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .home-button-logo {
+            display: block;
+            transition: transform 0.2s ease;
+        }
+
+        .home-button-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .site-logo {
+            max-width: 70%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Header Banner */
+        .header-banner {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .listen-baratta-banner {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            max-height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Main Content */
+        main {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            margin-bottom: 25px;
+        }
+
+        /* Introduction Section */
+        .intro-section {
+            margin-bottom: 40px;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+
+        .intro-section h2 {
+            color: #4a5568;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .intro-section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .audio-note {
+            font-style: italic;
+            color: #667eea;
+            font-weight: 500;
+            margin-top: 20px;
+            font-size: 1.05rem;
+        }
+
+		.player-close-btn {
+		    position: absolute;
+		    top: 10px;
+		    right: 15px;
+		    background: rgba(255, 255, 255, 0.2);
+		    border: none;
+		    color: white;
+		    font-size: 1.5rem;
+		    font-weight: bold;
+		    cursor: pointer;
+		    border-radius: 50%;
+		    width: 30px;
+		    height: 30px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    transition: all 0.3s ease;
+		    z-index: 10;
+		}
+
+		.player-close-btn:hover {
+		    background: rgba(255, 255, 255, 0.3);
+		    transform: scale(1.1);
+		}
+
+		.audio-player {
+		    position: relative; /* Ensure relative positioning for the close button */
+		}
+		
+		/* Audio Player */
+        .audio-player {
+            position: sticky;
+            top: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            z-index: 100;
+        }
+
+        .player-info {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .current-show {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .show-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .audio-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+		.control-btn {
+		    background: rgba(255, 255, 255, 0.2);
+		    border: none;
+		    color: white;
+		    padding: 10px;
+		    border-radius: 50%;
+		    cursor: pointer;
+		    font-size: 1.2rem;
+		    transition: all 0.3s ease;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    user-select: none;
+		}
+
+		.control-btn:hover {
+		    background: rgba(255, 255, 255, 0.3);
+		    transform: scale(1.1);
+		}
+
+		.play-btn {
+		    font-size: 1.5rem;
+		    padding: 15px;
+		}
+
+        .progress-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: white;
+            border-radius: 3px;
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* Show List */
+        .shows-list {
+            display: grid;
+            gap: 20px;
+        }
+
+        .show-card {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #0184f6;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .show-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .show-card.playing {
+            border-left-color: #48bb78;
+            background: rgba(72, 187, 120, 0.1);
+        }
+
+        .show-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+
+        .show-number {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #0184f6;
+            min-width: 80px;
+        }
+
+        .show-date {
+            font-size: 0.9rem;
+            color: #718096;
+            text-align: right;
+        }
+
+        .show-title-main {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #4a5568;
+            margin-bottom: 10px;
+        }
+
+        .show-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .show-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .action-btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .play-show-btn {
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+        }
+
+        .play-show-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(1, 132, 246, 0.3);
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
+        }
+
+        .show-duration {
+            font-size: 0.85rem;
+            color: #718096;
+            margin-left: auto;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .container {
+                padding: 40px;
+                padding-left: 100px; /* Space for floating toggle button */
+            }
+
+            main {
+                padding: 50px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                padding: 60px;
+                padding-left: 120px; /* Space for floating toggle button */
+            }
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                padding: 20px;
+            }
+
+            .side-nav {
+                width: 260px;
+                left: -260px;
+            }
+
+            /* Reduced vertical spacing between cards on mobile */
+            .language-switcher {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+            }
+
+            .site-name-card {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+            }
+
+            .header-banner {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+            }
+
+            main {
+                margin-bottom: 19px; /* 25% smaller than 25px */
+                padding: 25px;
+            }
+
+            .show-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .show-date {
+                text-align: left;
+            }
+
+            .show-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .action-btn {
+                justify-content: center;
+            }
+
+            .audio-controls {
+                gap: 10px;
+            }
+
+            .control-btn {
+                padding: 8px;
+                font-size: 1rem;
+            }
+
+            .play-btn {
+                font-size: 1.3rem;
+                padding: 12px;
+            }
+        }
+
+        /* Accessibility */
+        .action-btn:focus,
+        .control-btn:focus,
+        .nav-toggle-desktop:focus,
+        .nav-toggle-mobile:focus,
+        .side-nav-link:focus {
+            outline: 3px solid #0184f6;
+            outline-offset: 2px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .side-nav,
+            .nav-toggle-desktop,
+            .nav-toggle-mobile,
+            .main-content,
+            .nav-overlay {
+                transition: none;
+            }
+            
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Hide regular language switcher when side nav is open */
+        .nav-open-body .language-switcher {
+            display: none;
+        }
+		
+		/* Focus indicators for language flags */
+		.language-switcher img:focus,
+		.side-language-switcher img:focus {
+		    outline: 2px solid #0184f6;
+		    outline-offset: 2px;
+		    transform: scale(1.1);
+		    border-radius: 3px;
+		}
+
+		/* Ensure flags are keyboard accessible */
+		.language-switcher img,
+		.side-language-switcher img {
+		    cursor: pointer;
+		    border-radius: 3px;
+		    transition: transform 0.2s ease;
+		}
+
+		.language-switcher img:hover,
+		.side-language-switcher img:hover {
+		    transform: scale(1.1);
+		}
+    </style>
+</head>
+<body>
+    <!-- Navigation Toggle Button -->
+    <button class="nav-toggle-desktop" id="navToggleDesktop" onclick="toggleSideNav()" aria-label="Alternar menú de navegación">
+        ☰ Menú
+    </button>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay" onclick="closeSideNav()"></div>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav" id="sideNav">
+        <button class="side-nav-close" onclick="closeSideNav()" aria-label="Cerrar navegación">×</button>
+        
+        <div class="side-nav-header">
+            <div class="side-nav-logo">
+                <a href="bienvenido-a-opengateways">
+                    <img src="../assets/images/shared/OG_logo_2025.png" alt="Open Gateways">
+                </a>
+            </div>
+			<div class="side-language-switcher">
+			    <img onclick="switchLanguage('en');" 
+			         onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('en');" 
+			         tabindex="0" 
+			         width="24" 
+			         height="13" 
+			         border="0" 
+			         title="English" 
+			         alt="English" 
+			         src="../assets/images/shared/us.svg">
+			    <img onclick="switchLanguage('es');" 
+			         onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('es');" 
+			         tabindex="0" 
+			         width="24" 
+			         height="13" 
+			         border="0" 
+			         title="Español" 
+			         alt="Español" 
+			         src="../assets/images/shared/mx.svg">
+			</div>
+        </div>
+
+        <div class="side-nav-menu">
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Baratta</div>
+                <div class="side-nav-item">
+                    <a href="conoce-a-baratta" class="side-nav-link">Conoce a Baratta</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="escucha-a-baratta" class="side-nav-link active">Escucha a Baratta</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="baratta-habla-de" class="side-nav-link">Baratta habla de...</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="sesiones-privadas" class="side-nav-link">Sesiones privadas</a>
+                </div>
+            </div>
+
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Dale Carley</div>
+                <div class="side-nav-item">
+                    <a href="conoce-a-dale-carley" class="side-nav-link">Conoce a Dale Carley</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="que-es-canalizacion" class="side-nav-link">¿Qué es la canalización?</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="entrevista-con-dale" class="side-nav-link">Entrevista con Dale</a>
+                </div>
+            </div>
+
+            <div class="side-nav-section">
+                <div class="side-nav-section-title">Páginas del Sitio</div>
+                <div class="side-nav-item">
+                    <a href="noticias" class="side-nav-link">Noticias</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="testimonios" class="side-nav-link">Testimonios</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="tienda-en-linea-proximamente" class="side-nav-link">Tienda en línea (proximamente)</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="terminos-y-politicas" class="side-nav-link">Términos y políticas</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="contactanos" class="side-nav-link">Contáctanos</a>
+                </div>
+                <div class="side-nav-item">
+                    <a href="bienvenido-a-opengateways" class="side-nav-link">🏠 Inicio</a>
+                </div>
+            </div>
+
+            <div class="side-nav-cta">
+                <h4>¿Listo para conectar?</h4>
+                <a href="https://schedule.opengateways.com" class="side-nav-cta-btn" target="_blank">📅 Agendar en Línea</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="page-wrapper">
+        <div class="main-content">
+            <div class="container">
+                <!-- Language Switcher with Mobile Menu Button -->
+				<div class="language-switcher">
+				    <!-- Mobile Menu Button (aligned with language switcher) -->
+				    <button class="nav-toggle-mobile" id="navToggleMobile" onclick="toggleSideNav()" aria-label="Toggle navigation menu">
+				        ☰ Menu
+				    </button>
+    
+				    <div class="language-flags">
+				        <img onclick="switchLanguage('en');" 
+				             onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('en');" 
+				             tabindex="0" 
+				             width="30" 
+				             height="16" 
+				             border="0" 
+				             title="English" 
+				             alt="English" 
+				             src="../assets/images/shared/us.svg">
+				        <img onclick="switchLanguage('es');" 
+				             onkeydown="if(event.key==='Enter'||event.key===' ') switchLanguage('es');" 
+				             tabindex="0" 
+				             width="30" 
+				             height="16" 
+				             border="0" 
+				             title="Español" 
+				             alt="Español" 
+				             src="../assets/images/shared/mx.svg">
+				    </div>
+				</div>
+
+                <!-- Site Logo Card -->
+                <div class="site-name-card">
+                    <a href="bienvenido-a-opengateways" class="home-button-logo" title="Inicio">
+                        <img src="../assets/images/shared/OG_logo_2025.png" alt="Open Gateways Inicio" class="site-logo">
+                    </a>
+                </div>
+
+                <!-- Header Banner -->
+                <div class="header-banner">
+                    <img src="../assets/images/main-site/es/Escucha_a_Baratta_banner_v2.jpg" alt="Escucha a Baratta" class="listen-baratta-banner">
+                </div>
+
+                <main>
+                    <div class="intro-section">
+                        <h2>Archivo del programa de radio "Una vida exuberante"</h2>
+                        <p>Desde febrero de 2009 hasta abril de 2010, Baratta fue anfitrión de "Una Vida Exuberante", un programa semanal de radio por Internet transmitido en vivo en LATalkRadio.com. En cada transmisión, Baratta exploró un tema espiritual único, con apariciones ocasionales de una variedad de invitados.</p>
+                        <p>Este archivo de grabaciones es un registro permanente de estos programas clásicos, disponible para ti en cualquier momento sin costo alguno.</p>
+                        <p><strong>¡Disfruta!</strong></p>
+                        <p class="audio-note"><em>Todos los programas están en inglés.</em></p>
+                    </div>
+
+                    <!-- Audio Player -->
+					<div class="audio-player" id="audioPlayer" style="display: none;">
+					    <button class="player-close-btn" id="playerCloseBtn" onclick="closePlayer()" aria-label="Close player">×</button>
+					    <div class="player-info">
+					        <div class="current-show" id="currentShow">No show selected</div>
+					        <div class="show-title" id="currentTitle">Choose a show to begin listening</div>
+					    </div>
+						<div class="audio-controls">
+						    <div class="control-btn" id="prevBtn" onclick="previousShow()" role="button" tabindex="0" aria-label="Previous show">⏮</div>
+						    <div class="control-btn play-btn" id="playBtn" onclick="togglePlay()" role="button" tabindex="0" aria-label="Play/Pause">▶</div>
+						    <div class="control-btn" id="nextBtn" onclick="nextShow()" role="button" tabindex="0" aria-label="Next show">⏭</div>
+						</div>
+					    <div class="progress-container">
+					        <span id="currentTime">0:00</span>
+					        <div class="progress-bar" id="progressBar" onclick="seekTo(event)">
+					            <div class="progress-fill" id="progressFill"></div>
+					        </div>
+					        <span id="duration">0:00</span>
+					    </div>
+					    <audio id="audioElement" preload="none"></audio>
+					</div>
+
+                    <div class="shows-list">
+                        <!-- Show #1 -->
+                        <div class="show-card" data-show="1">
+                            <div class="show-header">
+                                <div class="show-number">#1</div>
+                                <div class="show-date">Lunes, 2 de febrero de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Una vida exuberante" (Estreno)</div>
+                            <div class="show-description">En el estreno, Baratta introduce la idea de "Una Vida Exuberante" como una expresión de nosotros mismos que no está limitada por la convención, el hábito o la conformidad – una riqueza de ser verdaderamente nosotros mismos. El enfoque de esta noche es encontrar maneras de darle a toda la gama de nuestro ser emocional un hogar en nosotros - darnos un lugar seguro en nuestras vidas para "respirar" emocionalmente.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_01_20090202.mp3', 1, 'Una vida exuberante (Estreno)', 3153)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_01_20090202.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 52:09</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #2 -->
+                        <div class="show-card" data-show="2">
+                            <div class="show-header">
+                                <div class="show-number">#2</div>
+                                <div class="show-date">Lunes, 9 de febrero de 2009</div>
+                            </div>
+                            <div class="show-title-main">"La totalidad del ser"</div>
+                            <div class="show-description">Baratta habla con los oyentes sobre muchos aspectos de "Una Vida Exuberante": sentir emociones intensamente, ser aventurero en la vida con un sentido de abandono así como responsabilidad; cambiar nuestra relación con el miedo a una positiva; recibir y evaluar mensajes personales de fuentes no físicas; la mente racional y su papel en la totalidad del ser.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_02_20090209.mp3', 2, 'La totalidad del ser', 3599)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_02_20090209.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 59:34</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #3 -->
+                        <div class="show-card" data-show="3">
+                            <div class="show-header">
+                                <div class="show-number">#3</div>
+                                <div class="show-date">Lunes, 16 de febrero de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Hacia lo desconocido"</div>
+                            <div class="show-description">En el programa de esta noche, Baratta habla con los oyentes sobre una variedad de temas, incluyendo: enfrentar lo desconocido, con su miedo así como su emoción; desintoxicar nuestros cuerpos físicos liberándonos de emociones tóxicas; establecernos sólidamente en un nuevo nivel de éxito. Durante el programa, Baratta recibe una llamada de una familia que acaba de perder a su amado padre y esposo. Baratta solicita la ayuda de Tysa Goodrich, una escritora y música que también tiene la habilidad de percibir a aquellos que han cruzado. Juntos, Tysa y Baratta asisten a la familia en una comunicación amorosa con su ser querido fallecido.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_03_20090216.mp3', 3, 'Hacia lo desconocido', 3014)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_03_20090216.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 49:51</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #4 -->
+                        <div class="show-card" data-show="4">
+                            <div class="show-header">
+                                <div class="show-number">#4</div>
+                                <div class="show-date">Lunes, 23 de febrero de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Alcanzando la libertad"</div>
+                            <div class="show-description">Baratta habla con los oyentes sobre: ir más allá del miedo a cometer errores cuando las apuestas son altas; construir más confianza en nosotros mismos; conectar con el amor en lo que hacemos; dejar ir el perfeccionismo; tomar la decisión de tener hijos o no; experimentar profundidad emocional como parte de "Una Vida Exuberante"; ir hacia lo desconocido de nuestras vidas con una nueva profundidad de sentimiento; auto-perdón y la libertad que se puede encontrar al otro lado de él.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_04_20090223.mp3', 4, 'Alcanzando la libertad', 2737)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_04_20090223.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 45:19</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #5 -->
+                        <div class="show-card" data-show="5">
+                            <div class="show-header">
+                                <div class="show-number">#5</div>
+                                <div class="show-date">Lunes, 2 de marzo de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Con honor y amor"</div>
+                            <div class="show-description">Baratta recibe a la invitada que regresa, Tysa Goodrich, para el programa de esta noche dedicado a personas que han perdido seres queridos. Baratta y Tysa hablan con varios oyentes, con Tysa proporcionando un puente emocional para la comunicación entre ellos y sus seres queridos. Baratta también habla con oyentes sobre "limpiar el panorama" emocionalmente en preparación para un nuevo trabajo, y sanar el dolor que nunca parece terminar.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_05_20090302.mp3', 5, 'Con honor y amor', 3471)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_05_20090302.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 57:33</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #6 -->
+                        <div class="show-card" data-show="6">
+                            <div class="show-header">
+                                <div class="show-number">#6</div>
+                                <div class="show-date">Lunes, 9 de marzo de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Una contribución personal"</div>
+                            <div class="show-description">Baratta explora la esperanza como una energía poderosa y una contribución personal que podemos hacer a nuestro mundo. También discute la idea de que todos podemos ser sanadores de algún tipo - sin importar cuál sea nuestro trabajo. Con los oyentes, Baratta habla sobre el tema del derecho como respuesta al miedo, lidiar con las voces internas que nos frenan en nuestro trabajo elegido, y reclamar el ser imaginativo e intuitivo cuando se ha perdido. En medio del programa, Baratta nos ayuda a participar más activamente compartiendo la energía amorosa de nuestros corazones, conectando con cada otro oyente.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_06_20090309.mp3', 6, 'Una contribución personal', 3193)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_06_20090309.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 52:55</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #7 -->
+                        <div class="show-card" data-show="7">
+                            <div class="show-header">
+                                <div class="show-number">#7</div>
+                                <div class="show-date">Lunes, 16 de marzo de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Felicidad natural"</div>
+                            <div class="show-description">Esta noche Baratta habla en profundidad sobre la magia que se puede encontrar en nuestras interacciones con otros. Describe cómo a menudo optamos por la seguridad de patrones familiares de relacionarnos, y cómo, al alcanzar más allá de esos patrones, podemos encontrar nuevos niveles de intimidad, poder, esperanza y pasión. Continuando, Baratta habla de cómo estamos condicionados a aceptar "lo que es" para "ser felices" - estar "agradecidos por lo que tenemos", lo cual a menudo significa conformarse con lo que es, no buscar más, y apagar nuestra curiosidad natural, anhelo y pasión por lo que pueda venir después en nuestras vidas. Con un oyente, Baratta habla sobre dejar ir la necesidad de probar nuestra dignidad por los regalos que recibimos en nuestras vidas.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_07_20090316.mp3', 7, 'Felicidad natural', 3260)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_07_20090316.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 54:02</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #8 -->
+                        <div class="show-card" data-show="8">
+                            <div class="show-header">
+                                <div class="show-number">#8</div>
+                                <div class="show-date">Lunes, 23 de marzo de 2009</div>
+                            </div>
+                            <div class="show-title-main">"El regalo de la intimidad"</div>
+                            <div class="show-description">Esta noche Baratta nos ayuda a desenredar las razones por las que resistimos la intimidad más profunda, y cómo, al ir más allá de ellas, podemos descubrir el regalo que es la intimidad, para nosotros mismos y para otros. Baratta explora la pregunta: "¿Cuánto de nosotros mismos deberíamos compartir por el bien de la intimidad - deberíamos contar todos nuestros secretos?" Con un oyente, habla sobre ser responsable del impacto en otros, sentir nuevas profundidades de remordimiento, y auto-perdón. Con otro oyente, Baratta percibe la base emocional de una enfermedad que amenaza la vida de un familiar, y envía energía sanadora a esa persona.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_08_20090323.mp3', 8, 'El regalo de la intimidad', 2917)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_08_20090323.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 48:18</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #9 -->
+                        <div class="show-card" data-show="9">
+                            <div class="show-header">
+                                <div class="show-number">#9</div>
+                                <div class="show-date">Lunes, 30 de marzo de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Entrevista con Baratta (parte 1)"</div>
+                            <div class="show-description">En el fascinante programa de esta noche, Baratta tiene una conversación íntima con la invitada especial Jean-Noel Bassior, la periodista galardonada, autora y entrenadora de escritura/publicación que ha entrevistado a estrellas de cine, figuras políticas y autores de bestsellers para Redbook, McCall's, Parade, Woman's World y muchas otras publicaciones. Motivado por las preguntas perspicaces de la Sra. Bassior, Baratta habla en profundidad sobre de dónde viene, cómo es estar donde está, y por qué ha elegido atravesar la frontera entre su reino y el nuestro para pasar tiempo con nosotros.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_09_20090330.mp3', 9, 'Entrevista con Baratta (parte 1)', 3370)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_09_20090330.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 55:41</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #10 -->
+                        <div class="show-card" data-show="10">
+                            <div class="show-header">
+                                <div class="show-number">#10</div>
+                                <div class="show-date">Lunes, 6 de abril de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Mensajes del corazón"</div>
+                            <div class="show-description">La invitada de Baratta es Tysa Goodrich, quien regresa para el programa de esta noche dedicado a personas que han perdido seres queridos. Baratta comienza el programa invitando a Tysa a compartir cómo descubrió por primera vez que podía percibir a aquellos que habían cruzado, y sobre su habilidad particular como medium empático. Tysa y Baratta hablan con varios oyentes: Un padre que falleció envía un mensaje de disculpa y explicación por no mostrar su amor a sus hijas, y un oyente de un programa anterior pide una actualización sobre cómo está su difunto esposo en el otro lado. Al final del programa, un fantasma visita el estudio con un mensaje para Tysa.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_10_20090406.mp3', 10, 'Mensajes del corazón', 3175)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_10_20090406.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 52:36</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #11 -->
+                        <div class="show-card" data-show="11">
+                            <div class="show-header">
+                                <div class="show-number">#11</div>
+                                <div class="show-date">Lunes, 13 de abril de 2009</div>
+                            </div>
+                            <div class="show-title-main">"La alegría de ser físico"</div>
+                            <div class="show-description">Esta noche Baratta examina la relación entre nuestra consciencia y nuestra fisicalidad: cómo nuestro cuerpo físico es parte de nuestro viaje de crecimiento consciente y expansión, y cómo permitir que nuestra vida física sea la experiencia gozosa que puede ser. Con los oyentes, Baratta habla sobre descubrir nuestro miedo más profundo, encontrar claridad en la decisión de mudarse a una nueva ciudad, y cómo lidiar con las emociones confusas que acompañan el triple desafío de divorcio, modificación de préstamo, y la pérdida de un trabajo.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_11_20090413.mp3', 11, 'La alegría de ser físico', 3148)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_11_20090413.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 52:07</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #12 -->
+                        <div class="show-card" data-show="12">
+                            <div class="show-header">
+                                <div class="show-number">#12</div>
+                                <div class="show-date">Lunes, 20 de abril de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Entrevista con Baratta (parte 2)"</div>
+                            <div class="show-description">Baratta recibe de vuelta a la invitada Jean-Noel Bassior, la periodista galardonada, autora y entrenadora de escritura/publicación, mientras continúan su conversación íntima sobre la naturaleza de la existencia de Baratta. En respuesta a cada una de las preguntas de amplio alcance de la Sra. Bassior, Baratta describe su punto de vista no físico, luego examina cómo ese entendimiento puede ser útil para nosotros en nuestras vidas físicas. Las preguntas incluyen: ¿Cómo es ser no físico? ¿Qué haces en el reino no físico? ¿Cómo sería vivir sin el miedo a la muerte? ¿Qué existía antes del Big Bang? ...Una discusión verdaderamente fascinante.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_12_20090420.mp3', 12, 'Entrevista con Baratta (parte 2)', 3299)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_12_20090420.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 54:36</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #13 -->
+                        <div class="show-card" data-show="13">
+                            <div class="show-header">
+                                <div class="show-number">#13</div>
+                                <div class="show-date">Lunes, 27 de abril de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Tendiendo puentes sobre la división"</div>
+                            <div class="show-description">Baratta habla sobre las muchas maneras en que nos separamos unos de otros - y de nosotros mismos - y cómo sanar esa separación. Con un oyente, Baratta describe cómo ir más allá del miedo a la humillación y el rechazo que nos impide conectar más profundamente con otras personas. Con otro, explora cómo podemos lidiar con nuestros miedos personales sobre la crisis de la Gripe Porcina, y cómo usar ese proceso para hacer una contribución personal al mundo. Baratta también discute el poderoso proceso de desarrollar una nueva relación con el cambio, el caos y lo desconocido mientras alcanzamos más amor y felicidad en nuestras vidas.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_13_20090427.mp3', 13, 'Tendiendo puentes sobre la división', 2820)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_13_20090427.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 46:39</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #14 -->
+                        <div class="show-card" data-show="14">
+                            <div class="show-header">
+                                <div class="show-number">#14</div>
+                                <div class="show-date">Lunes, 4 de mayo de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Haciendo contacto"</div>
+                            <div class="show-description">Baratta recibe una vez más a Tysa Goodrich para una noche enfocada en seres queridos que han fallecido - y aquellos que quedan atrás. Tysa comparte cómo podemos conectar con nuestros seres queridos fallecidos, y cuenta dos historias fascinantes de comunicación con espíritus. Baratta y Tysa ayudan a un oyente a lidiar con el tema de una madre controladora que entregó un último castigo a su hija antes de morir. Otro oyente pide ayuda para conectar con sus abuelos que perecieron en el holocausto, y con un amigo cercano que murió más recientemente, queriendo preguntarle dónde quiere que esparza sus cenizas.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_14_20090504.mp3', 14, 'Haciendo contacto', 3113)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_14_20090504.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 51:31</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #15 -->
+                        <div class="show-card" data-show="15">
+                            <div class="show-header">
+                                <div class="show-number">#15</div>
+                                <div class="show-date">Lunes, 11 de mayo de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Un corazón abierto"</div>
+                            <div class="show-description">Esta noche Baratta nos invita a considerar cómo a veces cerramos nuestros corazones a las personas que nos rodean, y cómo abrir nuestros corazones más puede cambiar profundamente nuestras vidas, así como las vidas de aquellos que nos rodean. En una conversación muy íntima con un oyente, Baratta describe cómo lidiar con los destellos de ira que pueden surgir cuando nuestras viejas sensibilidades son activadas por un ser querido, causando que él o ella se sienta herido y abandonado. Baratta cierra con una hermosa descripción de lo que puede suceder dentro de nosotros cuando comenzamos a relacionarnos con nosotros mismos con un corazón abierto.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_15_20090511.mp3', 15, 'Un corazón abierto', 3095)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_15_20090511.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 51:11</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #16 -->
+                        <div class="show-card" data-show="16">
+                            <div class="show-header">
+                                <div class="show-number">#16</div>
+                                <div class="show-date">Lunes, 18 de mayo de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Pasión en el matrimonio"</div>
+                            <div class="show-description">Baratta recibe al invitado especial Franc Sloan, un orador hermosamente perspicaz que se describe a sí mismo como "un consultor espiritual con pasión por el misterio". Esta noche Franc comparte con Baratta sus experiencias hablando con hombres de todas las edades sobre la pasión que tan a menudo se pierde en las relaciones íntimas, y el remordimiento que los hombres sienten por esa pérdida. Juntos, Baratta y Franc examinan cómo las expectativas familiares de "lo que siempre pasa en las relaciones" pueden hacer que sea una conclusión inevitable que la pasión eventualmente muera. Mientras se desarrolla esta conversación animada, Baratta y Franc exploran cómo la pasión puede crecer continuamente cuando nos mantenemos en "el borde de vanguardia del amor".</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_16_20090518.mp3', 16, 'Pasión en el matrimonio', 2751)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_16_20090518.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 45:32</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #17 -->
+                        <div class="show-card" data-show="17">
+                            <div class="show-header">
+                                <div class="show-number">#17</div>
+                                <div class="show-date">Lunes, 25 de mayo de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Sexualidad valiente"</div>
+                            <div class="show-description">Baratta discute el proceso de abrirse a una experiencia más profunda y satisfactoria de nuestra sexualidad, así como el impacto de largo alcance que puede tener, no solo en el acto de ser sexual, sino en todas las facetas de nuestras vidas. Durante el programa, Baratta invita a Tysa Goodrich a unirse y compartir sus perspectivas sobre este tema profundamente personal. Juntos, Baratta y Tysa hablan de ir más allá del miedo de quedarse corto, permitir que el momento actual sea nuevo, y descubrir más de quiénes somos nosotros y nuestras parejas – mientras continuamente desplegamos el misterio de nuestros seres sexuales a través de la sexualidad valiente.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_17_20090525.mp3', 17, 'Sexualidad valiente', 3156)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_17_20090525.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 52:15</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #18 -->
+                        <div class="show-card" data-show="18">
+                            <div class="show-header">
+                                <div class="show-number">#18</div>
+                                <div class="show-date">Lunes, 1 de junio de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Antes del nacimiento"</div>
+                            <div class="show-description">Baratta recibe a su invitada que regresa, la escritora y música Tysa Goodrich, para una exploración fascinante de lo que sucede en el viaje de un alma antes del nacimiento, mientras se prepara para entrar al cuerpo del bebé dentro del útero. En su trabajo con una mujer, Tysa comparte la historia de cuánto había querido la mujer tener un bebé, el esposo que era reacio, y el mensaje amoroso que Tysa recibió del alma del niño por nacer. Baratta y Tysa hablan de la comunicación psíquica animada entre Tysa y el alma de su propio hijo no nacido durante su embarazo, incluyendo durante y después de conciertos musicales. Tysa comparte varias técnicas que las futuras madres (y padres) pueden usar para hacer esa hermosa conexión psíquica con su hijo no nacido.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_18_20090601.mp3', 18, 'Antes del nacimiento', 3205)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_18_20090601.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 53:02</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #19 -->
+                        <div class="show-card" data-show="19">
+                            <div class="show-header">
+                                <div class="show-number">#19</div>
+                                <div class="show-date">Lunes, 8 de junio de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Amor al dinero"</div>
+                            <div class="show-description">Baratta habla sobre crear un vínculo entre el amor y el dinero, para que el dinero se convierta en una de las expresiones de nuestro amor, valor y dignidad inherentes. Baratta comparte los beneficios de ir más allá de la idea de que el dinero es una medida de nuestro éxito. Con un oyente, Baratta explora cómo podemos liberarnos de la deuda emocional, la falta de perdón, y los patrones de lucha y competencia en el reino del dinero y el éxito.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_19_20090608.mp3', 19, 'Amor al dinero', 3162)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_19_20090608.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 52:18</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #20 -->
+                        <div class="show-card" data-show="20">
+                            <div class="show-header">
+                                <div class="show-number">#20</div>
+                                <div class="show-date">Lunes, 15 de junio de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Entrando al mundo de los cristales"</div>
+                            <div class="show-description">Baratta recibe a su invitado especial, el maestro artesano de cristales Lawrence Stoller, para una exploración fascinante de la relación entre los humanos y los cristales. Lawrence y Baratta discuten las maneras en que podemos interactuar con los cristales, y lo que puede suceder en nuestras vidas cuando lo hacemos. Exploran la capacidad de los cristales de "despertar" en respuesta a nuestra apreciación de su belleza, y Lawrence comparte hermosas historias de experiencias que cambian la vida que las personas han tenido con cristales en su estudio.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_20_20090615.mp3', 20, 'Entrando al mundo de los cristales', 3223)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_20_20090615.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 53:24</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #21 -->
+                        <div class="show-card" data-show="21">
+                            <div class="show-header">
+                                <div class="show-number">#21</div>
+                                <div class="show-date">Lunes, 6 de julio de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Más allá de la ilusión de posesión"</div>
+                            <div class="show-description">El impulso de poseer a alguien o algo puede surgir repentinamente, desde lo profundo de nosotros, cuando más tememos perder lo que nos importa. Puede alejar a otros de nosotros, y hacernos sentir más débiles y aislados que nunca. Con un oyente, Baratta explica cómo la posesividad puede ser una manera de evitar y controlar emociones, especialmente el miedo. Únete a Baratta mientras explora cómo podemos liberarnos a nosotros mismos y a otros de este patrón aprisionante de vida.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_21_20090706.mp3', 21, 'Más allá de la ilusión de posesión', 2769)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_21_20090706.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 45:51</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #22 -->
+                        <div class="show-card" data-show="22">
+                            <div class="show-header">
+                                <div class="show-number">#22</div>
+                                <div class="show-date">Lunes, 13 de julio de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Una nueva fundación de amor"</div>
+                            <div class="show-description">Todos conocemos la intensidad, la pasión, el torbellino de enamorarse, pero a menudo tratamos de ignorar el dolor, real o anticipado, que puede estar debajo de esa intensidad. Únete a Baratta esta noche para aprender cómo sanar ese dolor, y establecer una nueva fundación sobre la cual pararnos mientras nos abrimos a más amor en nuestras vidas.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_22_20090713.mp3', 22, 'Una nueva fundación de amor', 3229)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_22_20090713.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 53:28</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #23 -->
+                        <div class="show-card" data-show="23">
+                            <div class="show-header">
+                                <div class="show-number">#23</div>
+                                <div class="show-date">Lunes, 20 de julio de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Tu futuro radiante"</div>
+                            <div class="show-description">En cada momento nuestra consciencia está sintonizada a un rango particular de posibilidad. Dentro de ese rango, las expectativas del pasado pueden limitar lo que imaginamos para el futuro. Únete a Baratta esta noche mientras revela cómo podemos resintonizar nuestro rango de posibilidad para que podamos recibir elegantemente nuestro futuro más radiante.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_23_20090720.mp3', 23, 'Tu futuro radiante', 3203)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_23_20090720.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 53:02</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #24 -->
+                        <div class="show-card" data-show="24">
+                            <div class="show-header">
+                                <div class="show-number">#24</div>
+                                <div class="show-date">Lunes, 27 de julio de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Profundizando tu confianza"</div>
+                            <div class="show-description">Una de las cosas más aterradoras en la vida es abrirse a confiar más en alguien, ya sea esa persona otra persona o tú mismo. Muy a menudo el miedo viene del conocimiento de que con mayor confianza viene un mayor riesgo de ser lastimado. Únete a Baratta esta noche mientras explica cómo navegar ese miedo y construir nueva confianza que puede convertirse en una fundación para mayor amor y felicidad en nuestras vidas.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_24_20090727.mp3', 24, 'Profundizando tu confianza', 3196)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_24_20090727.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 52:55</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #25 -->
+                        <div class="show-card" data-show="25">
+                            <div class="show-header">
+                                <div class="show-number">#25</div>
+                                <div class="show-date">Lunes, 3 de agosto de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Terminando la autocrítica negativa"</div>
+                            <div class="show-description">¿Cuántos de nosotros hemos dicho estas palabras? "Soy mi peor crítico." Esta declaración es un recordatorio de cuán duros podemos ser con nosotros mismos, algo en lo que confiamos con la vana esperanza de que la auto-amonestación traiga un fin a nuestros sentimientos de inadecuación. Únete a Baratta mientras examina los orígenes de la autocrítica negativa, y cómo podemos terminarla de una vez por todas.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_25_20090803.mp3', 25, 'Terminando la autocrítica negativa', 3337)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_25_20090803.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 55:18</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #26 -->
+                        <div class="show-card" data-show="26">
+                            <div class="show-header">
+                                <div class="show-number">#26</div>
+                                <div class="show-date">Lunes, 10 de agosto de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Más allá de la muerte: milagros de comunicación"</div>
+                            <div class="show-description">Abrirse a la comunicación amorosa más allá de la muerte puede proporcionar consuelo para los vivos, y sanación en ambos lados. En su nuevo camino, aquellos que han cruzado a menudo necesitan hacer saber a sus seres queridos que están bien. Únete a Baratta y Tysa Goodrich mientras discuten maneras en las que podemos abrirnos a estos milagros de comunicación que pueden ser recibidos y regalados en ambos lados. Durante el programa, Tysa y Baratta asisten a un oyente en contactar a un amigo de toda la vida recientemente fallecido.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_26_20090810.mp3', 26, 'Más allá de la muerte: milagros de comunicación', 3127)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_26_20090810.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 51:48</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #27 -->
+                        <div class="show-card" data-show="27">
+                            <div class="show-header">
+                                <div class="show-number">#27</div>
+                                <div class="show-date">Lunes, 7 de septiembre de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Un nuevo paradigma personal: poder, creatividad, y manifestando tus sueños"</div>
+                            <div class="show-description">Baratta recibe a su invitado especial, el cineasta y fotógrafo Norman Seeff, quien durante tres décadas ha explorado las dinámicas internas del proceso creativo con cientos de los más grandes artistas e innovadores del mundo. Únete a Baratta y Norman mientras discuten cómo podemos hacer un cambio de paradigma personal, liberando nuestro poder y creatividad ilimitados para manifestar nuestros sueños.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_27_20090907.mp3', 27, 'Un nuevo paradigma personal: poder, creatividad, y manifestando tus sueños', 3212)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_27_20090907.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 53:12</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #28 -->
+                        <div class="show-card" data-show="28">
+                            <div class="show-header">
+                                <div class="show-number">#28</div>
+                                <div class="show-date">Lunes, 26 de octubre de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Tu autonomía personal"</div>
+                            <div class="show-description">Esta noche Baratta habla en profundidad sobre cómo podemos resistir, y luego cómo podemos encontrar la plenitud de nuestra autonomía. Como Baratta lo describe, "Hay una paz maravillosa que se puede encontrar en la búsqueda y descubrimiento de tu autonomía personal. Es una paz que viene de saber que las elecciones que haces en tu vida son verdaderamente tuyas."</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_28_20091026.mp3', 28, 'Tu autonomía personal', 3077)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_28_20091026.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 50:57</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #29 -->
+                        <div class="show-card" data-show="29">
+                            <div class="show-header">
+                                <div class="show-number">#29</div>
+                                <div class="show-date">Lunes, 2 de noviembre de 2009</div>
+                            </div>
+                            <div class="show-title-main">"La danza de la dualidad"</div>
+                            <div class="show-description">Esta noche Baratta nos invita a un viaje fascinante hacia la magia y misterio que es nuestro universo de dualidad: lo oscuro y lo claro, lo femenino y masculino, el yin y yang, y "lo que funciona y lo que no". Paso a paso, Baratta comparte cómo podemos traer mayor elegancia y facilidad a nuestras vidas reconociendo tanto nuestros fracasos como nuestros éxitos como partes integrales de nuestra Danza de la Dualidad.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_29_20091102.mp3', 29, 'La danza de la dualidad', 3071)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_29_20091102.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 50:52</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #30 -->
+                        <div class="show-card" data-show="30">
+                            <div class="show-header">
+                                <div class="show-number">#30</div>
+                                <div class="show-date">Lunes, 9 de noviembre de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Lidiar con el miedo al cambio"</div>
+                            <div class="show-description">Es un tiempo de cambio dramático en nuestro mundo, tanto global como personalmente. Únete a Baratta esta noche mientras explora las muchas maneras en que el cambio puede asustarnos y activar nuestros mecanismos habituales de supervivencia, y cómo ir más allá de ellos hacia una nueva experiencia emocionante de la vida.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_30_20091109.mp3', 30, 'Lidiar con el miedo al cambio', 3207)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_30_20091109.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 53:27</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #31 -->
+                        <div class="show-card" data-show="31">
+                            <div class="show-header">
+                                <div class="show-number">#31</div>
+                                <div class="show-date">Lunes, 14 de diciembre de 2009</div>
+                            </div>
+                            <div class="show-title-main">"La temporada de dar"</div>
+                            <div class="show-description">Baratta explora el sentido familiar de obligación y estrés que acompaña las fiestas de fin de año, y la oportunidad que esta época del año puede ser para el descubrimiento y expresión más profunda de tu propio amor y el amor de otros.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_31_20091214.mp3', 31, 'La temporada de dar', 3157)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_31_20091214.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 52:18</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #32 -->
+                        <div class="show-card" data-show="32">
+                            <div class="show-header">
+                                <div class="show-number">#32</div>
+                                <div class="show-date">Lunes, 21 de diciembre de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Una pausa fértil"</div>
+                            <div class="show-description">Esta época de dar puede estar llena de ansiedad y estrés, incluso temor, y puede llevarte a querer que termine lo más pronto posible. Pero hay otra posibilidad: permitir que este sea un tiempo en el que hagas una pausa, para clarificar y purificar tu amor, en preparación para un rango completamente nuevo de expresión amorosa en un nuevo año emocionante. Únete a Baratta mientras revela una manera poderosa y nueva de experimentar la temporada navideña.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_32_20091221.mp3', 32, 'Una pausa fértil', 3237)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_32_20091221.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 53:35</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #33 -->
+                        <div class="show-card" data-show="33">
+                            <div class="show-header">
+                                <div class="show-number">#33</div>
+                                <div class="show-date">Lunes, 28 de diciembre de 2009</div>
+                            </div>
+                            <div class="show-title-main">"Terminando la separación del amor"</div>
+                            <div class="show-description">Mientras te preparas para un Año Nuevo que pronto llegará, estableciendo una nueva fundación de resonancia sobre la cual construir, puede ser útil trabajar con las maneras en que te separas de tu amor y del amor de aquellos que te rodean. Te invitamos a unirte a nosotros esta noche mientras exploramos juntos cómo terminar esa separación del amor. – Baratta</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_33_20091228.mp3', 33, 'Terminando la separación del amor', 3208)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_33_20091228.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 53:08</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #34 -->
+                        <div class="show-card" data-show="34">
+                            <div class="show-header">
+                                <div class="show-number">#34</div>
+                                <div class="show-date">Lunes, 4 de enero de 2010</div>
+                            </div>
+                            <div class="show-title-main">"Socios en el amor"</div>
+                            <div class="show-description">¿Qué ha sido la sociedad para ti en el pasado? ¿Cómo te gustaría que fuera mejor? Esta noche Baratta habla sobre el tema de la sociedad dentro de una relación amorosa – contigo mismo, otro, amigos o asociados, o incluso aquellos amigos invisibles que están más allá del mundo físico.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_34_20100104.mp3', 34, 'Socios en el amor', 3253)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_34_20100104.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 53:51</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #35 -->
+                        <div class="show-card" data-show="35">
+                            <div class="show-header">
+                                <div class="show-number">#35</div>
+                                <div class="show-date">Lunes, 11 de enero de 2010</div>
+                            </div>
+                            <div class="show-title-main">"Resolviendo la paradoja de la sensibilidad"</div>
+                            <div class="show-description">Una de nuestras capacidades humanas más hermosas es la habilidad de ser tocados por el mundo que nos rodea. Sin embargo, la sensibilidad es a menudo evitada, negada, mal usada, y juzgada como una debilidad. Por un lado, no queremos cerrar nuestra sensibilidad, pero tampoco queremos ser tan sensibles que no podamos soportar estar en el mundo, cerca de personas o "energías negativas". El poder está en la resolución de esta paradoja. Únete a Baratta y su invitada, la escritora y música Tysa Goodrich, mientras exploran ambos lados de la sensibilidad, y discuten cómo podemos despertar el poder creativo necesario para hacer una diferencia en un mundo dinámicamente cambiante.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_35_20100111.mp3', 35, 'Resolviendo la paradoja de la sensibilidad', 3189)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_35_20100111.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 52:46</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #36 -->
+                        <div class="show-card" data-show="36">
+                            <div class="show-header">
+                                <div class="show-number">#36</div>
+                                <div class="show-date">Lunes, 18 de enero de 2010</div>
+                            </div>
+                            <div class="show-title-main">"Momentos de oportunidad"</div>
+                            <div class="show-description">Cada día de tu vida es rico en oportunidades, pero muchas veces es como si estuvieran escondidas a plena vista. Aprender a ver, y sí, a responder a esas oportunidades puede acelerar el ritmo de tu crecimiento, tu expansión, y tu éxito, mucho más allá de lo que puedas haber imaginado. Te invitamos a unirte a nosotros mientras nos embarcamos en otra aventura más en tu vida exuberante. – Baratta</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_36_20100118.mp3', 36, 'Momentos de oportunidad', 2598)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_36_20100118.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 42:53</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #37 -->
+                        <div class="show-card" data-show="37">
+                            <div class="show-header">
+                                <div class="show-number">#37</div>
+                                <div class="show-date">Lunes, 8 de febrero de 2010</div>
+                            </div>
+                            <div class="show-title-main">"El regalo de la auto-aceptación"</div>
+                            <div class="show-description">Pasas mucho de tu vida midiendo las maneras en que eres, o no eres, aceptable para otros, a menudo trabajando muy duro para hacerte más aceptable. Sin embargo, el sentimiento de ser aceptado nunca parece encontrar completamente un hogar en ti. Es tiempo ahora de darte ese regalo – el regalo de la auto-aceptación. – Baratta. Uniéndose a Baratta en el estudio están los invitados Cathy Stubbs, Richard Stubbs, y Tysa Goodrich para una discusión animada sobre este tema importante.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_37_20100208.mp3', 37, 'El regalo de la auto-aceptación', 3063)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_37_20100208.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 50:41</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #38 -->
+                        <div class="show-card" data-show="38">
+                            <div class="show-header">
+                                <div class="show-number">#38</div>
+                                <div class="show-date">Lunes, 22 de febrero de 2010</div>
+                            </div>
+                            <div class="show-title-main">"Una confianza sagrada: el amor de tu vida"</div>
+                            <div class="show-description">En las relaciones amorosas íntimas, tan a menudo uno, y muchas veces, ambas personas renuncian a parte de sí mismas, creyendo que deben hacerlo por el bien de la relación. De esta manera piezas significativas del ser pueden ser abandonadas, dejadas atrás, causando dolor y resentimiento. Únete a nosotros esta noche mientras buscamos un camino más allá de esta avenida bien transitada, para explorar lo que puede ser tener el amor de tu vida, y traer una nueva honestidad, libertad y autonomía a esta confianza más sagrada. – Baratta. Uniéndose a Baratta esta noche está la invitada Tysa Goodrich, quien comparte algunas perspectivas fascinantes sobre su relación con su esposo, el canal Dale Carley. Con un oyente, Baratta y Tysa exploran cómo dejar de esperar hasta que seamos "suficientes" para tener lo que queremos en nuestras vidas.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_38_20100222.mp3', 38, 'Una confianza sagrada: el amor de tu vida', 3189)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_38_20100222.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 52:41</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #39 -->
+                        <div class="show-card" data-show="39">
+                            <div class="show-header">
+                                <div class="show-number">#39</div>
+                                <div class="show-date">Lunes, 1 de marzo de 2010</div>
+                            </div>
+                            <div class="show-title-main">"Defendiendo la libertad: una mirada más profunda"</div>
+                            <div class="show-description">Desde la época de la juventud temprana, muchos de ustedes han buscado libertad de influencias que sentían que los limitaban, ya fueran padres, instituciones, o incluso "la vida". Muchas veces traen tales luchas a sus relaciones adultas personales también. Esta noche los invitamos a unirse a nosotros mientras miramos más profundamente tanto la búsqueda como las luchas, para descubrir tu verdadera fuente de libertad interna, y cómo puedes usar esa libertad personal para cambiar tu vida—y tu mundo. – Baratta. Durante el programa, Baratta habla con un oyente (e invitado previo) Richard Stubbs sobre los temas de libertad que surgen dentro de las familias.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_39_20100301.mp3', 39, 'Defendiendo la libertad: una mirada más profunda', 3100)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_39_20100301.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 51:19</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #40 -->
+                        <div class="show-card" data-show="40">
+                            <div class="show-header">
+                                <div class="show-number">#40</div>
+                                <div class="show-date">Lunes, 15 de marzo de 2010</div>
+                            </div>
+                            <div class="show-title-main">"Límites: tu dominio personal"</div>
+                            <div class="show-description">En un mundo donde el amor está tan a menudo en cuestión, puede ser desafiante establecer y respetar los límites de ti mismo o de otros. Los invitamos a unirse a nosotros esta noche mientras exploramos la interacción delicada entre tu amorosidad y tus límites personales, y cómo encontrar un nuevo equilibrio de tu poder y vulnerabilidad. – Baratta. Baratta tiene una conversación íntima con su invitada Tysa Goodrich sobre un desafío que ella enfrenta con límites en su vida. Con oyentes, Baratta y Tysa discuten cómo lidiar con temas de límites que surgen tanto en relaciones familiares como románticas.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_40_20100315.mp3', 40, 'Límites: tu dominio personal', 3126)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_40_20100315.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 51:51</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #41 -->
+                        <div class="show-card" data-show="41">
+                            <div class="show-header">
+                                <div class="show-number">#41</div>
+                                <div class="show-date">Lunes, 22 de marzo de 2010</div>
+                            </div>
+                            <div class="show-title-main">"Haciendo una diferencia"</div>
+                            <div class="show-description">¿Qué tan a menudo sueñas con hacer una diferencia en el mundo, solo para despertar de ese sueño y encontrar que tu vida continúa siguiendo la misma rutina día a día de sobrevivir? Los invitamos a unirse a nosotros esta noche mientras exploramos cómo dar un paso más allá de las rutinas limitantes y verdaderamente hacer una diferencia positiva en tu propia vida y las vidas de otros. – Baratta</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_41_20100322.mp3', 41, 'Haciendo una diferencia', 3097)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_41_20100322.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 51:13</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #42 -->
+                        <div class="show-card" data-show="42">
+                            <div class="show-header">
+                                <div class="show-number">#42</div>
+                                <div class="show-date">Lunes, 29 de marzo de 2010</div>
+                            </div>
+                            <div class="show-title-main">"La magia del desafío"</div>
+                            <div class="show-description">Para muchos de ustedes, los desafíos de la vida están aumentando, tanto en tu vida personal como en tu mundo. Tan a menudo estos desafíos parecen amenazantes y aterradores, y muchas personas correrían al pasado o culparían a otros por lo que está mal con el mundo. Los invitamos a unirse a nosotros esta noche mientras exploramos lo que el desafío puede ser a nivel personal y global – una parte mágica y poderosa de una vida emocionante y satisfactoria. – Baratta</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_42_20100329.mp3', 42, 'La magia del desafío', 3181)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_42_20100329.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 50:44</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #43 -->
+                        <div class="show-card" data-show="43">
+                            <div class="show-header">
+                                <div class="show-number">#43</div>
+                                <div class="show-date">Lunes, 5 de abril de 2010</div>
+                            </div>
+                            <div class="show-title-main">"Sanando la herida psíquica de la traición, parte 1"</div>
+                            <div class="show-description">De los muchos desafíos que ocurren en tu vida, es la traición la que puede herirte más profundamente. El efecto psíquico de que alguien te traicione puede durar años, incluso toda una vida, alterando la manera en que te relacionas con todos y todo en tu vida. Únete a nosotros esta noche mientras miramos las maneras en que esta herida puede interrumpir tu viaje, y cómo puedes sanar e ir más allá de tales heridas para siempre. – Baratta. Uniéndose a Baratta esta noche está la invitada Tysa Goodrich para una discusión íntima de este tema conmovedor.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_43_20100405.mp3', 43, 'Sanando la herida psíquica de la traición, parte 1', 3176)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_43_20100405.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 52:36</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #44 -->
+                        <div class="show-card" data-show="44">
+                            <div class="show-header">
+                                <div class="show-number">#44</div>
+                                <div class="show-date">Lunes, 12 de abril de 2010</div>
+                            </div>
+                            <div class="show-title-main">"Sanando la herida psíquica de la traición, parte 2"</div>
+                            <div class="show-description">La herida psíquica de la traición puede durar toda una vida si no se atiende conscientemente. Los invitamos a unirse a nosotros esta noche mientras continuamos explorando este camino de sanación. No hay una respuesta para cada persona; no hay un solo camino para la reconstrucción de la confianza, seguridad y felicidad. Esta noche miramos varias avenidas diferentes para ir más allá de esta herida psíquica para siempre. Baratta está acompañado nuevamente por Tysa Goodrich, mientras continúan su discusión íntima sobre este tema conmovedor.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_44_20100412.mp3', 44, 'Sanando la herida psíquica de la traición, parte 2', 3195)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_44_20100412.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 52:54</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #45 -->
+                        <div class="show-card" data-show="45">
+                            <div class="show-header">
+                                <div class="show-number">#45</div>
+                                <div class="show-date">Lunes, 19 de abril de 2010</div>
+                            </div>
+                            <div class="show-title-main">"Llegando a la madurez"</div>
+                            <div class="show-description">A lo largo de tu vida, sin importar qué edad tengas, has alcanzado y cruzado umbrales de edad que han tenido gran significado para ti. Los umbrales tempranos a menudo traen sentimientos de emoción y libertad, pero los posteriores pueden traer un sentido de miedo, pérdida, dolor, o temor. Esta noche miramos el viaje de envejecer, con sus caminos familiares y los sentimientos intensos que pueden acompañarlos. Te damos la bienvenida mientras exploramos nuevas maneras de transformar el significado de envejecer, y por lo tanto la experiencia de ello, en una aventura emocionante y expansiva. – Baratta. Uniéndose a Baratta esta noche está la invitada Tysa Goodrich, quien habla íntimamente sobre la experiencia de envejecer como mujer en nuestra sociedad.</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_45_20100419.mp3', 45, 'Llegando a la madurez', 3165)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_45_20100419.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 52:27</div>
+                            </div>
+                        </div>
+
+                        <!-- Show #46 - Final Show -->
+                        <div class="show-card" data-show="46">
+                            <div class="show-header">
+                                <div class="show-number">#46</div>
+                                <div class="show-date">Lunes, 26 de abril de 2010</div>
+                            </div>
+                            <div class="show-title-main">"Saber que eres amado" (programa final)</div>
+                            <div class="show-description">A lo largo de tu vida puede parecer que gran parte de tu enfoque está en descubrir si eres amado o no, lo cual es verdaderamente una expresión de la creencia de que no lo eres. Te invitamos a explorar con nosotros esta noche mientras observamos las maneras en que tratas de saber que eres amado, pero más aún, buscaremos las formas en que puedes encontrar la verdad – que eres, y siempre has sido, más verdaderamente amado de lo que sabes. – Baratta</div>
+                            <div class="show-actions">
+                                <button class="action-btn play-show-btn" onclick="playShow('../assets/media/main-site/shared/LLRadio/A_Luscious_Life_46_20100426.mp3', 46, 'Saber que Eres Amado', 3163)">▶ Escuchar</button>
+                                <a href="../download.php?file=assets/media/main-site/shared/LLRadio/A_Luscious_Life_46_20100426.mp3" class="action-btn download-btn" onclick="closePlayerOnDownload()">📥 Descargar</a>
+                                <div class="show-duration">🕐 52:26</div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <footer>
+                    <p>Copyright © <script>document.write(new Date().getFullYear())</script> Open Gateways, Inc. – Todos los derechos reservados.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Audio Player Variables
+        let currentAudio = null;
+        let currentShowIndex = -1;
+        let isPlaying = false;
+        let showsData = [];
+
+        // Initialize shows data
+        function initializeShows() {
+            const showCards = document.querySelectorAll('.show-card');
+            showCards.forEach((card, index) => {
+                const showNumber = parseInt(card.dataset.show);
+                const titleElement = card.querySelector('.show-title-main');
+                const title = titleElement ? titleElement.textContent.replace(/"/g, '') : `Programa ${showNumber}`;
+                
+                showsData.push({
+                    number: showNumber,
+                    title: title,
+                    element: card
+                });
+            });
+        }
+
+        // Play specific show
+        function playShow(audioUrl, showNumber, title, duration) {
+            const audioPlayer = document.getElementById('audioPlayer');
+            const audioElement = document.getElementById('audioElement');
+            const currentShow = document.getElementById('currentShow');
+            const currentTitle = document.getElementById('currentTitle');
+            const playBtn = document.getElementById('playBtn');
+
+            // Update current show index
+            currentShowIndex = showsData.findIndex(show => show.number === showNumber);
+
+            // Stop current audio if playing
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio = null;
+            }
+
+            // Update UI
+            document.querySelectorAll('.show-card').forEach(card => card.classList.remove('playing'));
+            document.querySelector(`[data-show="${showNumber}"]`).classList.add('playing');
+
+            // Show player
+            audioPlayer.style.display = 'block';
+            currentShow.textContent = `Programa #${showNumber}`;
+            currentTitle.textContent = title;
+
+            // Setup audio
+            audioElement.src = audioUrl;
+            currentAudio = audioElement;
+
+            // Update play button
+            playBtn.textContent = '⏸';
+            isPlaying = true;
+
+            // Play audio
+            audioElement.play().catch(error => {
+                console.error('Error reproduciendo audio:', error);
+                playBtn.textContent = '▶';
+                isPlaying = false;
+            });
+
+            // Scroll player into view
+            audioPlayer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Toggle play/pause
+        function togglePlay() {
+            if (!currentAudio) return;
+
+            const playBtn = document.getElementById('playBtn');
+
+            if (isPlaying) {
+                currentAudio.pause();
+                playBtn.textContent = '▶';
+                isPlaying = false;
+            } else {
+                currentAudio.play().catch(error => {
+                    console.error('Error reproduciendo audio:', error);
+                });
+                playBtn.textContent = '⏸';
+                isPlaying = true;
+            }
+        }
+
+		// Previous show
+		function previousShow() {
+		    if (currentShowIndex > 0) {
+		        const prevShow = showsData[currentShowIndex - 1];
+		        prevShow.element.querySelector('.play-show-btn').click();
+		    }
+		}
+
+		// Next show
+		function nextShow() {
+		    if (currentShowIndex < showsData.length - 1) {
+		        const nextShow = showsData[currentShowIndex + 1];
+		        nextShow.element.querySelector('.play-show-btn').click();
+		    }
+		}
+
+        // Seek to position
+        function seekTo(event) {
+            if (!currentAudio) return;
+
+            const progressBar = document.getElementById('progressBar');
+            const rect = progressBar.getBoundingClientRect();
+            const clickX = event.clientX - rect.left;
+            const width = rect.width;
+            const percentage = clickX / width;
+            const seekTime = percentage * currentAudio.duration;
+
+            currentAudio.currentTime = seekTime;
+        }
+
+        // Format time
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = Math.floor(seconds % 60);
+            return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+        }
+
+		function closePlayer() {
+		    const audioPlayer = document.getElementById('audioPlayer');
+		    const audioElement = document.getElementById('audioElement');
+		    const playBtn = document.getElementById('playBtn');
+		    const progressFill = document.getElementById('progressFill');
+		    const currentTime = document.getElementById('currentTime');
+
+		    // Stop audio if playing
+		    if (currentAudio) {
+		        currentAudio.pause();
+		        currentAudio = null;
+		    }
+
+		    // Reset UI
+		    audioPlayer.style.display = 'none';
+		    playBtn.textContent = '▶';
+		    isPlaying = false;
+		    progressFill.style.width = '0%';
+		    currentTime.textContent = '0:00';
+
+		    // Remove playing class from all show cards
+		    document.querySelectorAll('.show-card').forEach(card => card.classList.remove('playing'));
+		    // For interview-with-dale.html, remove from interview cards
+		    document.querySelectorAll('.interview-card').forEach(card => card.classList.remove('playing'));
+		}
+		
+		function closePlayerOnDownload() {
+		    const audioElement = document.getElementById('audioElement');
+    
+		    // Only close if player is paused (not playing)
+		    if (currentAudio && audioElement.paused) {
+		        closePlayer();
+		    }
+		}
+		
+		// Audio event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeShows();
+
+            const audioElement = document.getElementById('audioElement');
+            const currentTime = document.getElementById('currentTime');
+            const duration = document.getElementById('duration');
+            const progressFill = document.getElementById('progressFill');
+            const playBtn = document.getElementById('playBtn');
+
+            // Update progress
+            audioElement.addEventListener('timeupdate', function() {
+                if (audioElement.duration) {
+                    const progress = (audioElement.currentTime / audioElement.duration) * 100;
+                    progressFill.style.width = progress + '%';
+                    currentTime.textContent = formatTime(audioElement.currentTime);
+                }
+            });
+
+            // Update duration when loaded
+            audioElement.addEventListener('loadedmetadata', function() {
+                duration.textContent = formatTime(audioElement.duration);
+            });
+
+            // Handle audio end
+            audioElement.addEventListener('ended', function() {
+                playBtn.textContent = '▶';
+                isPlaying = false;
+                progressFill.style.width = '0%';
+                currentTime.textContent = '0:00';
+
+                // Auto-play next show
+                if (currentShowIndex < showsData.length - 1) {
+                    setTimeout(() => nextShow(), 1000);
+                }
+            });
+
+            // Handle audio errors
+            audioElement.addEventListener('error', function() {
+                playBtn.textContent = '▶';
+                isPlaying = false;
+                alert('Error cargando audio. Por favor intenta de nuevo o descarga el archivo.');
+            });
+        });
+
+        // Navigation functions
+        function toggleSideNav() {
+            const sideNav = document.getElementById('sideNav');
+            const navToggleDesktop = document.getElementById('navToggleDesktop');
+            const navToggleMobile = document.getElementById('navToggleMobile');
+            const navOverlay = document.getElementById('navOverlay');
+            const body = document.body;
+            
+            if (sideNav.classList.contains('open')) {
+                closeSideNav();
+            } else {
+                sideNav.classList.add('open');
+                if (navToggleDesktop) navToggleDesktop.classList.add('nav-open');
+                if (navToggleMobile) navToggleMobile.classList.add('nav-open');
+                navOverlay.classList.add('active');
+                body.classList.add('nav-open-body');
+            }
+        }
+
+        function closeSideNav() {
+            const sideNav = document.getElementById('sideNav');
+            const navToggleDesktop = document.getElementById('navToggleDesktop');
+            const navToggleMobile = document.getElementById('navToggleMobile');
+            const navOverlay = document.getElementById('navOverlay');
+            const body = document.body;
+            
+            sideNav.classList.remove('open');
+            if (navToggleDesktop) navToggleDesktop.classList.remove('nav-open');
+            if (navToggleMobile) navToggleMobile.classList.remove('nav-open');
+            navOverlay.classList.remove('active');
+            body.classList.remove('nav-open-body');
+        }
+
+        // Close nav on escape key
+        document.addEventListener('keydown', function(e) {
+		    if (e.key === 'Escape') {
+		        // Close side nav if open
+		        if (document.getElementById('sideNav').classList.contains('open')) {
+		            closeSideNav();
+		        } 
+		        // Otherwise close audio player if open
+		        else if (document.getElementById('audioPlayer').style.display !== 'none') {
+		            closePlayer();
+		        }
+		    }
+        });
+
+    </script>
+</body>
+</html>

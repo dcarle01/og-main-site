@@ -1,0 +1,572 @@
+<!-- Version: 1.1.0 | Created: 2025-08-15 | Last Modified: 2026-02-03 | Author: Open Gateways Team -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Gateways - Welcome / Bienvenidos</title>
+    <meta name="description" content="Welcome to Open Gateways - Choose your country to continue. An intimate and safe place to explore spiritual growth through channeling with Baratta.">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/shared/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="./assets/images/shared/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/shared/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/shared/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/shared/apple-touch-icon.png">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 650px;
+            width: 90%;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Site Logo Card */
+        .site-name-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            padding: 10px 17px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 11px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            max-width: 340px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .logo-display {
+            display: block;
+        }
+
+        .site-logo {
+            max-width: 85%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            min-height: 45px;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .country-selection {
+            margin: 30px 0;
+        }
+
+        .selection-title {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin-bottom: 25px;
+            font-weight: normal;
+            line-height: 1.5;
+        }
+
+        .country-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .country-btn {
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            border: none;
+            padding: 20px 25px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(1, 132, 246, 0.3);
+            min-width: 150px;
+        }
+
+        .country-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(1, 132, 246, 0.4);
+            background: linear-gradient(135deg, #0164c9 0%, #0144a0 100%);
+        }
+
+        .country-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .country-btn .flag-img {
+            width: 40px;
+            height: 27px;
+            border-radius: 3px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .country-btn .country-name {
+            font-size: 1.1rem;
+        }
+
+        .country-btn .country-lang {
+            font-size: 0.85rem;
+            font-weight: normal;
+            opacity: 0.9;
+        }
+
+        /* Other Countries Button */
+        .other-btn {
+            background: linear-gradient(135deg, #38b2ac 0%, #2c7a7b 100%);
+            padding: 15px 30px;
+            flex-direction: row;
+            gap: 12px;
+            width: 320px;
+            min-width: 320px;
+        }
+
+        .other-btn:hover {
+            background: linear-gradient(135deg, #2c7a7b 0%, #234e52 100%);
+        }
+
+        .other-btn .globe-icon {
+            font-size: 1.5rem;
+        }
+
+        .other-btn .other-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2px;
+        }
+
+        .other-btn .other-primary {
+            font-size: 1rem;
+        }
+
+        .other-btn .other-secondary {
+            font-size: 0.85rem;
+            font-weight: normal;
+            opacity: 0.9;
+        }
+
+        /* Language Selection Modal (for Other Countries) */
+        .language-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .language-modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-title {
+            font-size: 1.3rem;
+            color: #4a5568;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .modal-btn {
+            background: linear-gradient(135deg, #0184f6 0%, #0164c9 100%);
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 130px;
+            justify-content: center;
+        }
+
+        .modal-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(1, 132, 246, 0.4);
+        }
+
+        .modal-btn .flag-img {
+            width: 24px;
+            height: 16px;
+            border-radius: 2px;
+        }
+
+        .modal-close {
+            margin-top: 20px;
+            background: none;
+            border: none;
+            color: #718096;
+            font-size: 0.95rem;
+            cursor: pointer;
+            padding: 10px;
+            transition: color 0.2s;
+        }
+
+        .modal-close:hover {
+            color: #4a5568;
+        }
+
+        .keyboard-hint {
+            margin-top: 25px;
+            font-size: 0.85rem;
+            color: #718096;
+            font-style: italic;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 35px 25px;
+                width: 95%;
+            }
+
+            .site-name-card {
+                max-width: 280px;
+                padding: 10px 15px;
+            }
+
+            .site-logo {
+                max-width: 100%;
+                width: auto;
+                height: auto;
+                min-height: unset;
+                object-fit: contain;
+            }
+
+            .country-btn {
+                padding: 18px 20px;
+                min-width: 140px;
+            }
+
+            .other-btn {
+                width: 100%;
+                min-width: unset;
+                max-width: 320px;
+                justify-content: center;
+            }
+
+            .other-btn .other-text {
+                align-items: center;
+            }
+        }
+
+        /* Large screens */
+        @media (min-width: 1200px) {
+            .site-name-card {
+                max-width: 500px;
+            }
+
+            .site-logo {
+                max-width: 95%;
+                max-height: 120px;
+            }
+        }
+
+        /* Loading animation for smooth transitions */
+        .fade-out {
+            opacity: 0;
+            transform: scale(0.95);
+            transition: all 0.3s ease;
+        }
+
+        /* Accessibility improvements */
+        .country-btn:focus,
+        .modal-btn:focus {
+            outline: 3px solid #ffd700;
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* High DPI displays */
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .site-logo {
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="site-name-card">
+            <div class="logo-display">
+                <img src="assets/images/shared/OG_logo_2025.png" alt="Open Gateways" class="site-logo">
+            </div>
+        </div>
+        
+        <p class="tagline">An intimate and safe place to explore the beauty and truth of who you are</p>
+        
+        <div class="country-selection">
+            <h2 class="selection-title">Please select your country<br><span style="font-size: 0.95em;">Por favor selecciona tu país</span></h2>
+            
+            <div class="country-buttons">
+                <button class="country-btn" onclick="selectCountry('us')" aria-label="United States - English">
+                    <img src="assets/images/shared/us.svg" alt="US Flag" class="flag-img">
+                    <span class="country-name">United States</span>
+                    <span class="country-lang">(English)</span>
+                </button>
+                <button class="country-btn" onclick="selectCountry('mx')" aria-label="México - Español">
+                    <img src="assets/images/shared/mx.svg" alt="Mexico Flag" class="flag-img">
+                    <span class="country-name">México</span>
+                    <span class="country-lang">(Español)</span>
+                </button>
+            </div>
+            
+            <div class="country-buttons">
+                <button class="country-btn other-btn" onclick="showLanguageModal()" aria-label="Other Countries">
+                    <span class="globe-icon">🌐</span>
+                    <span class="other-text">
+                        <span class="other-primary">Other Countries</span>
+                        <span class="other-secondary">Otros Países</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="keyboard-hint">
+            Keyboard: Press 'U' for US, 'M' for México, 'O' for Other
+        </div>
+    </div>
+
+    <!-- Language Selection Modal for Other Countries -->
+    <div class="language-modal" id="languageModal">
+        <div class="modal-content">
+            <h3 class="modal-title">Select your language<br><span style="font-size: 0.9em;">Selecciona tu idioma</span></h3>
+            <div class="modal-buttons">
+                <button class="modal-btn" onclick="selectCountry('other-en')" aria-label="English">
+                    <img src="assets/images/shared/us.svg" alt="English" class="flag-img">
+                    <span>English</span>
+                </button>
+                <button class="modal-btn" onclick="selectCountry('other-es')" aria-label="Español">
+                    <img src="assets/images/shared/mx.svg" alt="Español" class="flag-img">
+                    <span>Español</span>
+                </button>
+            </div>
+            <button class="modal-close" onclick="hideLanguageModal()">← Back / Volver</button>
+        </div>
+    </div>
+
+    <script>
+        // Set cookie function with domain support for cross-subdomain access
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            // Set domain for opengateways.com to share cookies across subdomains
+            var domain = window.location.hostname.indexOf('opengateways.com') !== -1 ? '; domain=.opengateways.com' : '';
+            document.cookie = name + "=" + (value || "") + expires + domain + "; path=/";
+        }
+
+        // Get cookie function
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        // Country selection function
+        function selectCountry(selection) {
+            var language, country;
+            
+            switch(selection) {
+                case 'us':
+                    language = 'en';
+                    country = 'us';
+                    break;
+                case 'mx':
+                    language = 'es';
+                    country = 'mx';
+                    break;
+                case 'other-en':
+                    language = 'en';
+                    country = 'other';
+                    break;
+                case 'other-es':
+                    language = 'es';
+                    country = 'other';
+                    break;
+                default:
+                    language = 'en';
+                    country = 'other';
+            }
+            
+            // Set cookies for 10 years
+            setCookie('langs', language, 3650);
+            setCookie('country', country, 3650);
+            
+            // Hide modal if open
+            hideLanguageModal();
+            
+            // Add fade out animation
+            document.querySelector('.container').classList.add('fade-out');
+            
+            // Auto-detect if running locally or on server
+            var isLocal = window.location.protocol === 'file:';
+            var basePath = isLocal ? '' : '/';
+            
+            // Redirect after animation
+            setTimeout(function() {
+                if (language === 'es') {
+                    window.location.href = basePath + 'es/bienvenido-a-opengateways.html';
+                } else {
+                    window.location.href = basePath + 'en/welcome-to-opengateways.html';
+                }
+            }, 300);
+        }
+
+        // Show language modal for Other Countries
+        function showLanguageModal() {
+            document.getElementById('languageModal').classList.add('active');
+        }
+
+        // Hide language modal
+        function hideLanguageModal() {
+            document.getElementById('languageModal').classList.remove('active');
+        }
+
+        // Check for existing cookies on page load
+        window.onload = function() {
+            var existingLanguage = getCookie('langs');
+            var existingCountry = getCookie('country');
+            
+            if (existingLanguage && existingCountry) {
+                // Auto-detect if running locally or on server
+                var isLocal = window.location.protocol === 'file:';
+                var basePath = isLocal ? '' : '/';
+                
+                // If cookies exist, redirect immediately
+                if (existingLanguage === 'es') {
+                    window.location.href = basePath + 'es/bienvenido-a-opengateways.html';
+                } else {
+                    window.location.href = basePath + 'en/welcome-to-opengateways.html';
+                }
+            }
+            // If no cookies, show the country selection (current page)
+        };
+
+        // Add keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            var modal = document.getElementById('languageModal');
+            
+            if (modal.classList.contains('active')) {
+                // Modal is open
+                if (event.key === 'Escape') {
+                    hideLanguageModal();
+                } else if (event.key === 'e' || event.key === 'E' || event.key === '1') {
+                    selectCountry('other-en');
+                } else if (event.key === 's' || event.key === 'S' || event.key === '2') {
+                    selectCountry('other-es');
+                }
+            } else {
+                // Main page
+                if (event.key === 'u' || event.key === 'U' || event.key === '1') {
+                    selectCountry('us');
+                } else if (event.key === 'm' || event.key === 'M' || event.key === '2') {
+                    selectCountry('mx');
+                } else if (event.key === 'o' || event.key === 'O' || event.key === '3') {
+                    showLanguageModal();
+                }
+            }
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('languageModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                hideLanguageModal();
+            }
+        });
+
+        // Add loading animation on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = '0';
+            setTimeout(function() {
+                document.body.style.transition = 'opacity 0.5s ease';
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
