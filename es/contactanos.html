@@ -1082,7 +1082,7 @@
                             
                             <div id="messageContainer" class="message"></div>
                             
-                            <form class="contact-form" id="contactForm" action="#" method="POST">
+                            <form class="contact-form" id="contactForm" action="#" method="POST" novalidate>
                                 <div class="form-group">
                                     <label for="name">Tu nombre *</label>
                                     <input type="text" id="name" name="name" required>
@@ -1125,7 +1125,7 @@
                             </p>
                             
                             <p style="margin-top: 10px; text-align: center; color: #0184f6; font-size: 0.9rem; font-weight: 500;">
-                                💡 Para una respuesta más rápida, envíanos un correo a <a href="mailto:appointments@opengateways.com" style="color: #0184f6;">appointments@opengateways.com</a>
+                                💡 Para una respuesta más rápida, envíanos un correo a <a href="mailto:info@opengateways.com" style="color: #0184f6;">info@opengateways.com</a>
                             </p>
                         </div>
 
@@ -1197,28 +1197,28 @@
             submitBtn.disabled = true;
             submitBtn.textContent = 'Enviando...';
             
-            // Create mailto link with form data
-            const subject = encodeURIComponent('Mensaje del Formulario de Contacto de ' + name);
-            const body = encodeURIComponent(
-                'Nombre: ' + name + '\n' +
-                'Correo: ' + email + '\n' +
-                'Mensaje:\n' + message + '\n\n' +
-                '---\n' +
-                'Este mensaje fue enviado desde el formulario de contacto de Open Gateways.'
-            );
+            // Send via server-side PHP
+            var data = new FormData();
+            data.append('name', name);
+            data.append('email', email);
+            data.append('message', message);
+            data.append('lang', 'es');
             
-            const mailtoLink = `mailto:feedback@opengateways.com?subject=${subject}&body=${body}`;
-            
-            // Open email client
-            window.location.href = mailtoLink;
-            
-            // Simulate sending delay and show success message
-            setTimeout(() => {
-                showMessage('Tu mensaje ha sido preparado para envío. Por favor envía el correo desde tu cliente de correo electrónico.', 'success');
-                form.reset();
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Enviar Mensaje';
-            }, 1000);
+            fetch('/assets/api/send-contact.php', { method: 'POST', body: data })
+                .then(function(r) { return r.json(); })
+                .then(function(r) {
+                    showMessage(r.message, r.success ? 'success' : 'error');
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Enviar Mensaje';
+                    if (r.success) {
+                        form.reset();
+                    }
+                })
+                .catch(function() {
+                    showMessage('Error de conexión. Intenta de nuevo.', 'error');
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Enviar Mensaje';
+                });
         });
         
         function showMessage(text, type) {

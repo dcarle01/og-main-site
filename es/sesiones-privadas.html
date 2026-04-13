@@ -1,4 +1,4 @@
-<!-- Version: 1.0.1 | Created: 2025-08-15 | Last Modified: 2025-08-18 | Author: Open Gateways Team -->
+<!-- Version: 1.0.1 | Created: 2025-08-15 | Last Modified: 2026-04-10 | Author: Open Gateways Team -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -1187,7 +1187,7 @@
                             <!-- Email Column -->
                             <div style="flex: 1; min-width: 250px; max-width: 350px;">
                                 <p style="margin: 0 0 8px 0; font-weight: 600; color: #374151; font-size: 1rem;">📧 Correo electrónico (preferido)</p>
-                                <a href="/cdn-cgi/l/email-protection#335243435c5a5d475e565d4740735c43565d5452475644524a401d505c5e" style="color: #0184f6; text-decoration: none; font-size: 0.95rem;"><span class="__cf_email__" data-cfemail="f39283839c9a9d879e969d8780b39c83969d9492879684928a80dd909c9e">[email&#160;protected]</span></a>
+                                <a href="mailto:appointments@opengateways.com" style="color: #0184f6; text-decoration: none; font-size: 0.95rem;">appointments@opengateways.com</a>
                                 <p style="margin: 8px 0 0 0; color: #6b7280; font-size: 0.85rem; font-style: italic;">Te responderemos normalmente en un plazo de 24 horas.</p>
                             </div>
                             
@@ -1204,7 +1204,7 @@
                 </main>
 
                 <footer>
-                    <p>&copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> Open Gateways, Inc. &ndash; Todos los derechos reservados.</p>
+                    <p>&copy; <script>document.write(new Date().getFullYear())</script> Open Gateways, Inc. &ndash; Todos los derechos reservados.</p>
                 </footer>
             </div>
         </div>
@@ -1277,8 +1277,8 @@
             
             // Then try to get live prices from API (optional enhancement)
             try {
-                fetch('/assets/api/get-pricing.php')
-                    .then(function(response) { 
+                fetch('/assets/api/get-pricing.php?t=' + Date.now())
+                    .then(function(response) {
                         return response.json(); 
                     })
                     .then(function(data) {
