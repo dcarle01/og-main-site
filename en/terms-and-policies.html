@@ -1,4 +1,4 @@
-<!-- Version: 1.0.0 | Created: 2025-08-15 | Last Modified: 2025-08-18 | Author: Open Gateways Team -->
+<!-- Version: 1.0.1 | Created: 2025-08-15 | Last Modified: 2026-04-23 | Author: Open Gateways Team -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,14 +112,6 @@
                     'en': 'news.html',
                     'es': 'noticias.html'
                 },
-                'online-store-coming-soon.html': {
-                    'en': 'online-store-coming-soon.html',
-                    'es': 'tienda-en-linea-proximamente.html'
-                },
-                'tienda-en-linea-proximamente.html': {
-                    'en': 'online-store-coming-soon.html',
-                    'es': 'tienda-en-linea-proximamente.html'
-                },
                 'terms-and-policies.html': {
                     'en': 'terms-and-policies.html',
                     'es': 'terminos-y-politicas.html'
@@ -220,6 +212,88 @@
             WriteCookie(lang);
         }
 
+        // Map of H2 leading numeric prefixes to anchor IDs.
+        // This lets deep links like #privacy work in both EN and ES even
+        // though the headings have different language text, because we
+        // identify sections by their numeric prefix rather than their text.
+        const SECTION_ANCHOR_MAP = {
+            '1.': 'intro',
+            '2.': 'refund',
+            '3.': 'nda',
+            '4.': 'external-links',
+            '5.': 'disclaimer',
+            '6.': 'copyright',
+            '7.': 'privacy',
+        };
+
+        function assignSectionAnchors() {
+            // Target H3s — the numbered sections in both EN and ES markdown
+            // are rendered as <h3> (from ### in the markdown), with H2s
+            // reserved for top-level groupings like "Terms of Service" and
+            // "Summary". Anchors like #privacy need to land on the H3.
+            const headings = document.querySelectorAll('#contentArea h3');
+            headings.forEach(function(heading) {
+                const text = (heading.textContent || '').trim();
+                for (const prefix in SECTION_ANCHOR_MAP) {
+                    if (text.indexOf(prefix) === 0) {
+                        heading.id = SECTION_ANCHOR_MAP[prefix];
+                        break;
+                    }
+                }
+            });
+        }
+
+        function scrollToHashIfPresent() {
+            if (!window.location.hash) return;
+            const id = window.location.hash.slice(1);
+            const target = document.getElementById(id);
+            if (!target) return;
+            
+            // Wait for fonts AND the window load event before scrolling.
+            // Content-area min-height, web-font loading, and banner-image
+            // loading can all shift layout AFTER innerHTML is assigned.
+            // A single requestAnimationFrame isn't enough — fonts may
+            // not be ready yet, causing scrollIntoView to compute an
+            // offset based on fallback-font metrics and land ~2 lines
+            // above the intended position once web fonts swap in.
+            const performScroll = function() {
+                // Re-resolve the target in case the DOM was rebuilt
+                const el = document.getElementById(id);
+                if (!el) return;
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            };
+            
+            // Prefer the Font Loading API when available (all modern browsers).
+            const fontsReady = (document.fonts && document.fonts.ready)
+                ? document.fonts.ready
+                : Promise.resolve();
+            
+            if (document.readyState === 'complete') {
+                // Page already fully loaded — wait only for fonts.
+                fontsReady.then(function() {
+                    requestAnimationFrame(performScroll);
+                });
+            } else {
+                // Wait for both the window load event and fonts-ready,
+                // then defer one frame so layout has settled.
+                let loadFired = false;
+                let fontsDone = false;
+                const tryScroll = function() {
+                    if (loadFired && fontsDone) {
+                        requestAnimationFrame(performScroll);
+                    }
+                };
+                window.addEventListener('load', function() {
+                    loadFired = true;
+                    tryScroll();
+                }, { once: true });
+                fontsReady.then(function() {
+                    fontsDone = true;
+                    tryScroll();
+                });
+            }
+        }
+
         // Load content from markdown file
         async function loadTermsContent() {
             try {
@@ -244,6 +318,16 @@
                 const htmlContent = parseMarkdownToHTML(contentWithoutHeader);
                 document.getElementById('contentArea').innerHTML = htmlContent;
                 document.getElementById('contentArea').style.display = 'block';
+                
+                // Assign anchor IDs to known numbered sections so that deep
+                // links like #privacy work. Section numbering is consistent
+                // across languages (e.g., "7." = Privacy in both EN & ES).
+                assignSectionAnchors();
+                
+                // Re-trigger hash-anchor scroll now that content is in the
+                // DOM. Without this, the browser's initial anchor scroll
+                // fires before content has loaded and fails silently.
+                scrollToHashIfPresent();
                 
             } catch (error) {
                 console.error('Error loading terms content:', error);
@@ -968,6 +1052,22 @@
         .nav-open-body .language-switcher {
             display: none;
         }
+        
+        /* ==== Anchor-scroll offset for sticky menu button ====
+           The nav-toggle button sits ~60px from the top of the viewport.
+           Adding scroll-margin-top ensures that when the browser jumps to
+           an anchored section (e.g., #privacy), the heading lands 80px
+           below the viewport top — clear of the menu button. Applied to
+           all headings in the dynamically-loaded content area.
+           Also enables smooth scrolling for better UX. */
+        html {
+            scroll-behavior: smooth;
+        }
+        #contentArea h1[id],
+        #contentArea h2[id],
+        #contentArea h3[id] {
+            scroll-margin-top: 34px;
+        }
     </style>
 </head>
 <body>
@@ -1050,7 +1150,7 @@
                     <a href="testimonials" class="side-nav-link">Testimonials</a>
                 </div>
                 <div class="side-nav-item">
-                    <a href="online-store-coming-soon" class="side-nav-link">Online Store (Coming Soon)</a>
+                    <a href="https://shop.opengateways.com" class="side-nav-link" target="_blank">Shop</a>
                 </div>
                 <div class="side-nav-item">
                     <a href="terms-and-policies" class="side-nav-link active">Terms & Policies</a>
