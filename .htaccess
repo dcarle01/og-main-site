@@ -62,6 +62,13 @@ RewriteRule ^es/media-dale-carley\.shtml$        /en/interview-with-dale  [R=301
 # Trailing ? strips any legacy query string like ?language=es.
 RewriteRule ^store(/.*)?$                 https://shop.opengateways.com/?    [R=301,L]
 
+# --- Retired "coming soon" store placeholders → live shop ---
+# Pages already carry client-side redirect stubs; these 301s supersede them
+# so crawlers never need to execute a meta refresh or JavaScript.
+# The optional (\.html)? matches both URL forms, avoiding a two-hop chain.
+RewriteRule ^en/online-store-coming-soon(\.html)?$      https://shop.opengateways.com/?  [R=301,L]
+RewriteRule ^es/tienda-en-linea-proximamente(\.html)?$  https://shop.opengateways.com/?  [R=301,L]
+
 # --- Generic .shtml → clean-URL fallback ---
 # Catches any remaining legacy page matching /en/<slug>.shtml or /es/<slug>.shtml
 # where the slug is unchanged between .shtml and modern .html versions.
