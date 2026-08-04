@@ -35,3 +35,11 @@ Thumbs.db
 *.log
 npm-debug.log*
 tsconfig.tsbuildinfo
+
+# Sync artifacts written by sync_project_files.sh — not source
+MAIN-SITE_*
+
+# Local safety copies taken before server restores — never commit
+*.recovered-*
+*.pre-restore-*
+.htaccess.backup.*
