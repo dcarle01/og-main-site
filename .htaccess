@@ -20,6 +20,58 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # =============================================================================
+# LEGACY URL REDIRECTS (pre-migration .shtml and CRE Loaded store)
+# 301 redirects to reclaim Google-indexed URLs that now return 404.
+# Most specific rules first; generic patterns last.
+# =============================================================================
+
+# --- Bare language directories (was 403: no index, directory listing off) ---
+RewriteRule ^en/?$                        /en/welcome-to-opengateways    [R=301,L]
+RewriteRule ^es/?$                        /es/bienvenido-a-opengateways  [R=301,L]
+
+# --- Legacy root-level pages (pre-bilingual redesign, no /en/ or /es/) ---
+RewriteRule ^channeling\.shtml$           /en/what-is-channeling         [R=301,L]
+RewriteRule ^news\.shtml$                 /en/news                       [R=301,L]
+RewriteRule ^contact\.shtml$              /en/contact-us                 [R=301,L]
+RewriteRule ^private\.shtml$              /en/private-sessions           [R=301,L]
+RewriteRule ^listen\.shtml$               /en/listen-to-baratta          [R=301,L]
+RewriteRule ^welcome\.shtml$              /                              [R=301,L]
+RewriteRule ^index\.shtml$                /                              [R=301,L]
+RewriteRule ^default\.htm$                /                              [R=301,L]
+
+# --- Legacy English pages with slugs that changed in the migration ---
+RewriteRule ^en/testimonials-comments\.shtml$    /en/testimonials         [R=301,L]
+RewriteRule ^en/introducing-dale\.shtml$         /en/meet-dale-carley     [R=301,L]
+RewriteRule ^en/introducing-baratta\.shtml$      /en/meet-baratta         [R=301,L]
+RewriteRule ^en/news-and-events\.shtml$          /en/news                 [R=301,L]
+RewriteRule ^en/private-session\.shtml$          /en/private-sessions     [R=301,L]
+
+# --- Legacy Spanish pages that used English slugs (pre-localization) ---
+RewriteRule ^es/contact-us\.shtml$               /es/contactanos          [R=301,L]
+RewriteRule ^es/testimonials-comments\.shtml$    /es/testimonios          [R=301,L]
+RewriteRule ^es/introducing-dale\.shtml$         /es/conoce-a-dale-carley [R=301,L]
+RewriteRule ^es/introducing-baratta\.shtml$      /es/conoce-a-baratta     [R=301,L]
+RewriteRule ^es/news-and-events\.shtml$          /es/noticias             [R=301,L]
+RewriteRule ^es/what-is-channeling\.shtml$       /es/que-es-canalizacion  [R=301,L]
+RewriteRule ^es/listen-to-baratta\.shtml$        /es/escucha-a-baratta    [R=301,L]
+RewriteRule ^es/private-session\.shtml$          /es/sesiones-privadas    [R=301,L]
+RewriteRule ^es/media-dale-carley\.shtml$        /en/interview-with-dale  [R=301,L]
+
+# --- Legacy CRE Loaded store → live shop subdomain ---
+# All /store/... paths redirect to the shop (which handles language via cookie).
+# Trailing ? strips any legacy query string like ?language=es.
+RewriteRule ^store(/.*)?$                 https://shop.opengateways.com/?    [R=301,L]
+
+# --- Generic .shtml → clean-URL fallback ---
+# Catches any remaining legacy page matching /en/<slug>.shtml or /es/<slug>.shtml
+# where the slug is unchanged between .shtml and modern .html versions.
+RewriteRule ^(en|es)/([^/]+)\.shtml$      /$1/$2                         [R=301,L]
+# --- Permanently gone: legacy /cgi-bin/ paths ---
+# Returns 410 Gone (rather than 404) to signal Google to drop from its index.
+# Empty substitution required when using [G] flag.
+RewriteRule ^cgi-bin(/.*)?$               -                              [G,L]
+
+# =============================================================================
 # SECURITY HEADERS
 # =============================================================================
 <IfModule mod_headers.c>
@@ -131,8 +183,8 @@ AddDefaultCharset UTF-8
 </IfModule>
 
 # php -- BEGIN cPanel-generated handler, do not edit
-# Set the "ea-php56" package as the default "PHP" programming language.
+# Set the “ea-php81” package as the default “PHP” programming language.
 <IfModule mime_module>
-  AddHandler application/x-httpd-ea-php56 .php .php5 .phtml
+  AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
 </IfModule>
 # php -- END cPanel-generated handler, do not edit

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Root language selector -->
+  <url>
+    <loc>https://opengateways.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/welcome-to-opengateways"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/bienvenido-a-opengateways"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://opengateways.com/"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Welcome / home -->
+  <url>
+    <loc>https://opengateways.com/en/welcome-to-opengateways</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/welcome-to-opengateways"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/bienvenido-a-opengateways"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://opengateways.com/"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://opengateways.com/es/bienvenido-a-opengateways</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/welcome-to-opengateways"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/bienvenido-a-opengateways"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://opengateways.com/"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Meet Baratta -->
+  <url>
+    <loc>https://opengateways.com/en/meet-baratta</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/meet-baratta"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/conoce-a-baratta"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://opengateways.com/es/conoce-a-baratta</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/meet-baratta"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/conoce-a-baratta"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Meet Dale Carley -->
+  <url>
+    <loc>https://opengateways.com/en/meet-dale-carley</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/meet-dale-carley"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/conoce-a-dale-carley"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://opengateways.com/es/conoce-a-dale-carley</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/meet-dale-carley"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/conoce-a-dale-carley"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- What Is Channeling -->
+  <url>
+    <loc>https://opengateways.com/en/what-is-channeling</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/what-is-channeling"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/que-es-canalizacion"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://opengateways.com/es/que-es-canalizacion</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/what-is-channeling"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/que-es-canalizacion"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Private Sessions -->
+  <url>
+    <loc>https://opengateways.com/en/private-sessions</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/private-sessions"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/sesiones-privadas"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://opengateways.com/es/sesiones-privadas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/private-sessions"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/sesiones-privadas"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Listen to Baratta -->
+  <url>
+    <loc>https://opengateways.com/en/listen-to-baratta</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/listen-to-baratta"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/escucha-a-baratta"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://opengateways.com/es/escucha-a-baratta</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/listen-to-baratta"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/escucha-a-baratta"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Baratta Talks About -->
+  <url>
+    <loc>https://opengateways.com/en/baratta-talks-about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/baratta-talks-about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/baratta-habla-de"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://opengateways.com/es/baratta-habla-de</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/baratta-talks-about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/baratta-habla-de"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Interview With Dale -->
+  <url>
+    <loc>https://opengateways.com/en/interview-with-dale</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/interview-with-dale"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/entrevista-con-dale"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://opengateways.com/es/entrevista-con-dale</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/interview-with-dale"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/entrevista-con-dale"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Learning Spiritually -->
+  <url>
+    <loc>https://opengateways.com/en/learning-spiritually</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/learning-spiritually"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/aprender-espiritualmente"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://opengateways.com/es/aprender-espiritualmente</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/learning-spiritually"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/aprender-espiritualmente"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Relating -->
+  <url>
+    <loc>https://opengateways.com/en/relating</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/relating"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/relacionandote"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://opengateways.com/es/relacionandote</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/relating"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/relacionandote"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Masculine/Feminine -->
+  <url>
+    <loc>https://opengateways.com/en/masculine-feminine</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/masculine-feminine"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/masculino-femenino"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://opengateways.com/es/masculino-femenino</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/masculine-feminine"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/masculino-femenino"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- News -->
+  <url>
+    <loc>https://opengateways.com/en/news</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/news"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/noticias"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://opengateways.com/es/noticias</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/news"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/noticias"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Testimonials -->
+  <url>
+    <loc>https://opengateways.com/en/testimonials</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/testimonials"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/testimonios"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://opengateways.com/es/testimonios</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/testimonials"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/testimonios"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://opengateways.com/en/contact-us</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/contact-us"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/contactanos"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://opengateways.com/es/contactanos</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/contact-us"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/contactanos"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
