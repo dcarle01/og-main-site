@@ -1,7 +1,7 @@
 # Open Gateways - Main Site Robots.txt
 # opengateways.com
 # Author: Dale Carley
-# Last Updated: March 2026
+# Last Updated: August 2026
 
 # =============================================================================
 # BLOCK AGGRESSIVE / HARMFUL CRAWLERS
@@ -94,4 +94,4 @@ Disallow: /MainNavInclude.txt
 # =============================================================================
 # SITEMAP
 # =============================================================================
-# Sitemap: https://opengateways.com/sitemap.xml
+Sitemap: https://opengateways.com/sitemap.xml

@@ -259,12 +259,30 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://opengateways.com/es/contactanos</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/contact-us"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/contactanos"/>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
+      <loc>https://opengateways.com/es/contactanos</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/contact-us"/>
+      <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/contactanos"/>
+      <lastmod>2026-04-20</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.6</priority>
+    </url>
 
-</urlset>
+    <!-- Terms & Policies -->
+    <url>
+      <loc>https://opengateways.com/en/terms-and-policies</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/terms-and-policies"/>
+      <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/terminos-y-politicas"/>
+      <lastmod>2026-04-23</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.3</priority>
+    </url>
+    <url>
+      <loc>https://opengateways.com/es/terminos-y-politicas</loc>
+      <xhtml:link rel="alternate" hreflang="en" href="https://opengateways.com/en/terms-and-policies"/>
+      <xhtml:link rel="alternate" hreflang="es" href="https://opengateways.com/es/terminos-y-politicas"/>
+      <lastmod>2026-04-23</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.3</priority>
+    </url>
+
+  </urlset>
