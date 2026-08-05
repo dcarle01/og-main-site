@@ -13,6 +13,17 @@ RewriteCond %{HTTP_USER_AGENT} (meta-externalagent|PetalBot|DotBot|AhrefsBot|Fee
 RewriteRule .* - [F,L]
 
 # ==============================================
+# CANONICAL HOST
+# Strips www and forces https in a single hop.
+# Must precede FORCE HTTPS: otherwise http://www/ chains through
+# https://www/ before reaching the canonical host, costing an extra hop.
+# Host-agnostic via the %1 backreference. No loop risk — after the
+# rewrite the host no longer matches ^www\. on the second pass.
+# ==============================================
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+
+# ==============================================
 # FORCE HTTPS
 # ==============================================
 RewriteCond %{HTTPS} off
@@ -45,6 +56,8 @@ RewriteRule ^en/introducing-dale\.shtml$         /en/meet-dale-carley     [R=301
 RewriteRule ^en/introducing-baratta\.shtml$      /en/meet-baratta         [R=301,L]
 RewriteRule ^en/news-and-events\.shtml$          /en/news                 [R=301,L]
 RewriteRule ^en/private-session\.shtml$          /en/private-sessions     [R=301,L]
+RewriteRule ^en/schedule-a-session\.shtml$       /en/private-sessions     [R=301,L]
+RewriteRule ^en/media-dale-carley\.shtml$        /en/interview-with-dale  [R=301,L]
 
 # --- Legacy Spanish pages that used English slugs (pre-localization) ---
 RewriteRule ^es/contact-us\.shtml$               /es/contactanos          [R=301,L]
@@ -55,7 +68,8 @@ RewriteRule ^es/news-and-events\.shtml$          /es/noticias             [R=301
 RewriteRule ^es/what-is-channeling\.shtml$       /es/que-es-canalizacion  [R=301,L]
 RewriteRule ^es/listen-to-baratta\.shtml$        /es/escucha-a-baratta    [R=301,L]
 RewriteRule ^es/private-session\.shtml$          /es/sesiones-privadas    [R=301,L]
-RewriteRule ^es/media-dale-carley\.shtml$        /en/interview-with-dale  [R=301,L]
+RewriteRule ^es/baratta-talks-about\.shtml$      /es/baratta-habla-de     [R=301,L]
+RewriteRule ^es/media-dale-carley\.shtml$        /es/entrevista-con-dale  [R=301,L]
 
 # --- Legacy CRE Loaded store → live shop subdomain ---
 # All /store/... paths redirect to the shop (which handles language via cookie).
