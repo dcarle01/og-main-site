@@ -1,0 +1,391 @@
+<!-- Version: 1.0.0 | Created: 2026-01-23 | Author: Open Gateways Team -->
+<!-- Location: public_html/en/sms-consent-verification.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Consent Verification - Open Gateways</title>
+    <meta name="description" content="SMS consent verification documentation for Open Gateways appointment notifications.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/shared/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/shared/favicon.svg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #334155;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header img {
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-family: Georgia, serif;
+            font-size: 2rem;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .card h2 {
+            color: #1e40af;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .card h3 {
+            color: #334155;
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+        
+        .consent-box {
+            background: #f0f9ff;
+            border: 2px solid #0284c7;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .consent-box h4 {
+            color: #0369a1;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        
+        .consent-text {
+            background: white;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 15px;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        
+        .checkbox-demo {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-top: 15px;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+        
+        .checkbox-demo input {
+            margin-top: 3px;
+        }
+        
+        .screenshot-container {
+            background: #f1f5f9;
+            border: 2px solid #cbd5e1;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .screenshot-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .screenshot-caption {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .info-item {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .info-item strong {
+            display: block;
+            color: #1e40af;
+            margin-bottom: 5px;
+            font-size: 0.85rem;
+        }
+        
+        .sample-message {
+            background: #ecfdf5;
+            border-left: 4px solid #10b981;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 0 8px 8px 0;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+        
+        .links-section {
+            background: #fefce8;
+            border: 1px solid #fbbf24;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .links-section a {
+            color: #0284c7;
+            text-decoration: none;
+        }
+        
+        .links-section a:hover {
+            text-decoration: underline;
+        }
+        
+        .step-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .step-list li {
+            counter-increment: step-counter;
+            padding: 10px 0 10px 45px;
+            position: relative;
+        }
+        
+        .step-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            background: #3b82f6;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .footer a {
+            color: #0284c7;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../assets/images/shared/OG_logo_2025.png" alt="Open Gateways Logo">
+            <h1>SMS Consent Verification</h1>
+            <p>Documentation of SMS opt-in process for A2P 10DLC compliance verification</p>
+        </div>
+        
+        <div class="card">
+            <h2>1. Business Information</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Business Name</strong>
+                    Open Gateways
+                </div>
+                <div class="info-item">
+                    <strong>Website</strong>
+                    opengateways.com
+                </div>
+                <div class="info-item">
+                    <strong>Scheduling System</strong>
+                    schedule.opengateways.com
+                </div>
+                <div class="info-item">
+                    <strong>Industry</strong>
+                    Spiritual Consultation Services
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>2. SMS Opt-In Process</h2>
+            <p>Clients opt in to SMS notifications through their account profile in the scheduling system. This is a voluntary, explicit opt-in that requires:</p>
+            
+            <ol class="step-list">
+                <li>User must be logged into their authenticated account at schedule.opengateways.com</li>
+                <li>User navigates to Profile → Communication Preferences section</li>
+                <li>User clicks the SMS checkbox which opens a consent dialog</li>
+                <li>User reviews and confirms all consent disclosures in the modal</li>
+                <li>User checks the consent confirmation checkbox</li>
+                <li>User clicks "Enable SMS" button to complete opt-in</li>
+            </ol>
+            
+            <h3>Screenshot: Communication Preferences Section</h3>
+            <div class="screenshot-container">
+                <!-- Replace src with actual screenshot after implementation -->
+                <img src="../assets/images/sms-verification/comm-prefs-screenshot.png" alt="Communication Preferences showing SMS option">
+                <p class="screenshot-caption">Profile page Communication Preferences section with SMS opt-in checkbox</p>
+            </div>
+            
+            <h3>Screenshot: SMS Consent Dialog</h3>
+            <div class="screenshot-container">
+                <!-- Replace src with actual screenshot after implementation -->
+                <img src="../assets/images/sms-verification/consent-dialog-screenshot.png" alt="SMS Consent Dialog">
+                <p class="screenshot-caption">SMS consent modal with all required disclosures and confirmation checkbox</p>
+            </div>
+            
+            <h3>Consent Dialog - Exact Text</h3>
+            <div class="consent-box">
+                <h4>SMS Notifications Consent</h4>
+                <div class="consent-text">
+                    <p>By enabling SMS notifications, you agree to receive appointment confirmations, reminders, and important notices from Open Gateways via text message.</p>
+                    
+                    <p style="margin-top: 15px;"><strong>Important Information:</strong></p>
+                    <ul style="margin: 10px 0 10px 20px;">
+                        <li>Message frequency varies (typically 2-4 messages per scheduled appointment)</li>
+                        <li>Message and data rates may apply</li>
+                        <li>Reply STOP to opt out at any time</li>
+                        <li>Reply HELP for assistance</li>
+                    </ul>
+                    
+                    <p style="margin-top: 15px; font-size: 0.85rem; color: #64748b;">
+                        View our <a href="https://schedule.opengateways.com/terms-and-policies">Terms of Service</a> and
+                        <a href="https://schedule.opengateways.com/terms-and-policies#7-user-accounts-and-privacy">Privacy Policy</a>.
+                    </p>
+                    
+                    <div class="checkbox-demo">
+                        <input type="checkbox" id="demo-consent" checked disabled>
+                        <label for="demo-consent">
+                            I agree to receive SMS notifications from Open Gateways. I understand that message and data rates may apply and I can opt out at any time by replying STOP.
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>3. Sample Messages</h2>
+            <p>All messages include brand identification ("Open Gateways:") and opt-out instructions ("Reply STOP to opt out"):</p>
+            
+            <h3>Appointment Confirmation</h3>
+            <div class="sample-message">
+                Open Gateways: Your appointment REF123 is confirmed for Jan 15 at 10:00 AM (Mexico City time). Msg&data rates may apply. Reply STOP to opt out.
+            </div>
+            
+            <h3>Appointment Reminder</h3>
+            <div class="sample-message">
+                Open Gateways Reminder: Your session is tomorrow, Jan 15 at 10:00 AM. Questions? Visit opengateways.com Reply STOP to opt out.
+            </div>
+            
+            <h3>Cancellation Notice</h3>
+            <div class="sample-message">
+                Open Gateways: Your appointment for Jan 15 has been cancelled. To reschedule, visit schedule.opengateways.com Reply STOP to opt out.
+            </div>
+            
+            <h3>Payment Confirmation</h3>
+            <div class="sample-message">
+                Open Gateways: Payment confirmed for your Jan 15 session. Thank you! Questions? Visit opengateways.com Reply STOP to opt out.
+            </div>
+            
+            <h3>Payment Reminder</h3>
+            <div class="sample-message">
+                Open Gateways: Reminder - payment due for your reserved session on Jan 15. Complete payment at schedule.opengateways.com to confirm. Reply STOP to opt out.
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>4. Message Frequency</h2>
+            <p>Typical message volume per scheduled appointment:</p>
+            <ul style="margin: 15px 0 15px 20px;">
+                <li><strong>Confirmation:</strong> 1 message when appointment is booked</li>
+                <li><strong>Reminder:</strong> 1 message (typically 24 hours before, user-configurable)</li>
+                <li><strong>Payment:</strong> 1-2 messages (confirmation and/or reminder if applicable)</li>
+                <li><strong>Cancellation:</strong> 1 message (if appointment is cancelled)</li>
+            </ul>
+            <p><strong>Average:</strong> 2-4 messages per scheduled appointment</p>
+            <p style="margin-top: 10px; color: #64748b; font-size: 0.9rem;">No marketing or promotional messages are sent via SMS.</p>
+        </div>
+        
+        <div class="card">
+            <h2>5. Opt-Out Mechanism</h2>
+            <p>Users can opt out of SMS notifications at any time via:</p>
+            <ul style="margin: 15px 0 15px 20px;">
+                <li><strong>Reply STOP:</strong> Immediately removes user from SMS list. Automatic unsubscribe confirmation sent.</li>
+                <li><strong>Reply HELP:</strong> Receives assistance message with contact info and instructions</li>
+                <li><strong>Account Settings:</strong> Disable SMS checkbox in Communication Preferences at any time</li>
+                <li><strong>Contact Support:</strong> Email info@opengateways.com or call (310) 457-9171</li>
+            </ul>
+            
+            <div class="links-section">
+                <h3 style="margin-bottom: 15px;">📋 Required Policy Links</h3>
+                <p><strong>Terms of Service:</strong> <a href="https://schedule.opengateways.com/terms-and-policies" target="_blank">schedule.opengateways.com/terms-and-policies</a></p>
+                <p><strong>Privacy Policy:</strong> <a href="https://schedule.opengateways.com/terms-and-policies#7-user-accounts-and-privacy" target="_blank">schedule.opengateways.com/terms-and-policies#7-user-accounts-and-privacy</a></p>
+                <p style="margin-top: 10px;"><strong>Contact:</strong> <a href="mailto:info@opengateways.com">info@opengateways.com</a> | <a href="tel:+13104579171">(310) 457-9171</a></p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>This page is provided for A2P 10DLC campaign verification purposes.</p>
+            <p style="margin-top: 15px;">© 2026 Open Gateways. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="https://opengateways.com">opengateways.com</a> |
+                <a href="mailto:info@opengateways.com">info@opengateways.com</a> |
+                <a href="tel:+13104579171">(310) 457-9171</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
