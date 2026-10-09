@@ -1,7 +1,7 @@
 # Open Gateways - Main Site Robots.txt
 # opengateways.com
 # Author: Dale Carley
-# Last Updated: August 2026
+# Last Updated: October 2026
 
 # =============================================================================
 # BLOCK AGGRESSIVE / HARMFUL CRAWLERS
@@ -62,7 +62,6 @@ Disallow: /stats/
 Disallow: /test/
 Disallow: /css/
 Disallow: /js/
-Disallow: /assets/database/
 Disallow: /MainNavInclude.txt
 
 User-agent: Bingbot
@@ -73,7 +72,6 @@ Disallow: /stats/
 Disallow: /test/
 Disallow: /css/
 Disallow: /js/
-Disallow: /assets/database/
 Disallow: /MainNavInclude.txt
 
 # =============================================================================
@@ -88,7 +86,6 @@ Disallow: /stats/
 Disallow: /test/
 Disallow: /css/
 Disallow: /js/
-Disallow: /assets/database/
 Disallow: /MainNavInclude.txt
 
 # =============================================================================
