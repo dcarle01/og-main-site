@@ -1,6 +1,6 @@
 # Open Gateways - Main Site Configuration
 # Clean URLs, caching, security, and compression
-# Updated: March 2026
+# Updated: October 2026
 
 RewriteEngine On
 
@@ -75,6 +75,16 @@ RewriteRule ^es/media-dale-carley\.shtml$        /es/entrevista-con-dale  [R=301
 # All /store/... paths redirect to the shop (which handles language via cookie).
 # Trailing ? strips any legacy query string like ?language=es.
 RewriteRule ^store(/.*)?$                 https://shop.opengateways.com/?    [R=301,L]
+
+# --- Retired podcast feed → the pages that host the audio ---
+# "A Luscious Life" (2009-2010) was distributed as an RSS feed at
+# /podcasts/Baratta.xml, /en/podcasts/Baratta.xml and /es/podcasts/Baratta.xml.
+# The feed did not survive the migration; all 46 episodes did, and are served
+# from the listen pages. Matches the whole directory rather than the one
+# filename, since other feed artifacts may also have lived there.
+RewriteRule ^podcasts/.*$                 /en/listen-to-baratta          [R=301,L,NC]
+RewriteRule ^en/podcasts/.*$              /en/listen-to-baratta          [R=301,L,NC]
+RewriteRule ^es/podcasts/.*$              /es/escucha-a-baratta          [R=301,L,NC]
 
 # --- Retired "coming soon" store placeholders → live shop ---
 # Pages already carry client-side redirect stubs; these 301s supersede them
